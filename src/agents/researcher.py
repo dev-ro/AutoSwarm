@@ -25,6 +25,5 @@ def get_research_agent() -> Agent:
         ],
         tools=[BrowserTools()], 
         knowledge=knowledge_base,
-        show_tool_calls=True,
         markdown=True
     )

@@ -1,6 +1,6 @@
 
 from typing import List
-from src.agents.schemas import Plan, Task, AgentType
+from src.agents.schemas import Plan, Task, AgentType, PlanReview
 from src.agents.researcher import get_research_agent
 from src.agents.social import get_social_agent
 from src.agents.finance import get_finance_agent
@@ -84,7 +84,7 @@ class Manager:
                 """
                 
                 try:
-                    review_response = self.reviewer.run(prompt)
+                    review_response = self.reviewer.run(prompt, response_model=PlanReview)
                     plan_review = review_response.content
                     
                     if plan_review.should_modify and plan_review.new_plan:
@@ -212,7 +212,7 @@ class Manager:
         """
         
         print("  -> Asking Executive Agent for decision...")
-        response = self.executive.run(prompt)
+        response = self.executive.run(prompt, response_model=Plan)
         
         # The executive returns a Plan object (structured output)
         # We can recursively execute this new mini-plan or just print it for now.

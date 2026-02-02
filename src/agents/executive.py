@@ -18,7 +18,6 @@ def get_executive_agent() -> Agent:
             "Do NOT execute the steps yourself.",
             "Ensure the plan is logical, sequential, and covers all aspects of the user's request."
         ],
-        response_model=Plan,
         structured_outputs=True,
         markdown=True
     )
@@ -38,7 +37,6 @@ def get_plan_reviewer_agent() -> Agent:
             "If the plan is fine, set should_modify to False.",
             "Be adaptive. If a research step failed, propose an alternative source or method."
         ],
-        response_model=PlanReview,
         structured_outputs=True,
         markdown=True
     )

@@ -17,6 +17,5 @@ def get_finance_agent() -> Agent:
             "Be conservative with funds."
         ],
         tools=[FinanceTools()],
-        show_tool_calls=True,
         markdown=True
     )

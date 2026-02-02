@@ -1,16 +1,15 @@
-
+from pathlib import Path
 from agno.agent import Agent
 from src.core.models import get_executive_model
 from agno.tools.file import FileTools
 from src.tools.docker_shell import DockerShellTools
-import os
 
-# Ensure workspace exists
 WORKSPACE_DIR = "./workspace"
-if not os.path.exists(WORKSPACE_DIR):
-    os.makedirs(WORKSPACE_DIR)
 
 def get_coder_agent() -> Agent:
+    """
+    Returns the Coder Agent.
+    """
     return Agent(
         model=get_executive_model(),
         description="You are a Senior Python Developer.",
@@ -28,9 +27,8 @@ def get_coder_agent() -> Agent:
             "   e. Only return after success or 3 failed attempts."
         ],
         tools=[
-            FileTools(base_dir=WORKSPACE_DIR, list_files=True, read_file=True, write_file=True), 
+            FileTools(base_dir=Path(WORKSPACE_DIR)), 
             DockerShellTools()
-        ], 
-        show_tool_calls=True,
+        ],
         markdown=True
     )

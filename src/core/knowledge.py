@@ -1,12 +1,12 @@
 
-from agno.knowledge import AgentKnowledge
-from agno.vectordb.lancedb import LanceDb
-from agno.embedder.google import GeminiEmbedder
+from agno.knowledge.knowledge import Knowledge
+from agno.vectordb.lancedb.lance_db import LanceDb
+from agno.knowledge.embedder.google import GeminiEmbedder
 import os
 
-def get_knowledge_base() -> AgentKnowledge:
+def get_knowledge_base() -> Knowledge:
     """
-    Returns a configured AgentKnowledge object using LanceDB.
+    Returns a configured Knowledge object using LanceDB.
     """
     # Ensure the knowledge directory exists
     db_path = "./workspace/knowledge"
@@ -20,11 +20,11 @@ def get_knowledge_base() -> AgentKnowledge:
     vector_db = LanceDb(
         table_name="research_knowledge",
         uri=db_path,
-        embedder=GeminiEmbedder(api_key=api_key, model="models/embedding-001")
+        embedder=GeminiEmbedder(api_key=api_key, id="models/embedding-001")
     )
     
     # Create Knowledge Base
-    knowledge = AgentKnowledge(
+    knowledge = Knowledge(
         vector_db=vector_db,
         # We can add default docs here if we wanted
         # num_documents=3 # default retrieval count

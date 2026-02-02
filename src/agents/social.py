@@ -18,6 +18,5 @@ def get_social_agent() -> Agent:
             "Be creative but professional (or 'edgy' if the vibe calls for it)."
         ],
         tools=[SocialTools()],
-        show_tool_calls=True,
         markdown=True
     )
