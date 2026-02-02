@@ -1,33 +1,31 @@
-
-from agno.knowledge.knowledge import Knowledge
-from agno.vectordb.lancedb.lance_db import LanceDb
-from agno.knowledge.embedder.google import GeminiEmbedder
 import os
+from agno.knowledge import Knowledge
+from agno.vectordb.lancedb import LanceDb
+from agno.knowledge.embedder.google import GeminiEmbedder
+from agno.vectordb.search import SearchType
 
 def get_knowledge_base() -> Knowledge:
     """
-    Returns a configured Knowledge object using LanceDB.
+    Returns the persistent Knowledge Base backed by LanceDB.
     """
-    # Ensure the knowledge directory exists
-    db_path = "./workspace/knowledge"
-    if not os.path.exists(db_path):
-        os.makedirs(db_path)
-    
-    # We use Google's Gemini Embedder since we have the key
-    api_key = os.getenv("GOOGLE_API_KEY")
-    
-    # Initialize Vector DB
+    db_path = "data/knowledge_base"
+    os.makedirs(db_path, exist_ok=True)
+
+    # Configure the LanceDB vector database
     vector_db = LanceDb(
         table_name="research_knowledge",
         uri=db_path,
-        embedder=GeminiEmbedder(api_key=api_key, id="models/embedding-001")
+        search_type=SearchType.keyword,
+        embedder=GeminiEmbedder(id="models/embedding-001") 
     )
-    
-    # Create Knowledge Base
-    knowledge = Knowledge(
+
+    # Initialize the Knowledge Base
+    knowledge_base = Knowledge(
         vector_db=vector_db,
-        # We can add default docs here if we wanted
-        # num_documents=3 # default retrieval count
     )
     
-    return knowledge
+    # Ensure the vector_db is created if it doesn't exist.
+    if not vector_db.exists():
+        vector_db.create()
+
+    return knowledge_base

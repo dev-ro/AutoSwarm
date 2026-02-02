@@ -4,12 +4,12 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class AgentType(str, Enum):
-    RESEARCHER = "Researcher"
-    SOCIAL = "Social"
-    FINANCE = "Finance"
-    CODER = "Coder"
-    EXECUTIVE = "Executive"
-    REVIEWER = "Reviewer"
+    RESEARCHER = "researcher"
+    SOCIAL = "social"
+    FINANCE = "finance"
+    CODER = "coder"
+    REVIEWER = "reviewer"
+    EXECUTIVE = "executive"
 
 class Task(BaseModel):
     description: str = Field(..., description="Description of the task to be performed.")

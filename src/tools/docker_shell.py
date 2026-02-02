@@ -28,10 +28,17 @@ class DockerShellTools(Toolkit):
             if not os.path.exists(workspace_abs_path):
                 os.makedirs(workspace_abs_path)
                 
+            src_abs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../src'))
+            
+            # Remove existing container to apply new mounts (simple reset)
+            subprocess.run(["docker", "rm", "-f", self.container_name], 
+                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False)
+
             subprocess.run([
-                "docker", "run", "-d", "--rm",
+                "docker", "run", "-d",
                 "--name", self.container_name,
                 "-v", f"{workspace_abs_path}:{self.work_dir}", # Mount workspace
+                "-v", f"{src_abs_path}:{self.work_dir}/src",   # Mount src
                 "-w", self.work_dir,
                 "python:3.11-alpine", "sleep", "infinity"
             ], check=True)
@@ -45,7 +52,7 @@ class DockerShellTools(Toolkit):
             # Use 'docker exec' to run command
             result = subprocess.run(
                 ["docker", "exec", self.container_name, "sh", "-c", command],
-                capture_output=True, text=True, timeout=30
+                capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=30
             )
             output = result.stdout + result.stderr
             return output if output.strip() else "(Command executed with no output)"

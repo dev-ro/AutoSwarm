@@ -5,8 +5,8 @@ from agno.models.google import Gemini
 
 load_dotenv()
 
-# We use the Gemini 3 Pro Preview model as requested.
-GEMINI_MODEL_ID = "gemini-3-pro-preview"
+# We use the Gemini 3 Flash Preview model as requested.
+GEMINI_MODEL_ID = "gemini-3-flash-preview"
 
 def get_executive_model():
     """
