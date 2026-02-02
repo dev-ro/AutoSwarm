@@ -1,10 +1,11 @@
 
 from typing import List
-from src.agents.schemas import Plan, Task
+from src.agents.schemas import Plan, Task, AgentType
 from src.agents.researcher import get_research_agent
 from src.agents.social import get_social_agent
 from src.agents.finance import get_finance_agent
-from src.agents.executive import get_executive_agent # Self-referential for handoff
+from src.agents.coder import get_coder_agent
+from src.agents.executive import get_executive_agent, get_plan_reviewer_agent
 from src.core.state import StateManager
 
 class Manager:
@@ -18,9 +19,11 @@ class Manager:
         self.researcher = get_research_agent()
         self.social_agent = get_social_agent()
         self.finance_agent = get_finance_agent()
+        self.coder_agent = get_coder_agent()
         
         # We need the executive for handoffs
         self.executive = get_executive_agent()
+        self.reviewer = get_plan_reviewer_agent()
         
         # State Manager
         self.state_manager = StateManager()
@@ -28,8 +31,7 @@ class Manager:
     def execute_plan(self, plan: Plan, resume_plan_id: int = None):
         """
         Iterates through the plan's steps and delegates them.
-        If resume_plan_id is provided, it uses existing state.
-        Otherwise, it creates a new plan in state.
+        Uses dynamic replanning logic.
         """
         print("\n" + "="*50)
         print(f" MANAGER: Executing Plan - {plan.goal}")
@@ -39,28 +41,72 @@ class Manager:
         if not plan_id:
             plan_id = self.state_manager.create_plan(plan)
 
-        for i, task in enumerate(plan.steps, 1):
-            # Check current status in DB to see if we should skip
-            # In a resume scenario, we need to know if this step is already done.
-            # For simplicity in this loop, we just re-check the DB or rely on the passed-in logic.
-            # But efficiently, we should check `self.state_manager.get_active_plan()`
-            # Here we assume the loop is running sequentially.
+        # Dynamic Execution Loop
+        current_step_index = 1
+        
+        # We use a while loop because plan.steps might change length
+        while current_step_index <= len(plan.steps):
             
-            # Let's verify status from DB if resuming
+            task = plan.steps[current_step_index - 1] # List is 0-indexed, index is 1-indexed
+
+            # Check existing status for resumption
             if resume_plan_id:
-                current_state = self.state_manager.get_active_plan()
-                if current_state:
-                    db_task = next((t for t in current_state['tasks'] if t['step_index'] == i), None)
+                 current_state = self.state_manager.get_active_plan()
+                 if current_state:
+                    db_task = next((t for t in current_state['tasks'] if t['step_index'] == current_step_index), None)
                     if db_task and db_task['status'] == 'completed':
-                        print(f"[Step {i}] Already completed. Skipping.")
+                        print(f"[Step {current_step_index}] Already completed. Skipping.")
+                        current_step_index += 1
                         continue
 
-            self.state_manager.update_task_status(plan_id, i, "in_progress")
+            self.state_manager.update_task_status(plan_id, current_step_index, "in_progress")
             
-            # Execute
-            result = self.delegate_task(i, task)
+            # Execute Task
+            result = self.delegate_task(current_step_index, task)
             
-            self.state_manager.update_task_status(plan_id, i, "completed", result=str(result))
+            self.state_manager.update_task_status(plan_id, current_step_index, "completed", result=str(result))
+            
+            # --- OODA Loop / Review Phase ---
+            # If there are steps remaining, check if we need to change them.
+            if current_step_index < len(plan.steps):
+                print(f"  [Review] Analyzing result of Step {current_step_index}...")
+                
+                remaining_steps_desc = [t.description for t in plan.steps[current_step_index:]]
+                
+                prompt = f"""
+                Goal: {plan.goal}
+                Step {current_step_index} Completed.
+                Result: {result}
+                
+                Current Remaining Steps: {remaining_steps_desc}
+                
+                Does the plan need to change based on this result?
+                """
+                
+                try:
+                    review_response = self.reviewer.run(prompt)
+                    plan_review = review_response.content
+                    
+                    if plan_review.should_modify and plan_review.new_plan:
+                        print(f"\n[PLAN CHANGE] Replanning triggered: {plan_review.reasoning}")
+                        
+                        # Replace remaining steps
+                        # We keep steps [0 .. current_step_index-1] (which are done)
+                        # We append the new steps
+                        done_steps = plan.steps[:current_step_index]
+                        new_steps = plan_review.new_plan.steps
+                        
+                        plan.steps = done_steps + new_steps
+                        
+                        print(f"  -> New Plan Length: {len(plan.steps)}")
+                        print(f"  -> Next Step: {new_steps[0].description if new_steps else 'None'}")
+                    else:
+                        print("  [Review] Plan good. Continuing...")
+                        
+                except Exception as e:
+                    print(f"  [Review Error] Execution continuing regardless: {e}")
+
+            current_step_index += 1
             
         print("\n" + "="*50)
         print(" MANAGER: Plan Execution Complete")
@@ -73,31 +119,34 @@ class Manager:
         Delegates a single task to the assigned agent type.
         Returns the result string.
         """
-        print(f"\n[Step {index}] Delegating to @{task.assigned_agent}...")
+        print(f"\n[Step {index}] Delegating to @{task.assigned_agent.value}...")
         print(f"  Task: {task.description}")
         
         response = None
         
-        # Routing logic
-        agent_type = task.assigned_agent.lower()
+        # Routing logic using Enums
+        # task.assigned_agent is now an Enum member
         
-        if "research" in agent_type:
+        if task.assigned_agent == AgentType.RESEARCHER:
             print(f"  -> Activating ResearchAgent...")
             response = self.researcher.run(task.description)
-        elif "social" in agent_type or "media" in agent_type:
+        elif task.assigned_agent == AgentType.SOCIAL:
             print(f"  -> Activating SocialAgent...")
             response = self.social_agent.run(task.description)
-        elif "finance" in agent_type or "wallet" in agent_type:
+        elif task.assigned_agent == AgentType.FINANCE:
             print(f"  -> Activating FinanceAgent...")
             response = self.finance_agent.run(task.description)
+        elif task.assigned_agent == AgentType.CODER:
+            print(f"  -> Activating CoderAgent...")
+            response = self.coder_agent.run(task.description)
         else:
-            print(f"  -> [WARNING] No specific agent found for '{task.assigned_agent}'. Defaulting to ResearchAgent.")
+            print(f"  -> [WARNING] No specific handler for '{task.assigned_agent}'. Defaulting to ResearchAgent.")
             response = self.researcher.run(task.description)
 
         result_content = "No response"
         if response:
             result_content = response.content
-            print(f"\n  -> @{task.assigned_agent} Result:\n")
+            print(f"\n  -> @{task.assigned_agent.value} Result:\n")
             print(result_content)
             
             # HANDOFF LOGIC

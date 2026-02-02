@@ -1,7 +1,7 @@
 
 from agno.agent import Agent
 from src.core.models import get_executive_model
-from src.agents.schemas import Plan
+from src.agents.schemas import Plan, PlanReview
 
 def get_executive_agent() -> Agent:
     """
@@ -14,11 +14,31 @@ def get_executive_agent() -> Agent:
         instructions=[
             "Analyze the user's high-level request.",
             "Break down the request into a series of actionable steps.",
-            "Assign each step to a specific type of sub-agent (e.g., 'Researcher', 'Coder', 'Tester').",
+            "Assign each step to a specific type of sub-agent: 'Researcher', 'Social', 'Finance', 'Coder'.",
             "Do NOT execute the steps yourself.",
             "Ensure the plan is logical, sequential, and covers all aspects of the user's request."
         ],
         response_model=Plan,
+        structured_outputs=True,
+        markdown=True
+    )
+
+def get_plan_reviewer_agent() -> Agent:
+    """
+    Returns an agent specialized in reviewing and adapting plans.
+    """
+    return Agent(
+        model=get_executive_model(),
+        description="You are an Agile Project Manager and Strategist.",
+        instructions=[
+            "Review the progress of the current plan.",
+            "Analyze the result of the last completed step.",
+            "Determine if the remaining steps are still valid or need to change.",
+            "If the plan needs to change, provide a NEW Plan object containing ONLY the remaining steps.",
+            "If the plan is fine, set should_modify to False.",
+            "Be adaptive. If a research step failed, propose an alternative source or method."
+        ],
+        response_model=PlanReview,
         structured_outputs=True,
         markdown=True
     )

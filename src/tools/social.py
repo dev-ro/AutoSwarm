@@ -1,11 +1,14 @@
 
 from agno.tools import Toolkit
+from src.tools.browser import BrowserTools
 
 class SocialTools(Toolkit):
     def __init__(self):
         super().__init__(name="social_tools")
+        self.browser_tools = BrowserTools()
         self.register(self.social_login)
         self.register(self.post_update)
+        self.register(self.monitor_topic)
 
     def social_login(self, platform: str) -> str:
         """
@@ -27,3 +30,19 @@ class SocialTools(Toolkit):
         # In this secure-by-design agent, we only DRAFT.
         print(f"  [SocialTool] Drafting post for {platform}: {content[:50]}...")
         return f"[DRAFT Created] for {platform}:\nContent: {content}\nStatus: PENDING USER APPROVAL."
+
+    def monitor_topic(self, topic: str, platform: str) -> str:
+        """
+        Searches for recent discussions on a topic to gauge sentiment ('Vibe Check').
+        """
+        print(f"  [SocialTool] Monitoring sentiment for '{topic}' on {platform}...")
+        
+        # Reuse existing browser logic
+        # Optimize query for sentiment/discussions
+        search_query = f"site:{platform}.com {topic} discussion sentiment"
+        
+        # Call the browser tool directly
+        # Note: calling the method directly on the instance
+        results = self.browser_tools.search_web(search_query)
+        
+        return f"Recent sentiment scan for '{topic}' on {platform}:\n{results}"
