@@ -8,7 +8,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from src.agents.executive import get_executive_agent
 from src.agents.manager import Manager
-from src.agents.schemas import Plan, Task
+from src.agents.schemas import Plan, Task, AgentType
 from src.core.state import StateManager
 
 def main():
@@ -47,7 +47,15 @@ def main():
             # Ideally, we reconstruct the objects to match the type hint.
             tasks = []
             for t in active_state['tasks']:
-                tasks.append(Task(description=t['description'], assigned_agent=t['assigned_agent']))
+                # Convert string from DB to Enum to satisfy Pydantic validation
+                try:
+                    agent_enum = AgentType(t['assigned_agent'])
+                except ValueError:
+                    # Fallback or error handling if DB has invalid value
+                    print(f"Warning: Unknown agent type '{t['assigned_agent']}' in DB. Defaulting to Research.")
+                    agent_enum = AgentType.RESEARCHER
+                
+                tasks.append(Task(description=t['description'], assigned_agent=agent_enum))
                 
             resuned_plan = Plan(goal=active_state['plan']['goal'], steps=tasks)
             manager.execute_plan(resuned_plan, resume_plan_id=active_state['plan']['id'])

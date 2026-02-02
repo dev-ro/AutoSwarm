@@ -148,6 +148,25 @@ class Manager:
             result_content = response.content
             print(f"\n  -> @{task.assigned_agent.value} Result:\n")
             print(result_content)
+
+            # --- NEW: Human-in-the-Loop Trigger ---
+            if "PENDING USER APPROVAL" in result_content:
+                print("\n" + "!"*50)
+                print(f" [STOP] User Approval Required for: {task.description}")
+                print(f" Agent Output: {result_content}")
+                print("!"*50)
+                
+                user_choice = input(">> Approve this action? (y/n/edit): ").strip().lower()
+                
+                if user_choice == 'y':
+                    # In a real system, you would call a 'publish_post' tool here.
+                    # For now, we simulate the 'signing' of the action.
+                    result_content = f"{result_content}\n[USER APPROVED]: Action authorized by human."
+                elif user_choice == 'edit':
+                    feedback = input(">> Enter instructions for revision: ")
+                    return f"[USER REJECTED] Revision requested: {feedback}"
+                else:
+                    return "[USER REJECTED] Action denied."
             
             # HANDOFF LOGIC
             # Check for triggers to pass back to Executive
