@@ -1,0 +1,5 @@
+agno
+google-generativeai
+python-dotenv
+playwright
+beautifulsoup4

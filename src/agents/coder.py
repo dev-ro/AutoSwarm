@@ -2,7 +2,7 @@
 from agno.agent import Agent
 from src.core.models import get_executive_model
 from agno.tools.file import FileTools
-from agno.tools.shell import ShellTools
+from src.tools.docker_shell import DockerShellTools
 import os
 
 # Ensure workspace exists
@@ -20,11 +20,16 @@ def get_coder_agent() -> Agent:
             "2. READ: Before editing a file, use 'read_file' to understand the current content.",
             "3. WRITE: Use 'write_file' to save your code.",
             "4. TEST: ALWAYS use 'run_shell_command' to verify your code works.",
-            "5. FIX: If the test fails, analyze the error and iterate."
+            "5. SELF-CORRECTION PROTOCOL: If 'run_shell_command' returns an error:",
+            "   a. Do NOT return the error to the user immediately.",
+            "   b. Read the error message.",
+            "   c. Rewrite the file with the fix.",
+            "   d. Run the test again.",
+            "   e. Only return after success or 3 failed attempts."
         ],
         tools=[
             FileTools(base_dir=WORKSPACE_DIR, list_files=True, read_file=True, write_file=True), 
-            ShellTools()
+            DockerShellTools()
         ], 
         show_tool_calls=True,
         markdown=True

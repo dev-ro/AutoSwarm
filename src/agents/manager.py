@@ -168,21 +168,29 @@ class Manager:
                 else:
                     return "[USER REJECTED] Action denied."
             
-            # SEMANTIC HANDOFF CHECK
-            # We ask the model quickly if this result warrants executive attention.
-            handoff_check = self.executive.run(
-                f"""
-                Analyze this result from {task.assigned_agent.value}:
-                "{result_content[:500]}"
-                
-                Does this result contain a high-value opportunity (like a job, money making idea, or critical failure) 
-                that requires a change in strategy? 
-                Reply with ONLY 'YES' or 'NO'.
-                """
-            )
+            # OPTIMIZATION: Heuristic Gate
+            # Only ask the expensive LLM if we see interesting keywords.
+            trigger_words = ["error", "fail", "urgent", "hiring", "job", "money", "profit", "crypto"]
+            is_interesting = any(w in result_content.lower() for w in trigger_words)
             
-            if "YES" in handoff_check.content.upper():
-                self._handle_handoff(result_content)
+            if is_interesting:
+                # SEMANTIC HANDOFF CHECK
+                # We ask the model quickly if this result warrants executive attention.
+                handoff_check = self.executive.run(
+                    f"""
+                    Analyze this result from {task.assigned_agent.value}:
+                    "{result_content[:500]}"
+                    
+                    Does this result contain a high-value opportunity (like a job, money making idea, or critical failure) 
+                    that requires a change in strategy? 
+                    Reply with ONLY 'YES' or 'NO'.
+                    """
+                )
+                
+                if "YES" in handoff_check.content.upper():
+                    self._handle_handoff(result_content)
+            else:
+                print("  [Manager] Output standard. Skipping semantic handoff check.")
 
         return result_content
 
