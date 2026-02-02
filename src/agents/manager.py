@@ -84,7 +84,7 @@ class Manager:
                 """
                 
                 try:
-                    review_response = self.reviewer.run(prompt, response_model=PlanReview)
+                    review_response = self.reviewer.run(prompt, output_schema=PlanReview)
                     plan_review = review_response.content
                     
                     if plan_review.should_modify and plan_review.new_plan:
@@ -212,7 +212,7 @@ class Manager:
         """
         
         print("  -> Asking Executive Agent for decision...")
-        response = self.executive.run(prompt, response_model=Plan)
+        response = self.executive.run(prompt, output_schema=Plan)
         
         # The executive returns a Plan object (structured output)
         # We can recursively execute this new mini-plan or just print it for now.

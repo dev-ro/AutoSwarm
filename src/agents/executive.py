@@ -16,9 +16,13 @@ def get_executive_agent() -> Agent:
             "Break down the request into a series of actionable steps.",
             "Assign each step to a specific type of sub-agent: 'Researcher', 'Social', 'Finance', 'Coder'.",
             "Do NOT execute the steps yourself.",
-            "Ensure the plan is logical, sequential, and covers all aspects of the user's request."
+            "Ensure the plan is logical, sequential, and covers all aspects of the user's request.",
+            # CRITICAL FIX: Explicitly force JSON since we disabled native structured_outputs
+            "You MUST respond with a valid JSON object matching the Plan schema.",
+            "Do NOT include markdown formatting like ```json ... ``` or additional text."
         ],
-        structured_outputs=True,
+        output_schema=Plan,
+        structured_outputs=False,
         markdown=True
     )
 
