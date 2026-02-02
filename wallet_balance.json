@@ -1,0 +1,6 @@
+{
+    "address": "0x1234567890abcdef",
+    "balance_eth": 5.0,
+    "balance_usdc": 1000.0,
+    "transactions": []
+}
