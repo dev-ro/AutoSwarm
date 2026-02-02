@@ -168,9 +168,20 @@ class Manager:
                 else:
                     return "[USER REJECTED] Action denied."
             
-            # HANDOFF LOGIC
-            # Check for triggers to pass back to Executive
-            if "freelance" in result_content.lower() and ("job" in result_content.lower() or "hiring" in result_content.lower()):
+            # SEMANTIC HANDOFF CHECK
+            # We ask the model quickly if this result warrants executive attention.
+            handoff_check = self.executive.run(
+                f"""
+                Analyze this result from {task.assigned_agent.value}:
+                "{result_content[:500]}"
+                
+                Does this result contain a high-value opportunity (like a job, money making idea, or critical failure) 
+                that requires a change in strategy? 
+                Reply with ONLY 'YES' or 'NO'.
+                """
+            )
+            
+            if "YES" in handoff_check.content.upper():
                 self._handle_handoff(result_content)
 
         return result_content

@@ -66,14 +66,16 @@ class BrowserTools(Toolkit):
                 
                 text = soup.get_text()
                 
-                # Basic cleaning
+                # Basic cleaning - IMPROVED
+                # Filter out short lines (likely navigation items) and massive blocks of whitespace
                 lines = (line.strip() for line in text.splitlines())
-                chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-                text = '\n'.join(chunk for chunk in chunks if chunk)
+                # Keep lines that look like actual content (more than 30 chars or ends with punctuation)
+                meaningful_lines = [line for line in lines if len(line) > 30 or line.endswith(('.', '!', '?'))]
+                text = '\n'.join(meaningful_lines)
                 
-                # Truncate if too long (managing context window as requested)
+                # Smart Truncation
                 if len(text) > 8000:
-                    text = text[:8000] + "\n...[Content Truncated]..."
+                    text = f"--- Page Summary (Truncated) ---\n{text[:8000]}\n...(more content)..."
                     
                 return text
             except Exception as e:

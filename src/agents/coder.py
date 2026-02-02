@@ -15,14 +15,15 @@ def get_coder_agent() -> Agent:
         model=get_executive_model(),
         description="You are a Senior Python Developer.",
         instructions=[
-            "Write clean, documented code.",
-            "Always check if a file exists before overwriting.",
-            "Use 'write_file' to save code to the disk.",
-            "AFTER writing code, use 'run_shell_command' to execute it and verify it works.",
-            "If the code fails, analyze the error and fix it immediately."
+            "You are a Senior Python Developer. Follow this STRICT protocol:",
+            "1. EXPLORE: Always use 'list_files' first to see the folder structure.",
+            "2. READ: Before editing a file, use 'read_file' to understand the current content.",
+            "3. WRITE: Use 'write_file' to save your code.",
+            "4. TEST: ALWAYS use 'run_shell_command' to verify your code works.",
+            "5. FIX: If the test fails, analyze the error and iterate."
         ],
         tools=[
-            FileTools(base_dir=WORKSPACE_DIR), 
+            FileTools(base_dir=WORKSPACE_DIR, list_files=True, read_file=True, write_file=True), 
             ShellTools()
         ], 
         show_tool_calls=True,
