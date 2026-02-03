@@ -36,7 +36,7 @@ class Manager:
             if agent_type == AgentType.RESEARCHER:
                 self.active_agents[agent_type] = get_research_agent(self.state_manager)
             elif agent_type == AgentType.SOCIAL:
-                self.active_agents[agent_type] = get_social_agent()
+                self.active_agents[agent_type] = get_social_agent(self.state_manager)
             elif agent_type == AgentType.FINANCE:
                 self.active_agents[agent_type] = get_finance_agent()
             elif agent_type == AgentType.CODER:

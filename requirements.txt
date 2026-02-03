@@ -4,3 +4,7 @@ python-dotenv
 playwright
 beautifulsoup4
 pylance
+tweepy
+praw
+atproto
+python-substack

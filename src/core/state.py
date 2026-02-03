@@ -20,6 +20,8 @@ class StateManager:
     def _init_db(self):
         """Initialize the database schema."""
         conn = sqlite3.connect(self.db_path)
+        # Enable Foreign Keys
+        conn.execute("PRAGMA foreign_keys = ON")
         cursor = conn.cursor()
         
         # Table for Plans
@@ -57,6 +59,37 @@ class StateManager:
                 source_url TEXT,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY(task_id) REFERENCES tasks(id)
+            )
+        ''')
+
+        # Table for Social Personas
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS social_personas (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                handle TEXT NOT NULL,
+                platform TEXT NOT NULL,
+                description TEXT,
+                tags TEXT, -- JSON list of strings
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        ''')
+
+        # Table for Social Posts
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS social_posts (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                task_id INTEGER NOT NULL,
+                assigned_persona_id INTEGER,
+                content TEXT NOT NULL,
+                platform TEXT NOT NULL,
+                status TEXT DEFAULT 'draft', -- draft, approved, published, failed
+                metrics TEXT, -- JSON dict
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                published_at TIMESTAMP,
+                FOREIGN KEY(task_id) REFERENCES tasks(id),
+                FOREIGN KEY(assigned_persona_id) REFERENCES social_personas(id)
             )
         ''')
         
@@ -192,3 +225,99 @@ class StateManager:
         cursor.execute("UPDATE plans SET status = 'completed' WHERE id = ?", (plan_id,))
         conn.commit()
         conn.close()
+
+    # --- Social Media Extensions ---
+
+    def create_persona(self, name: str, handle: str, platform: str, description: str, tags: List[str]) -> int:
+        """Creates a new social persona."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        try:
+            cursor.execute('''
+                INSERT INTO social_personas (name, handle, platform, description, tags)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (name, handle, platform, description, json.dumps(tags)))
+            persona_id = cursor.lastrowid
+            conn.commit()
+            print(f"[State] Created persona '{name}' with ID: {persona_id}")
+            return persona_id
+        except Exception as e:
+            print(f"[State] Error creating persona: {e}")
+            return -1
+        finally:
+            conn.close()
+
+    def get_persona_by_tag(self, tag: str) -> Optional[Dict]:
+        """
+        Finds a persona that has the specified tag.
+        Returns the first match found.
+        """
+        conn = sqlite3.connect(self.db_path)
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        
+        cursor.execute("SELECT * FROM social_personas")
+        rows = cursor.fetchall()
+        
+        for row in rows:
+            try:
+                tags = json.loads(row['tags']) if row['tags'] else []
+                if tag in tags:
+                    conn.close()
+                    return dict(row)
+            except json.JSONDecodeError:
+                continue
+                
+        conn.close()
+        return None
+
+    def create_post(self, task_id: int, content: str, platform: str, assigned_persona_id: Optional[int] = None) -> int:
+        """
+        Creates a new social post tracked against a task.
+        """
+        conn = sqlite3.connect(self.db_path)
+        conn.execute("PRAGMA foreign_keys = ON") # Ensure FKs are enforced
+        cursor = conn.cursor()
+        
+        try:
+            cursor.execute('''
+                INSERT INTO social_posts (task_id, assigned_persona_id, content, platform, status)
+                VALUES (?, ?, ?, ?, 'draft')
+            ''', (task_id, assigned_persona_id, content, platform))
+            post_id = cursor.lastrowid
+            conn.commit()
+            print(f"[State] Created post for task {task_id} with ID: {post_id}")
+            return post_id
+        except sqlite3.IntegrityError as e:
+            print(f"[State] Integrity error creating post (likely invalid task_id): {e}")
+            return -1
+        except Exception as e:
+            print(f"[State] Error creating post: {e}")
+            return -1
+        finally:
+            conn.close()
+
+    def update_post_status(self, post_id: int, status: str, metrics: Optional[Dict] = None):
+        """Updates the status and metrics of a post."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        try:
+            if metrics:
+                cursor.execute('''
+                    UPDATE social_posts 
+                    SET status = ?, metrics = ?, updated_at = CURRENT_TIMESTAMP
+                    WHERE id = ?
+                ''', (status, json.dumps(metrics), post_id))
+            else:
+                cursor.execute('''
+                    UPDATE social_posts 
+                    SET status = ?, updated_at = CURRENT_TIMESTAMP
+                    WHERE id = ?
+                ''', (status, post_id))
+            conn.commit()
+        except Exception as e:
+            print(f"[State] Error updating post {post_id}: {e}")
+        finally:
+            conn.close()
+
