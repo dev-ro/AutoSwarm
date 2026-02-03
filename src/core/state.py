@@ -19,9 +19,24 @@ class StateManager:
 
     def _init_db(self):
         """Initialize the database schema."""
+        conn = self._get_connection()
+        conn.close()
+
+    def _get_connection(self):
+        """Returns a database connection and ensures tables exist."""
         conn = sqlite3.connect(self.db_path)
-        # Enable Foreign Keys
         conn.execute("PRAGMA foreign_keys = ON")
+        
+        # Check if tables exist
+        cursor = conn.cursor()
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='plans'")
+        if not cursor.fetchone():
+            self._create_tables(conn)
+            
+        return conn
+
+    def _create_tables(self, conn):
+        """Creates the database tables if they don't exist."""
         cursor = conn.cursor()
         
         # Table for Plans
@@ -94,14 +109,13 @@ class StateManager:
         ''')
         
         conn.commit()
-        conn.close()
 
     def create_plan(self, plan: Plan) -> int:
         """
         Saves a new plan and its tasks to the DB.
         Returns the plan_id.
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         cursor = conn.cursor()
         
         try:
@@ -130,7 +144,7 @@ class StateManager:
         """
         Checks for an active plan. Returns a dict with plan info and tasks if found, else None.
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
         
@@ -156,7 +170,7 @@ class StateManager:
         """
         Retrieves the task_id for a given plan and step index.
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         cursor = conn.cursor()
         
         cursor.execute("SELECT id FROM tasks WHERE plan_id = ? AND step_index = ?", (plan_id, step_index))
@@ -169,7 +183,7 @@ class StateManager:
         """
         Updates the status of a specific task.
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         cursor = conn.cursor()
         
         if result:
@@ -192,7 +206,7 @@ class StateManager:
         """
         Logs a detailed artifact (search result, citation, etc.) for a task.
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         cursor = conn.cursor()
         
         try:
@@ -209,7 +223,7 @@ class StateManager:
 
     def get_artifact_count(self, task_id: int) -> int:
         """Counts artifacts for a specific task."""
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         cursor = conn.cursor()
         cursor.execute("SELECT COUNT(*) FROM task_artifacts WHERE task_id = ?", (task_id,))
         count = cursor.fetchone()[0]
@@ -220,7 +234,7 @@ class StateManager:
         """
         Mark a plan as completed.
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         cursor = conn.cursor()
         cursor.execute("UPDATE plans SET status = 'completed' WHERE id = ?", (plan_id,))
         conn.commit()
@@ -230,7 +244,7 @@ class StateManager:
 
     def create_persona(self, name: str, handle: str, platform: str, description: str, tags: List[str]) -> int:
         """Creates a new social persona."""
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         cursor = conn.cursor()
         try:
             cursor.execute('''
@@ -252,7 +266,7 @@ class StateManager:
         Finds a persona that has the specified tag.
         Returns the first match found.
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
         
@@ -275,8 +289,8 @@ class StateManager:
         """
         Creates a new social post tracked against a task.
         """
-        conn = sqlite3.connect(self.db_path)
-        conn.execute("PRAGMA foreign_keys = ON") # Ensure FKs are enforced
+        conn = self._get_connection()
+        # conn.execute("PRAGMA foreign_keys = ON") # Handled in _get_connection
         cursor = conn.cursor()
         
         try:
@@ -299,7 +313,7 @@ class StateManager:
 
     def update_post_status(self, post_id: int, status: str, metrics: Optional[Dict] = None):
         """Updates the status and metrics of a post."""
-        conn = sqlite3.connect(self.db_path)
+        conn = self._get_connection()
         cursor = conn.cursor()
         
         try:

@@ -167,6 +167,13 @@ class Manager:
             response = agent.run(full_prompt)
             result_content = response.content if hasattr(response, 'content') else str(response)
             
+            # --- Type Safety Fix ---
+            # If result_content is a Pydantic model (from structured_outputs), dump to JSON
+            if hasattr(result_content, 'model_dump_json'):
+                result_content = result_content.model_dump_json()
+            elif not isinstance(result_content, (str, bytes)):
+                 result_content = str(result_content)
+
             print(f"\n  -> @{task.assigned_agent.value} Result:\n")
             print(result_content)
 
