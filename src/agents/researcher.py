@@ -5,6 +5,8 @@ from src.tools.browser import BrowserTools
 from src.core.knowledge import get_knowledge_base
 
 # --- NEW TOOL FOR AGENT TO USE ---
+import uuid
+
 def save_to_knowledge_base(content: str, source: str = "User/Web") -> str:
     """
     Saves valuable information to the long-term Knowledge Base.
@@ -12,9 +14,14 @@ def save_to_knowledge_base(content: str, source: str = "User/Web") -> str:
     """
     try:
         kb = get_knowledge_base()
+        # Explicitly generate a unique name to ensure we append, not overwrite/update.
+        # We use a UUID to guarantee uniqueness.
+        doc_name = f"{source}_{uuid.uuid4()}"
+        
         # 'insert' creates a document and embeds it immediately
         kb.insert(
             text_content=content,
+            name=doc_name,
             metadata={
                 "source": source,
                 "date": datetime.now().isoformat()

@@ -3,13 +3,7 @@
     "docstore_compression": "lz4",
     "docstore_blocksize": 16384
   },
-  "segments": [
-    {
-      "segment_id": "17eb04d7-abcc-4181-97d4-db597feafdaa",
-      "max_doc": 1,
-      "deletes": null
-    }
-  ],
+  "segments": [],
   "schema": [
     {
       "name": "doc_id",
@@ -35,5 +29,5 @@
       }
     }
   ],
-  "opstamp": 2
+  "opstamp": 0
 }

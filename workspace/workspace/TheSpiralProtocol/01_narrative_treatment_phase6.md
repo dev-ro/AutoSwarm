@@ -1,0 +1,32 @@
+# Narrative Treatment: The Spiral Protocol
+**Snowflake Phase 6: Full Story Summary**
+
+## Act I: The Fault Line (Scenes 1-4)
+The story opens in the "Gilded Cage" of the Spiral’s upper management tier—a place of glass, sterile white light, and the quiet hum of functional machinery. **Kyle Vance**, the Shadow Monarch, is orchestrating a delicate political purge of the Board when the **"Metabolic Scream"** occurs. The Spiral—a massive, ancient space station held together by bio-resonance—suffers a Level 1 system-wide shock. The screaming isn't metaphorical; the station’s bio-synthetic walls vibrate with a sound that mimics human distress.
+
+Kyle’s pristine world is invaded by **Andrew Thorne**, a brilliant but "grimy" technician from the Gut-Works who has been promoted via a hostile internal audit. Their first meeting is a study in **Weaponized Inarticulacy**. Kyle tries to dismiss the failure as "optics," while Andrew mocks Kyle’s inability to understand the "viscera" of the station. The tension is immediate and eroticized—a mutual recognition of competence hidden behind professional loathing. **Sarah Lin**, the Architect, provides the clinical oversight, warning that the "Scream" is a precursor to a total resonance collapse. The Board orders Kyle to "manage" Andrew, while Andrew is secretly tasked with finding the leverage to "unseat" Kyle.
+
+## Act II: The Descent (Scenes 5-8)
+As the Bio-Resonance drops to Level 2 (Amber), Kyle is forced to leave the Gilded Cage and enter the **"Gut-Works"**—the industrial heart of the station. Here, the aesthetic is **Infrastructure-Punk**: weeping pipes, "spaghetti" wiring, and the smell of ozone and burnt oil. Kyle, in his tailored suit, is an alien in this environment, but he begins to revert to his "Shuck" origins—the impoverished moon where he and Andrew both grew up.
+
+Their rivalry intensifies during the "Spaghetti Walk" repair mission. Every mechanical fix is a power struggle. Andrew shows off his intuitive mastery of the bio-synthetic cables, while Kyle demonstrates his ability to manipulate the station’s logic gates. They trade *Succession*-style barbs, using corporate jargon to mask the growing "Competence-Lust" they feel as they watch each other work. Sarah monitors them from her "Sterile Void" lab, realizing that their combined bio-signatures are the only thing stabilizing the sector, though she keeps this data to herself. The Act ends with the discovery of the "Purge Protocol"—a secret directive by the Board to scuttle the lower levels (and the people in them) to save the elite.
+
+## Act III: The Pressure Cooker (Scenes 9-12)
+The Bio-Resonance hits Level 3 (Red). The station enters the **"Steam Cathedral"** phase—sectors are venting high-pressure coolant, and the rhythmic thrum of the turbines becomes a bone-shaking roar. The political and mechanical plots converge. Andrew, believing he can save the Gut-Works alone, attempts a "Solo Override." He tries to sync with the station's core without Kyle, driven by a need to prove he doesn't need the man he secretly admires.
+
+The override fails spectacularly. The Bio-Resonance system rejects Andrew’s solo signature, nearly killing him and triggering a station-wide lockdown. Kyle, instead of using this failure to destroy Andrew, risks his life to pull Andrew from the coolant vents. In the heat and the grime, the professional masks slip. They acknowledge their shared "Shuck" history, not through sentiment, but through a brutal exchange of "Corporate Vulgarianism." They realize the Board has set them up to fail. They agree to a "Hostile Synchronization"—a temporary alliance to seize the Core.
+
+## Act IV: The Shuck's Ghost (Scenes 13-16)
+The station descends into Level 4 (Black). Life support is failing, leading to **hypoxia and hallucinations**. Kyle and Andrew are forced into the **"Sub-Gut"**—the manual-sync nodes that require direct neural-to-bio-synthetic connection. The environment is one of sensory deprivation; the only light is the bioluminescent glow of the station’s failing "nerves."
+
+Under the influence of hypoxia, their corporate personas dissolve entirely. They are no longer "The Shadow Monarch" and "The Usurper"; they are two "Shuck" kids fighting for breath. This Act is the emotional peak of their **Competence-Lust**. The physical proximity required for the manual sync becomes an act of intense intimacy. They see each other’s deepest professional shames and triumphs through the neural link. Sarah Lin, realizing the Board is about to execute the Purge Protocol to kill all three of them, finally defects. She provides them with the "Stability Collar" codes—not to stabilize the station for the Board, but to give Kyle and Andrew "God-tier" control over the resonance.
+
+## Act V: The Core Cathedral (Scenes 17-18)
+The climax takes place in the **Core Cathedral**, the bioluminescent heart of the Spiral. The Bio-Resonance has reached an "Unstable God-Tier" state. To stop the Purge Protocol, Kyle and Andrew must perform a "Total Professional Intimacy" sync—merging their bio-signatures into a single, dominant command frequency.
+
+The scene is a fusion of high-tech mechanical labor and raw emotional surrender. They trade commands and insults with the rhythm of a practiced dance, their movements perfectly synchronized as they bypass the Board’s locks. The "Competence-Lust" is finally consummated, not through sex, but through the exhilarating mastery of the station itself. As they sync, they don't just fix the Spiral; they *become* the Spiral. They override the scuttle commands and turn the station’s internal defense systems against the Board’s private security.
+
+## Act VI: The New Order (Scenes 19-20)
+The aftermath. The station is stable, but the hierarchy is shattered. Kyle and Andrew emerge from the Core, covered in grease and "viscous blood," their elite clothes ruined, looking like the Shuck-rats they once were. But they are now the "Sovereigns of the Core."
+
+They issue a binary ultimatum to the Board: The Spiral now belongs to the Gut-Works. Sarah Lin takes her place as the head of the new technical meritocracy. The final scene takes place in the ruins of Kyle's former office. The glass is cracked, and the "Metabolic Scream" has been replaced by a low, contented hum. Kyle and Andrew share a drink—cheap "Shuck" whiskey—and begin the process of rebuilding. The rivalry remains, but it is now the foundation of their joint rule. They are bound by a "Spiral Protocol" that no one else can break.
