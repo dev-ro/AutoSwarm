@@ -12,13 +12,16 @@ class AgentType(str, Enum):
     EXECUTIVE = "executive"
     WRITER = "writer"
     EDITOR = "editor"
+    TAROT = "tarot"
 
 class Task(BaseModel):
     description: str = Field(..., description="Description of the task to be performed.")
     assigned_agent: AgentType = Field(..., description="The type of agent assigned to this task.")
+    project_context: Optional[str] = Field(None, description="The project name this task belongs to (e.g., 'TheSpiralProtocol').")
 
 class Plan(BaseModel):
     goal: str = Field(..., description="The overall goal of the plan.")
+    project_default: Optional[str] = Field(None, description="Default project name for all tasks in this plan.")
     steps: List[Task] = Field(..., description="List of actionable tasks to execute the plan.")
 
 class PlanReview(BaseModel):

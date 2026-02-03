@@ -23,7 +23,7 @@ TEST_PROMPTS = [
     # "Read src/agents/schemas.py. Create a new file schemas_v2.py that adds a new AgentType called 'Tester'. Verify the new file is valid Python code by running it.",
     
     # Category 2: The "Truth Terminal"
-    "Research the top trending discussion on 'artificial intelligence' on Reddit or X today. Draft a provocative, viral-style tweet about it that fits the 'Truth Terminal' persona. Do not publish without my approval.",
+    # "Research the top trending discussion on 'artificial intelligence' on Reddit or X today. Draft a provocative, viral-style tweet about it that fits the 'Truth Terminal' persona. Do not publish without my approval.",
     "Monitor sentiment around 'crypto regulation' from recent news articles. Summarize the general mood (Fear, Uncertainty, or Greed) and draft a LinkedIn post advising caution.",
     
     # Category 3: The "Hustler"

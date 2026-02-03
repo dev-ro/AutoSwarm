@@ -1,20 +1,16 @@
-
 import os
-from dotenv import load_dotenv
 from agno.models.google import Gemini
 
-load_dotenv()
-
-# We use the Gemini 3 Flash Preview model as requested.
-GEMINI_MODEL_ID = "gemini-3-flash-preview"
+# Default configuration
+GEMINI_MODEL_ID = os.getenv("GEMINI_MODEL_ID", "gemini-3-flash-preview")
 
 def get_executive_model():
     """
-    Returns a configured Gemini model instance for the Executive Agent.
+    Returns a configured Gemini model instance.
     """
     api_key = os.getenv("GOOGLE_API_KEY")
     if not api_key:
-        print("Warning: GOOGLE_API_KEY not found in environment variables.")
+        print("[WARNING] GOOGLE_API_KEY not found. Agent initialization may fail.")
     
     return Gemini(
         id=GEMINI_MODEL_ID,

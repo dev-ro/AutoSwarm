@@ -9,6 +9,7 @@ from src.agents.coder import get_coder_agent
 from src.agents.editor import get_editor_agent
 from src.agents.writer import get_writer_agent
 from src.agents.executive import get_executive_agent, get_plan_reviewer_agent
+from src.agents.tarot import TarotAgent
 from agno.agent import Agent
 from src.core.models import get_executive_model
 from src.core.state import StateManager
@@ -32,6 +33,20 @@ class Manager:
             structured_outputs=False
         )
 
+
+    def set_project(self, project_name: str, persona: dict = None):
+        """
+        Sets the current project context for the Manager.
+        This forces a re-initialization of context-dependent agents like the Writer.
+        """
+        print(f"[Manager] Switching Project Context -> {project_name}")
+        self.current_project = project_name
+        self.current_persona = persona
+        
+        # Invalidate writers so they get re-created with new context
+        if AgentType.WRITER in self.active_agents:
+            del self.active_agents[AgentType.WRITER]
+
     def _get_agent(self, agent_type: AgentType) -> Agent:
         """Lazy loads agents to save memory."""
         if agent_type not in self.active_agents:
@@ -44,13 +59,18 @@ class Manager:
             elif agent_type == AgentType.CODER:
                 self.active_agents[agent_type] = get_coder_agent()
             elif agent_type == AgentType.WRITER:
-                self.active_agents[agent_type] = get_writer_agent()
+                # [NEW] Inject Project Context
+                project = getattr(self, 'current_project', 'general')
+                persona = getattr(self, 'current_persona', None)
+                self.active_agents[agent_type] = get_writer_agent(project_name=project, persona=persona)
             elif agent_type == AgentType.EDITOR:
                 self.active_agents[agent_type] = get_editor_agent()
             elif agent_type == AgentType.REVIEWER:
                 self.active_agents[agent_type] = get_plan_reviewer_agent()
             elif agent_type == AgentType.EXECUTIVE:
                 self.active_agents[agent_type] = self.executive
+            elif agent_type == AgentType.TAROT:
+                self.active_agents[agent_type] = TarotAgent()
             else:
                 print(f"[WARNING] No handler for {agent_type}. Defaulting to Researcher.")
                 self.active_agents[agent_type] = get_research_agent(self.state_manager)
@@ -89,9 +109,16 @@ class Manager:
 
             self.state_manager.update_task_status(plan_id, current_step_index, "in_progress")
             
+            # --- [NEW] Context Switching ---
+            # Priority: Task-level > Plan-level > Default ('general')
+            target_project = task.project_context or plan.project_default
+            if target_project and target_project != getattr(self, 'current_project', None):
+                self.set_project(target_project)
+
             # 2. Prepare the Prompt with Context
             # We append the history so the agent knows what the previous agents did
             full_prompt = (
+                f"CURRENT PROJECT: {target_project or 'general'}\n"
                 f"CURRENT TASK: {task.description}\n\n"
                 f"--- CONTEXT FROM PREVIOUS STEPS ---\n"
                 f"{execution_context}"
@@ -126,12 +153,17 @@ class Manager:
                     review_response = self.reviewer.run(review_prompt, output_schema=PlanReview)
                     plan_review = review_response.content
                     
-                    if plan_review.should_modify and plan_review.new_plan:
-                        print(f"\n[PLAN CHANGE] Replanning triggered: {plan_review.reasoning}")
-                        done_steps = plan.steps[:current_step_index]
-                        new_steps = plan_review.new_plan.steps
-                        plan.steps = done_steps + new_steps
-                        print(f"  -> New Plan Length: {len(plan.steps)}")
+                    # Fix: Check if response is actually a PlanReview object (failed parsing returns str)
+                    if isinstance(plan_review, PlanReview):
+                        if plan_review.should_modify and plan_review.new_plan:
+                            print(f"\n[PLAN CHANGE] Replanning triggered: {plan_review.reasoning}")
+                            done_steps = plan.steps[:current_step_index]
+                            new_steps = plan_review.new_plan.steps
+                            plan.steps = done_steps + new_steps
+                            print(f"  -> New Plan Length: {len(plan.steps)}")
+                    else:
+                         print(f"  [Review Warning] Failed to parse valid PlanReview JSON. Skipping OODA loop. Raw output: {str(plan_review)[:200]}...")
+                         
                 except Exception as e:
                     print(f"  [Review Error] Execution continuing regardless: {e}")
 

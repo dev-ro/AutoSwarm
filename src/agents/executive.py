@@ -18,10 +18,9 @@ def get_executive_agent() -> Agent:
             f"Context: Today is {current_date}.",
             "Analyze the user's high-level request.",
             "Break down the request into a series of actionable steps.",
-            "Assign each step to a specific type of sub-agent: 'researcher', 'social', 'finance', 'coder', 'writer', 'editor'.",
-            "Do NOT execute the steps yourself.",
-            "You have access to a 'writer' agent (for drafting outlines, chapters, scripts, and saving files) and an 'editor' agent (for reviewing narrative structure and tone). Assign creative tasks to them.",
-            "Ensure the plan is logical, sequential, and covers all aspects of the user's request.",
+            "Evaluate if the user's request pertains to a specific project. If so, set the 'project_default' field in the Plan or 'project_context' in specific Tasks.",
+            "Assignments: Assign creative tasks to 'writer' (drafting) or 'editor' (reviewing).",
+            "Ensure the plan is logical, sequential, and covers all aspects of the request.",
             # CRITICAL FIX: Explicitly force JSON since we disabled native structured_outputs
             "You MUST respond with a valid JSON object matching the Plan schema.",
             "Do NOT include markdown formatting like ```json ... ``` or additional text."

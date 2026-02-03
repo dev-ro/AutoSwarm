@@ -1,7 +1,11 @@
-from texttable import Texttable
-
+import json
+import os
+import re
+from pathlib import Path
 
 class Card:
+    _database = None
+
     astrological_correspondences = {
         "The Fool": "Uranus",
         "The Magician": "Mercury",
@@ -96,6 +100,70 @@ class Card:
         self.element = self.get_element()
         self.astrology = self.get_astrological_correspondence()
         self.kabbalah = self.get_kabbalistic_correspondence()
+        self._load_database()
+
+    def _load_database(self):
+        if Card._database is None:
+            paths = [
+                Path("tarot/tarot_database.json"),
+                Path("tarot_database.json"),
+                Path("../tarot/tarot_database.json"),
+                Path("workspace/tarot/tarot_database.json")
+            ]
+            for path in paths:
+                if path.exists():
+                    try:
+                        with open(path, 'r', encoding='utf-8') as f:
+                            Card._database = json.load(f)
+                        break
+                    except Exception:
+                        continue
+    
+    def _normalize(self, s):
+        is_minor = any(suit in s for suit in ["Wands", "Cups", "Swords", "Pentacles"])
+        if not is_minor:
+            s = re.sub(r'^\d+[\.\s]+', '', s)
+        s = s.replace('The ', '').strip().title()
+        s = s.replace(' Of ', ' of ')
+        return s
+
+    def get_vibe_check(self, persona="main_character"):
+        if not Card._database:
+            return "Vibe check data not found."
+        
+        norm_name = self._normalize(self.name)
+        card_data = None
+        
+        # Try direct match or normalized match
+        if norm_name in Card._database:
+            card_data = Card._database[norm_name]
+        else:
+            for key in Card._database:
+                if self._normalize(key) == norm_name:
+                    card_data = Card._database[key]
+                    break
+        
+        if not card_data:
+            return f"Modern narrative not available for {self.name} ({norm_name})."
+        
+        personas = card_data.get("personas", {})
+        # Get selected persona or default to main_character
+        selected_persona_data = personas.get(persona)
+        
+        # Fallback logic: if selected persona is missing or empty, try main_character
+        if not selected_persona_data or not selected_persona_data.get("upright"):
+            selected_persona_data = personas.get("main_character", {})
+
+        if self.is_upright:
+            return {
+                "keywords": card_data.get("keywords", {}).get("upright", ""),
+                "narrative": selected_persona_data.get("upright", "")
+            }
+        else:
+            return {
+                "keywords": card_data.get("keywords", {}).get("reversed", ""),
+                "narrative": selected_persona_data.get("reversed", "")
+            }
 
     def get_element(self):
         if "Wands" in self.name:

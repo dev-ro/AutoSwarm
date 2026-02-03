@@ -8,3 +8,5 @@ tweepy
 praw
 atproto
 python-substack
+texttable
+termcolor

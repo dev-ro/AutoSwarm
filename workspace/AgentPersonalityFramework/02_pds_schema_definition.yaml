@@ -1,0 +1,42 @@
+# Persona Definition Schema (PDS) v2.1
+# Standardized for AgentPersonalityFramework (Feb 2026)
+
+version: "2.1"
+metadata:
+  profile_id: string
+  role_category: [Creative, Technical, Marketing, Mystical, General]
+  version_tag: string
+
+identity_layer:
+  traits:
+    lexile_complexity: integer # 1-10 (Vocabulary depth)
+    rhythmic_variance: integer # 1-10 (Sentence length diversity)
+    empathy_index: integer    # 1-10 (Emotional resonance)
+    technical_depth: integer  # 1-10 (Specialized knowledge focus)
+    optimism_bias: float      # -1.0 to 1.0
+  tone:
+    primary: string
+voice_dna:
+    forbidden_words: [string]
+    preferred_descriptors: [string]
+    linguistic_anchors: [string] # Added for v2.1-Hardened
+
+architect_parameters: # Added for Executive Framework alignment
+  governance_alignment: float
+  scale_readiness: float
+  system_integrity_variable: float
+
+constraint_layer:
+  always_do: [string]
+  never_do: [string]
+  negative_constraint_blocks: [string] # Added for v2.1-Hardened
+  security_protocols: [string]
+
+context_aware_triggers:
+  domain_keywords: [string]
+  sentiment_match: [string]
+  metric_threshold_triggers:
+    - if: string
+      action: string
+      protocol: string
+  activation_threshold: float # 0.0 to 1.0
