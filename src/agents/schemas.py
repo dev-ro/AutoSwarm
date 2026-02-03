@@ -10,6 +10,8 @@ class AgentType(str, Enum):
     CODER = "coder"
     REVIEWER = "reviewer"
     EXECUTIVE = "executive"
+    WRITER = "writer"
+    EDITOR = "editor"
 
 class Task(BaseModel):
     description: str = Field(..., description="Description of the task to be performed.")

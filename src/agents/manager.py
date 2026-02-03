@@ -6,6 +6,8 @@ from src.agents.researcher import get_research_agent, verify_knowledge
 from src.agents.social import get_social_agent
 from src.agents.finance import get_finance_agent
 from src.agents.coder import get_coder_agent
+from src.agents.editor import get_editor_agent
+from src.agents.writer import get_writer_agent
 from src.agents.executive import get_executive_agent, get_plan_reviewer_agent
 from agno.agent import Agent
 from src.core.models import get_executive_model
@@ -41,6 +43,10 @@ class Manager:
                 self.active_agents[agent_type] = get_finance_agent()
             elif agent_type == AgentType.CODER:
                 self.active_agents[agent_type] = get_coder_agent()
+            elif agent_type == AgentType.WRITER:
+                self.active_agents[agent_type] = get_writer_agent()
+            elif agent_type == AgentType.EDITOR:
+                self.active_agents[agent_type] = get_editor_agent()
             elif agent_type == AgentType.REVIEWER:
                 self.active_agents[agent_type] = get_plan_reviewer_agent()
             elif agent_type == AgentType.EXECUTIVE:
