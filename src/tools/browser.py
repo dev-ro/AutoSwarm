@@ -4,10 +4,16 @@ from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
 class BrowserTools(Toolkit):
-    def __init__(self):
+    def __init__(self, state_manager=None):
         super().__init__(name="browser_tools")
+        self.state_manager = state_manager
+        self.current_task_id = None
         self.register(self.search_web)
         self.register(self.read_page)
+
+    def set_task_context(self, task_id: int):
+        """Sets the current task ID for logging artifacts."""
+        self.current_task_id = task_id
 
     def search_web(self, query: str) -> str:
         """
@@ -39,7 +45,17 @@ class BrowserTools(Toolkit):
                 if not results:
                     return "No results found or page structure changed."
                 
-                return "\n".join(results)
+                summary = "\n".join(results)
+                
+                # --- Artifact Logging ---
+                if self.state_manager and self.current_task_id:
+                    self.state_manager.log_artifact(
+                        task_id=self.current_task_id,
+                        artifact_type="search_result",
+                        content=summary
+                    )
+                
+                return summary
             except Exception as e:
                 return f"Error searching web: {e}"
             finally:
@@ -73,6 +89,17 @@ class BrowserTools(Toolkit):
                 meaningful_lines = [line for line in lines if len(line) > 30 or line.endswith(('.', '!', '?'))]
                 text = '\n'.join(meaningful_lines)
                 
+                # --- Artifact Logging ---
+                if self.state_manager and self.current_task_id:
+                    # Log first 2000 chars as requested
+                    log_content = text[:2000]
+                    self.state_manager.log_artifact(
+                        task_id=self.current_task_id,
+                        artifact_type="scraped_content",
+                        content=log_content,
+                        source_url=url
+                    )
+
                 # Smart Truncation
                 if len(text) > 8000:
                     text = f"--- Page Summary (Truncated) ---\n{text[:8000]}\n...(more content)..."

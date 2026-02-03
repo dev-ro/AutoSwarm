@@ -47,6 +47,19 @@ class StateManager:
             )
         ''')
         
+        # Table for Task Artifacts
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS task_artifacts (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                task_id INTEGER,
+                artifact_type TEXT,
+                content TEXT,
+                source_url TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY(task_id) REFERENCES tasks(id)
+            )
+        ''')
+        
         conn.commit()
         conn.close()
 
@@ -106,6 +119,19 @@ class StateManager:
         conn.close()
         return {"plan": plan_data, "tasks": tasks_data}
 
+    def get_task_id(self, plan_id: int, step_index: int) -> Optional[int]:
+        """
+        Retrieves the task_id for a given plan and step index.
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute("SELECT id FROM tasks WHERE plan_id = ? AND step_index = ?", (plan_id, step_index))
+        row = cursor.fetchone()
+        
+        conn.close()
+        return row[0] if row else None
+
     def update_task_status(self, plan_id: int, step_index: int, status: str, result: str = None):
         """
         Updates the status of a specific task.
@@ -128,6 +154,34 @@ class StateManager:
             
         conn.commit()
         conn.close()
+
+    def log_artifact(self, task_id: int, artifact_type: str, content: str, source_url: str = None):
+        """
+        Logs a detailed artifact (search result, citation, etc.) for a task.
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        try:
+            cursor.execute('''
+                INSERT INTO task_artifacts (task_id, artifact_type, content, source_url)
+                VALUES (?, ?, ?, ?)
+            ''', (task_id, artifact_type, content, source_url))
+            conn.commit()
+            print(f"[State] Logged artifact '{artifact_type}' for task {task_id}")
+        except Exception as e:
+            print(f"[State] Error logging artifact: {e}")
+        finally:
+            conn.close()
+
+    def get_artifact_count(self, task_id: int) -> int:
+        """Counts artifacts for a specific task."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        cursor.execute("SELECT COUNT(*) FROM task_artifacts WHERE task_id = ?", (task_id,))
+        count = cursor.fetchone()[0]
+        conn.close()
+        return count
 
     def complete_plan(self, plan_id: int):
         """

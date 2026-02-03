@@ -10,6 +10,7 @@ from src.agents.executive import get_executive_agent
 from src.agents.manager import Manager
 from src.agents.schemas import Plan, Task, AgentType
 from src.core.state import StateManager
+from src.agents.researcher import verify_knowledge
 
 def main():
     # 1. Load Environment Variables
@@ -21,6 +22,9 @@ def main():
         return
 
     print("Starting AutoSwarm System (Agno Framework)...")
+    
+    # 0. Check Knowledge Base Persistence
+    verify_knowledge()
 
     # 2. Initialize the Executive Agent
     try:

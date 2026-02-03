@@ -1,7 +1,8 @@
 
 from typing import List
+import re
 from src.agents.schemas import Plan, Task, AgentType, PlanReview
-from src.agents.researcher import get_research_agent
+from src.agents.researcher import get_research_agent, verify_knowledge
 from src.agents.social import get_social_agent
 from src.agents.finance import get_finance_agent
 from src.agents.coder import get_coder_agent
@@ -33,7 +34,7 @@ class Manager:
         """Lazy loads agents to save memory."""
         if agent_type not in self.active_agents:
             if agent_type == AgentType.RESEARCHER:
-                self.active_agents[agent_type] = get_research_agent()
+                self.active_agents[agent_type] = get_research_agent(self.state_manager)
             elif agent_type == AgentType.SOCIAL:
                 self.active_agents[agent_type] = get_social_agent()
             elif agent_type == AgentType.FINANCE:
@@ -46,7 +47,7 @@ class Manager:
                 self.active_agents[agent_type] = self.executive
             else:
                 print(f"[WARNING] No handler for {agent_type}. Defaulting to Researcher.")
-                self.active_agents[agent_type] = get_research_agent()
+                self.active_agents[agent_type] = get_research_agent(self.state_manager)
         return self.active_agents[agent_type]
 
     def execute_plan(self, plan: Plan, resume_plan_id: int = None):
@@ -91,7 +92,8 @@ class Manager:
             )
 
             # 3. Delegate
-            result = self.delegate_task(task, full_prompt)
+            task_id = self.state_manager.get_task_id(plan_id, current_step_index)
+            result = self.delegate_task(task, full_prompt, task_id)
             
             self.state_manager.update_task_status(plan_id, current_step_index, "completed", result=str(result))
             
@@ -135,7 +137,7 @@ class Manager:
         
         self.state_manager.complete_plan(plan_id)
 
-    def delegate_task(self, task: Task, full_prompt: str) -> str:
+    def delegate_task(self, task: Task, full_prompt: str, task_id: int = None) -> str:
         """
         Delegates a single task to the assigned agent type.
         """
@@ -144,12 +146,64 @@ class Manager:
         
         agent = self._get_agent(task.assigned_agent)
         
+        # --- Instrument Tools with Task Context ---
+        if task_id and agent.tools:
+            for tool in agent.tools:
+                if hasattr(tool, 'set_task_context'):
+                    tool.set_task_context(task_id)
+        
+        # --- Memory Leak Detection Setup ---
+        kb_start_count = 0
+        if task.assigned_agent == AgentType.RESEARCHER:
+             kb_start_count = verify_knowledge()
+
         try:
             response = agent.run(full_prompt)
             result_content = response.content if hasattr(response, 'content') else str(response)
             
             print(f"\n  -> @{task.assigned_agent.value} Result:\n")
             print(result_content)
+
+            # --- Artifact Extraction & Logging ---
+            if task_id:
+                # 1. Extract URLs with regex
+                urls = re.findall(r'(https?://[^\s\)]+)', result_content)
+                if urls:
+                    print(f"  [Artifacts] Found {len(urls)} URLs. Logging...")
+                    for url in urls:
+                        # Log as a citation/source
+                        self.state_manager.log_artifact(
+                            task_id=task_id, 
+                            artifact_type="citation", 
+                            content=f"Extracted URL: {url}", 
+                            source_url=url
+                        )
+                
+                # 2. Heuristic: If it looks like a list of news items (lines starting with - or *), log them
+                lines = result_content.split('\n')
+                for line in lines:
+                    line = line.strip()
+                    if (line.startswith('- ') or line.startswith('* ')) and len(line) > 20:
+                         # basic heuristic for a "summary item" or "search result"
+                         self.state_manager.log_artifact(
+                            task_id=task_id,
+                            artifact_type="summary_item",
+                            content=line
+                         )
+                
+                # --- [NEW] Memory Leak Check ---
+                if task.assigned_agent == AgentType.RESEARCHER:
+                    kb_end_count = verify_knowledge()
+                    artifact_count = self.state_manager.get_artifact_count(task_id)
+                    kb_delta = kb_end_count - kb_start_count
+                    
+                    if artifact_count > 0 and kb_delta == 0:
+                        print("\n" + "!"*60)
+                        print(" [WARNING] Memory Leak Detected: Agent found data but failed to save to KB.")
+                        print(f"           Artifacts: {artifact_count} | KB Growth: 0")
+                        print("!"*60 + "\n")
+                    elif kb_delta > 0:
+                        print(f"  [Memory] Knowledge Base grew by {kb_delta} documents.")
 
             # --- Human-in-the-Loop Trigger ---
             if "PENDING USER APPROVAL" in result_content:
