@@ -1,0 +1,18 @@
+2026-02-03 09:08:44,285 - INFO - Initialized database at /workspace/NewsletterLaunch/subscribers.csv
+2026-02-03 09:08:44,321 - INFO - No subscribers found.
+2026-02-03 09:08:45,793 - INFO - Added subscriber: Alice (alice@example.com)
+2026-02-03 09:08:47,338 - ERROR - Invalid email format: invalid-email
+2026-02-03 09:08:49,498 - WARNING - Subscriber with email alice@example.com already exists.
+2026-02-03 09:08:51,020 - INFO - Removed subscriber: alice@example.com
+2026-02-03 09:08:52,536 - INFO - No subscribers found.
+2026-02-03 09:08:57,873 - INFO - Added subscriber: Bob (bob@example.com)
+2026-02-03 09:08:58,228 - INFO - Added subscriber: Charlie (charlie@example.com)
+2026-02-03 09:11:38,921 - INFO - Added subscriber: Test User 1 (test1@example.com)
+2026-02-03 09:11:38,996 - INFO - Added subscriber: Test User 2 (test2@example.com)
+2026-02-03 09:12:19,621 - INFO - Added subscriber: New Guy (new_guy@example.com)
+2026-02-03 09:12:24,863 - INFO - Removed subscriber: test1@example.com
+2026-02-03 09:12:25,164 - INFO - Removed subscriber: test2@example.com
+2026-02-03 09:12:25,306 - INFO - Removed subscriber: new_guy@example.com
+2026-02-03 09:27:16,286 - INFO - Updating database headers...
+2026-02-03 09:27:18,033 - INFO - Added subscriber: Alice (alice@example.com) [source: linkedin]
+2026-02-03 09:27:26,711 - INFO - Removed subscriber: bob@example.com

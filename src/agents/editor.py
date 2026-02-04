@@ -5,22 +5,37 @@ from src.core.models import get_executive_model
 
 WORKSPACE_DIR = "./workspace"
 
-def get_editor_agent() -> Agent:
+def get_editor_agent(project_name: str = "General", persona: dict = None) -> Agent:
     """
     Returns the Editor Agent.
-    Role: Senior Sci-Fi Editor.
+    Role: Adapts to the provided persona or defaults to a Senior Editor.
     """
-    return Agent(
-        model=get_executive_model(),
-        description="You are a Senior Sci-Fi Editor.",
-        instructions=[
-            "You are a Senior Sci-Fi Editor. You are ruthless about pacing, character consistency, and 'Show, Don't Tell'.",
+    if persona:
+        role = persona.get("role", "Senior Editor")
+        base_instructions = persona.get("instructions", [
+            "You are a Senior Editor.",
+            "Your job is to read drafts and provide critical feedback based on the project's style guide."
+        ])
+    else:
+        role = "Senior Editor"
+        base_instructions = [
+            "You are a Senior Editor. You are ruthless about pacing, clarity, and structure.",
             "Your job is to read .md files created by the Writer and provide critical feedback.",
             "1. READ: Use FileTools to read the latest drafts in the workspace.",
-            "2. CONTEXT: Always check against the 'Narrative Bible' file to ensure character voices (like Kyle vs. Andrew) are consistent.",
-            "3. FEEDBACK LOOP: Do not rewrite the file yourself. Instead, provide a bulleted critique and specific instructions for the Writer to improve the draft.",
-            "4. ANALYZE: specific plot holes, scientific inaccuracies (it is Sci-Fi after all), and dialogue stiffness."
-        ],
+            "2. CONTEXT: Check for consistency in tone and voice.",
+            "3. FEEDBACK LOOP: Do not rewrite the file yourself. Instead, provide a bulleted critique and specific instructions for the Writer.",
+            "4. ANALYZE: specific gaps, logic errors, and flow issues."
+        ]
+
+    instructions = [
+        f"Context: Project '{project_name}'",
+        f"Role: {role}"
+    ] + base_instructions
+
+    return Agent(
+        model=get_executive_model(),
+        description=f"You are a {role}.",
+        instructions=instructions,
         tools=[
             FileTools(base_dir=Path(WORKSPACE_DIR))
         ],

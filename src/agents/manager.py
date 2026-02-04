@@ -43,9 +43,11 @@ class Manager:
         self.current_project = project_name
         self.current_persona = persona
         
-        # Invalidate writers so they get re-created with new context
+        # Invalidate writers and editors so they get re-created with new context
         if AgentType.WRITER in self.active_agents:
             del self.active_agents[AgentType.WRITER]
+        if AgentType.EDITOR in self.active_agents:
+            del self.active_agents[AgentType.EDITOR]
 
     def _get_agent(self, agent_type: AgentType) -> Agent:
         """Lazy loads agents to save memory."""
@@ -64,7 +66,10 @@ class Manager:
                 persona = getattr(self, 'current_persona', None)
                 self.active_agents[agent_type] = get_writer_agent(project_name=project, persona=persona)
             elif agent_type == AgentType.EDITOR:
-                self.active_agents[agent_type] = get_editor_agent()
+                # [NEW] Inject Project Context for Editor
+                project = getattr(self, 'current_project', 'general')
+                persona = getattr(self, 'current_persona', None)
+                self.active_agents[agent_type] = get_editor_agent(project_name=project, persona=persona)
             elif agent_type == AgentType.REVIEWER:
                 self.active_agents[agent_type] = get_plan_reviewer_agent()
             elif agent_type == AgentType.EXECUTIVE:

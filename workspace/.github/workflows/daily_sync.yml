@@ -1,0 +1,44 @@
+name: Daily Subscriber Sync
+name: Daily Subscriber Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run at 00:00 UTC every day
+  workflow_dispatch:      # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install sendgrid boto3
+
+      - name: Run sync script
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION || 'us-east-1' }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SES_CONTACT_LIST: ${{ secrets.SES_CONTACT_LIST }}
+          EMAIL_PROVIDER: ${{ vars.EMAIL_PROVIDER || 'mock' }}
+        run: |
+          python NewsletterLaunch/email_bridge.py --provider $EMAIL_PROVIDER
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add NewsletterLaunch/sync_state.json NewsletterLaunch/email_bridge.log
+          git commit -m "chore: update sync state [skip ci]" || echo "No changes to commit"
+          git push

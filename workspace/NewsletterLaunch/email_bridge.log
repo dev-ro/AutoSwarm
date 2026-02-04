@@ -1,0 +1,402 @@
+2026-02-03 09:11:40,930 - INFO - Syncing 4 subscribers to SendGrid...
+2026-02-03 09:11:40,930 - INFO - [DRY RUN] Would send data to SendGrid: {
+  "contacts": [
+    {
+      "email": "bob@example.com",
+      "first_name": "Bob"
+    },
+    {
+      "email": "charlie@example.com",
+      "first_name": "Charlie"
+    },
+    {
+      "email": "test1@example.com",
+      "first_name": "Test User 1"
+    },
+    {
+      "email": "test2@example.com",
+      "first_name": "Test User 2"
+    }
+  ]
+}
+2026-02-03 09:11:44,495 - INFO - Syncing 4 subscribers to AWS SES...
+2026-02-03 09:11:44,496 - INFO - [DRY RUN] Would sync 4 subscribers to SES Contact List.
+2026-02-03 09:11:44,496 - INFO - [DRY RUN] Syncing bob@example.com
+2026-02-03 09:11:44,497 - INFO - [DRY RUN] Syncing charlie@example.com
+2026-02-03 09:11:44,499 - INFO - [DRY RUN] Syncing test1@example.com
+2026-02-03 09:11:44,499 - INFO - [DRY RUN] Syncing test2@example.com
+2026-02-03 09:12:16,141 - INFO - Found 4 subscribers to sync.
+2026-02-03 09:12:16,142 - INFO - MOCK: Syncing 4 subscribers...
+2026-02-03 09:12:16,142 - INFO - MOCK: Synced bob@example.com
+2026-02-03 09:12:16,144 - INFO - MOCK: Synced charlie@example.com
+2026-02-03 09:12:16,144 - INFO - MOCK: Synced test1@example.com
+2026-02-03 09:12:16,144 - INFO - MOCK: Synced test2@example.com
+2026-02-03 09:12:17,685 - INFO - All subscribers are already synced. Use --force to sync anyway.
+2026-02-03 09:12:19,832 - INFO - Found 1 subscribers to sync.
+2026-02-03 09:12:19,834 - INFO - MOCK: Syncing 1 subscribers...
+2026-02-03 09:12:19,836 - INFO - MOCK: Synced new_guy@example.com
+2026-02-03 09:13:25,329 - INFO - All subscribers are already synced. Use --force to sync anyway.
+2026-02-03 09:13:27,317 - INFO - Found 2 subscribers to sync.
+2026-02-03 09:13:27,317 - INFO - MOCK: Syncing 2 subscribers...
+2026-02-03 09:13:27,318 - INFO - MOCK: Synced bob@example.com
+2026-02-03 09:13:27,318 - INFO - MOCK: Synced charlie@example.com
+2026-02-03 09:41:07,111 - INFO - Found 161 subscribers to sync.
+2026-02-03 09:41:07,111 - INFO - MOCK: Syncing 161 subscribers...
+2026-02-03 09:41:07,112 - INFO - MOCK: Synced alice@example.com
+2026-02-03 09:41:07,112 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_0@example.com
+2026-02-03 09:41:07,112 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_1@example.com
+2026-02-03 09:41:07,113 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_2@example.com
+2026-02-03 09:41:07,113 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_3@example.com
+2026-02-03 09:41:07,113 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_4@example.com
+2026-02-03 09:41:07,114 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_5@example.com
+2026-02-03 09:41:07,114 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_6@example.com
+2026-02-03 09:41:07,114 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_7@example.com
+2026-02-03 09:41:07,114 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_8@example.com
+2026-02-03 09:41:07,115 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_9@example.com
+2026-02-03 09:41:07,115 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_10@example.com
+2026-02-03 09:41:07,115 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_11@example.com
+2026-02-03 09:41:07,116 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_12@example.com
+2026-02-03 09:41:07,116 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_13@example.com
+2026-02-03 09:41:07,116 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_14@example.com
+2026-02-03 09:41:07,116 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_15@example.com
+2026-02-03 09:41:07,117 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_16@example.com
+2026-02-03 09:41:07,117 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_17@example.com
+2026-02-03 09:41:07,117 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_18@example.com
+2026-02-03 09:41:07,117 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_19@example.com
+2026-02-03 09:41:07,118 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_20@example.com
+2026-02-03 09:41:07,118 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_21@example.com
+2026-02-03 09:41:07,119 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_22@example.com
+2026-02-03 09:41:07,119 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_23@example.com
+2026-02-03 09:41:07,119 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_24@example.com
+2026-02-03 09:41:07,119 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_25@example.com
+2026-02-03 09:41:07,120 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_26@example.com
+2026-02-03 09:41:07,120 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_27@example.com
+2026-02-03 09:41:07,120 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_28@example.com
+2026-02-03 09:41:07,120 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_29@example.com
+2026-02-03 09:41:07,121 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_30@example.com
+2026-02-03 09:41:07,121 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_31@example.com
+2026-02-03 09:41:07,121 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_32@example.com
+2026-02-03 09:41:07,122 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_33@example.com
+2026-02-03 09:41:07,122 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_34@example.com
+2026-02-03 09:41:07,122 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_35@example.com
+2026-02-03 09:41:07,122 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_36@example.com
+2026-02-03 09:41:07,123 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_37@example.com
+2026-02-03 09:41:07,123 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_38@example.com
+2026-02-03 09:41:07,123 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_39@example.com
+2026-02-03 09:41:07,123 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_40@example.com
+2026-02-03 09:41:07,124 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_41@example.com
+2026-02-03 09:41:07,124 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_42@example.com
+2026-02-03 09:41:07,124 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_43@example.com
+2026-02-03 09:41:07,125 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_44@example.com
+2026-02-03 09:41:07,125 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_45@example.com
+2026-02-03 09:41:07,125 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_46@example.com
+2026-02-03 09:41:07,126 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_47@example.com
+2026-02-03 09:41:07,126 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_48@example.com
+2026-02-03 09:41:07,126 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_49@example.com
+2026-02-03 09:41:07,126 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_50@example.com
+2026-02-03 09:41:07,127 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_51@example.com
+2026-02-03 09:41:07,127 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_52@example.com
+2026-02-03 09:41:07,127 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_53@example.com
+2026-02-03 09:41:07,127 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_54@example.com
+2026-02-03 09:41:07,128 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_55@example.com
+2026-02-03 09:41:07,128 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_56@example.com
+2026-02-03 09:41:07,128 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_57@example.com
+2026-02-03 09:41:07,128 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_58@example.com
+2026-02-03 09:41:07,129 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_59@example.com
+2026-02-03 09:41:07,129 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_60@example.com
+2026-02-03 09:41:07,129 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_61@example.com
+2026-02-03 09:41:07,129 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_62@example.com
+2026-02-03 09:41:07,130 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_63@example.com
+2026-02-03 09:41:07,130 - INFO - MOCK: Synced lead_linkedin_cto_authority_play_64@example.com
+2026-02-03 09:41:07,130 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_0@example.com
+2026-02-03 09:41:07,130 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_1@example.com
+2026-02-03 09:41:07,131 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_2@example.com
+2026-02-03 09:41:07,131 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_3@example.com
+2026-02-03 09:41:07,131 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_4@example.com
+2026-02-03 09:41:07,131 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_5@example.com
+2026-02-03 09:41:07,131 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_6@example.com
+2026-02-03 09:41:07,132 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_7@example.com
+2026-02-03 09:41:07,132 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_8@example.com
+2026-02-03 09:41:07,132 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_9@example.com
+2026-02-03 09:41:07,132 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_10@example.com
+2026-02-03 09:41:07,133 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_11@example.com
+2026-02-03 09:41:07,133 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_12@example.com
+2026-02-03 09:41:07,133 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_13@example.com
+2026-02-03 09:41:07,133 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_14@example.com
+2026-02-03 09:41:07,134 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_15@example.com
+2026-02-03 09:41:07,134 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_16@example.com
+2026-02-03 09:41:07,134 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_17@example.com
+2026-02-03 09:41:07,135 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_18@example.com
+2026-02-03 09:41:07,135 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_19@example.com
+2026-02-03 09:41:07,135 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_20@example.com
+2026-02-03 09:41:07,135 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_21@example.com
+2026-02-03 09:41:07,136 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_22@example.com
+2026-02-03 09:41:07,136 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_23@example.com
+2026-02-03 09:41:07,136 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_24@example.com
+2026-02-03 09:41:07,136 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_25@example.com
+2026-02-03 09:41:07,137 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_26@example.com
+2026-02-03 09:41:07,137 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_27@example.com
+2026-02-03 09:41:07,137 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_28@example.com
+2026-02-03 09:41:07,137 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_29@example.com
+2026-02-03 09:41:07,137 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_30@example.com
+2026-02-03 09:41:07,138 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_31@example.com
+2026-02-03 09:41:07,138 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_32@example.com
+2026-02-03 09:41:07,138 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_33@example.com
+2026-02-03 09:41:07,138 - INFO - MOCK: Synced lead_x_comparison_thread_auditor_34@example.com
+2026-02-03 09:41:07,139 - INFO - MOCK: Synced lead_x_dev_builder_play_0@example.com
+2026-02-03 09:41:07,139 - INFO - MOCK: Synced lead_x_dev_builder_play_1@example.com
+2026-02-03 09:41:07,139 - INFO - MOCK: Synced lead_x_dev_builder_play_2@example.com
+2026-02-03 09:41:07,139 - INFO - MOCK: Synced lead_x_dev_builder_play_3@example.com
+2026-02-03 09:41:07,140 - INFO - MOCK: Synced lead_x_dev_builder_play_4@example.com
+2026-02-03 09:41:07,140 - INFO - MOCK: Synced lead_x_dev_builder_play_5@example.com
+2026-02-03 09:41:07,140 - INFO - MOCK: Synced lead_x_dev_builder_play_6@example.com
+2026-02-03 09:41:07,140 - INFO - MOCK: Synced lead_x_dev_builder_play_7@example.com
+2026-02-03 09:41:07,141 - INFO - MOCK: Synced lead_x_dev_builder_play_8@example.com
+2026-02-03 09:41:07,141 - INFO - MOCK: Synced lead_x_dev_builder_play_9@example.com
+2026-02-03 09:41:07,141 - INFO - MOCK: Synced lead_x_dev_builder_play_10@example.com
+2026-02-03 09:41:07,141 - INFO - MOCK: Synced lead_x_dev_builder_play_11@example.com
+2026-02-03 09:41:07,141 - INFO - MOCK: Synced lead_x_dev_builder_play_12@example.com
+2026-02-03 09:41:07,142 - INFO - MOCK: Synced lead_x_dev_builder_play_13@example.com
+2026-02-03 09:41:07,142 - INFO - MOCK: Synced lead_x_dev_builder_play_14@example.com
+2026-02-03 09:41:07,142 - INFO - MOCK: Synced lead_x_dev_builder_play_15@example.com
+2026-02-03 09:41:07,142 - INFO - MOCK: Synced lead_x_dev_builder_play_16@example.com
+2026-02-03 09:41:07,143 - INFO - MOCK: Synced lead_x_dev_builder_play_17@example.com
+2026-02-03 09:41:07,143 - INFO - MOCK: Synced lead_x_dev_builder_play_18@example.com
+2026-02-03 09:41:07,143 - INFO - MOCK: Synced lead_x_dev_builder_play_19@example.com
+2026-02-03 09:41:07,143 - INFO - MOCK: Synced lead_x_dev_builder_play_20@example.com
+2026-02-03 09:41:07,143 - INFO - MOCK: Synced lead_x_dev_builder_play_21@example.com
+2026-02-03 09:41:07,144 - INFO - MOCK: Synced lead_x_dev_builder_play_22@example.com
+2026-02-03 09:41:07,144 - INFO - MOCK: Synced lead_x_dev_builder_play_23@example.com
+2026-02-03 09:41:07,144 - INFO - MOCK: Synced lead_x_dev_builder_play_24@example.com
+2026-02-03 09:41:07,144 - INFO - MOCK: Synced lead_x_dev_builder_play_25@example.com
+2026-02-03 09:41:07,144 - INFO - MOCK: Synced lead_x_dev_builder_play_26@example.com
+2026-02-03 09:41:07,145 - INFO - MOCK: Synced lead_x_dev_builder_play_27@example.com
+2026-02-03 09:41:07,145 - INFO - MOCK: Synced lead_x_dev_builder_play_28@example.com
+2026-02-03 09:41:07,145 - INFO - MOCK: Synced lead_x_dev_builder_play_29@example.com
+2026-02-03 09:41:07,145 - INFO - MOCK: Synced lead_x_dev_builder_play_30@example.com
+2026-02-03 09:41:07,146 - INFO - MOCK: Synced lead_x_dev_builder_play_31@example.com
+2026-02-03 09:41:07,146 - INFO - MOCK: Synced lead_x_dev_builder_play_32@example.com
+2026-02-03 09:41:07,146 - INFO - MOCK: Synced lead_x_dev_builder_play_33@example.com
+2026-02-03 09:41:07,146 - INFO - MOCK: Synced lead_x_dev_builder_play_34@example.com
+2026-02-03 09:41:07,147 - INFO - MOCK: Synced lead_x_dev_builder_play_35@example.com
+2026-02-03 09:41:07,147 - INFO - MOCK: Synced lead_x_dev_builder_play_36@example.com
+2026-02-03 09:41:07,147 - INFO - MOCK: Synced lead_x_dev_builder_play_37@example.com
+2026-02-03 09:41:07,147 - INFO - MOCK: Synced lead_x_dev_builder_play_38@example.com
+2026-02-03 09:41:07,147 - INFO - MOCK: Synced lead_x_dev_builder_play_39@example.com
+2026-02-03 09:41:07,148 - INFO - MOCK: Synced lead_x_dev_builder_play_40@example.com
+2026-02-03 09:41:07,148 - INFO - MOCK: Synced lead_x_dev_builder_play_41@example.com
+2026-02-03 09:41:07,148 - INFO - MOCK: Synced lead_x_comparison_thread_architect_0@example.com
+2026-02-03 09:41:07,148 - INFO - MOCK: Synced lead_x_comparison_thread_architect_1@example.com
+2026-02-03 09:41:07,149 - INFO - MOCK: Synced lead_x_comparison_thread_architect_2@example.com
+2026-02-03 09:41:07,149 - INFO - MOCK: Synced lead_x_comparison_thread_architect_3@example.com
+2026-02-03 09:41:07,149 - INFO - MOCK: Synced lead_x_comparison_thread_architect_4@example.com
+2026-02-03 09:41:07,149 - INFO - MOCK: Synced lead_x_comparison_thread_architect_5@example.com
+2026-02-03 09:41:07,149 - INFO - MOCK: Synced lead_x_comparison_thread_architect_6@example.com
+2026-02-03 09:41:07,150 - INFO - MOCK: Synced lead_x_comparison_thread_architect_7@example.com
+2026-02-03 09:41:07,150 - INFO - MOCK: Synced lead_x_comparison_thread_architect_8@example.com
+2026-02-03 09:41:07,150 - INFO - MOCK: Synced lead_x_comparison_thread_architect_9@example.com
+2026-02-03 09:41:07,150 - INFO - MOCK: Synced lead_x_comparison_thread_architect_10@example.com
+2026-02-03 09:41:07,151 - INFO - MOCK: Synced lead_x_comparison_thread_architect_11@example.com
+2026-02-03 09:41:07,151 - INFO - MOCK: Synced lead_x_comparison_thread_architect_12@example.com
+2026-02-03 09:41:07,151 - INFO - MOCK: Synced lead_x_comparison_thread_architect_13@example.com
+2026-02-03 09:41:07,151 - INFO - MOCK: Synced lead_x_comparison_thread_architect_14@example.com
+2026-02-03 09:41:07,151 - INFO - MOCK: Synced lead_x_comparison_thread_architect_15@example.com
+2026-02-03 09:41:07,152 - INFO - MOCK: Synced lead_x_comparison_thread_architect_16@example.com
+2026-02-03 09:41:07,152 - INFO - MOCK: Synced lead_x_comparison_thread_architect_17@example.com
+2026-02-03 09:41:07,154 - INFO - Sync state updated.
+2026-02-03 09:43:28,141 - INFO - Starting dispatch of 'The AI Auditor Issue #1: The Forensic Specification' to 162 subscribers.
+2026-02-03 09:43:28,141 - INFO - MOCK: Starting newsletter dispatch: The AI Auditor Issue #1: The Forensic Specification
+2026-02-03 09:43:47,304 - INFO - Starting dispatch of 'The AI Auditor Issue #1: The Forensic Specification' to 162 subscribers.
+2026-02-03 09:43:47,304 - INFO - MOCK: Starting newsletter dispatch: The AI Auditor Issue #1: The Forensic Specification
+2026-02-03 09:43:47,305 - INFO - [DELIVERED] 1/162 - Sent to charlie@example.com
+2026-02-03 09:43:47,438 - INFO - [DELIVERED] 2/162 - Sent to alice@example.com
+2026-02-03 09:43:47,584 - INFO - [DELIVERED] 3/162 - Sent to lead_linkedin_cto_authority_play_0@example.com
+2026-02-03 09:43:47,709 - INFO - [DELIVERED] 4/162 - Sent to lead_linkedin_cto_authority_play_1@example.com
+2026-02-03 09:43:47,854 - INFO - [DELIVERED] 5/162 - Sent to lead_linkedin_cto_authority_play_2@example.com
+2026-02-03 09:43:47,981 - INFO - [DELIVERED] 6/162 - Sent to lead_linkedin_cto_authority_play_3@example.com
+2026-02-03 09:43:48,130 - INFO - [DELIVERED] 7/162 - Sent to lead_linkedin_cto_authority_play_4@example.com
+2026-02-03 09:43:48,257 - INFO - [DELIVERED] 8/162 - Sent to lead_linkedin_cto_authority_play_5@example.com
+2026-02-03 09:43:48,393 - INFO - [DELIVERED] 9/162 - Sent to lead_linkedin_cto_authority_play_6@example.com
+2026-02-03 09:43:48,516 - INFO - [DELIVERED] 10/162 - Sent to lead_linkedin_cto_authority_play_7@example.com
+2026-02-03 09:43:48,662 - INFO - [DELIVERED] 11/162 - Sent to lead_linkedin_cto_authority_play_8@example.com
+2026-02-03 09:43:48,788 - INFO - [DELIVERED] 12/162 - Sent to lead_linkedin_cto_authority_play_9@example.com
+2026-02-03 09:43:48,913 - INFO - [DELIVERED] 13/162 - Sent to lead_linkedin_cto_authority_play_10@example.com
+2026-02-03 09:43:49,024 - INFO - [DELIVERED] 14/162 - Sent to lead_linkedin_cto_authority_play_11@example.com
+2026-02-03 09:43:49,139 - INFO - [DELIVERED] 15/162 - Sent to lead_linkedin_cto_authority_play_12@example.com
+2026-02-03 09:43:49,285 - INFO - [DELIVERED] 16/162 - Sent to lead_linkedin_cto_authority_play_13@example.com
+2026-02-03 09:43:49,285 - INFO - --- PROGRESS REPORT: 16/162 ---
+2026-02-03 09:43:49,286 - INFO - Deliverability: 100.00% | Bounce Rate: 0.00%
+2026-02-03 09:43:49,420 - INFO - [DELIVERED] 17/162 - Sent to lead_linkedin_cto_authority_play_14@example.com
+2026-02-03 09:43:49,559 - INFO - [DELIVERED] 18/162 - Sent to lead_linkedin_cto_authority_play_15@example.com
+2026-02-03 09:43:49,706 - INFO - [DELIVERED] 19/162 - Sent to lead_linkedin_cto_authority_play_16@example.com
+2026-02-03 09:43:49,841 - INFO - [DELIVERED] 20/162 - Sent to lead_linkedin_cto_authority_play_17@example.com
+2026-02-03 09:43:49,989 - INFO - [DELIVERED] 21/162 - Sent to lead_linkedin_cto_authority_play_18@example.com
+2026-02-03 09:43:50,138 - INFO - [DELIVERED] 22/162 - Sent to lead_linkedin_cto_authority_play_19@example.com
+2026-02-03 09:43:50,269 - INFO - [DELIVERED] 23/162 - Sent to lead_linkedin_cto_authority_play_20@example.com
+2026-02-03 09:43:50,384 - INFO - [DELIVERED] 24/162 - Sent to lead_linkedin_cto_authority_play_21@example.com
+2026-02-03 09:43:50,500 - INFO - [DELIVERED] 25/162 - Sent to lead_linkedin_cto_authority_play_22@example.com
+2026-02-03 09:43:50,614 - INFO - [DELIVERED] 26/162 - Sent to lead_linkedin_cto_authority_play_23@example.com
+2026-02-03 09:43:50,732 - INFO - [DELIVERED] 27/162 - Sent to lead_linkedin_cto_authority_play_24@example.com
+2026-02-03 09:43:50,867 - INFO - [DELIVERED] 28/162 - Sent to lead_linkedin_cto_authority_play_25@example.com
+2026-02-03 09:43:50,988 - INFO - [DELIVERED] 29/162 - Sent to lead_linkedin_cto_authority_play_26@example.com
+2026-02-03 09:43:51,123 - INFO - [DELIVERED] 30/162 - Sent to lead_linkedin_cto_authority_play_27@example.com
+2026-02-03 09:43:51,257 - INFO - [DELIVERED] 31/162 - Sent to lead_linkedin_cto_authority_play_28@example.com
+2026-02-03 09:43:51,394 - INFO - [DELIVERED] 32/162 - Sent to lead_linkedin_cto_authority_play_29@example.com
+2026-02-03 09:43:51,394 - INFO - --- PROGRESS REPORT: 32/162 ---
+2026-02-03 09:43:51,395 - INFO - Deliverability: 100.00% | Bounce Rate: 0.00%
+2026-02-03 09:43:51,524 - WARNING - [BOUNCE] Failed to deliver to lead_linkedin_cto_authority_play_30@example.com (Reason: Mailbox Full/Invalid)
+2026-02-03 09:43:51,635 - INFO - [DELIVERED] 33/162 - Sent to lead_linkedin_cto_authority_play_31@example.com
+2026-02-03 09:43:51,783 - INFO - [DELIVERED] 34/162 - Sent to lead_linkedin_cto_authority_play_32@example.com
+2026-02-03 09:43:51,898 - INFO - [DELIVERED] 35/162 - Sent to lead_linkedin_cto_authority_play_33@example.com
+2026-02-03 09:43:52,047 - INFO - [DELIVERED] 36/162 - Sent to lead_linkedin_cto_authority_play_34@example.com
+2026-02-03 09:43:52,158 - INFO - [DELIVERED] 37/162 - Sent to lead_linkedin_cto_authority_play_35@example.com
+2026-02-03 09:43:52,294 - INFO - [DELIVERED] 38/162 - Sent to lead_linkedin_cto_authority_play_36@example.com
+2026-02-03 09:43:52,435 - INFO - [DELIVERED] 39/162 - Sent to lead_linkedin_cto_authority_play_37@example.com
+2026-02-03 09:43:52,582 - INFO - [DELIVERED] 40/162 - Sent to lead_linkedin_cto_authority_play_38@example.com
+2026-02-03 09:43:52,721 - INFO - [DELIVERED] 41/162 - Sent to lead_linkedin_cto_authority_play_39@example.com
+2026-02-03 09:43:52,835 - INFO - [DELIVERED] 42/162 - Sent to lead_linkedin_cto_authority_play_40@example.com
+2026-02-03 09:43:52,960 - INFO - [DELIVERED] 43/162 - Sent to lead_linkedin_cto_authority_play_41@example.com
+2026-02-03 09:43:53,097 - INFO - [DELIVERED] 44/162 - Sent to lead_linkedin_cto_authority_play_42@example.com
+2026-02-03 09:43:53,232 - INFO - [DELIVERED] 45/162 - Sent to lead_linkedin_cto_authority_play_43@example.com
+2026-02-03 09:43:53,362 - INFO - [DELIVERED] 46/162 - Sent to lead_linkedin_cto_authority_play_44@example.com
+2026-02-03 09:43:53,483 - INFO - [DELIVERED] 47/162 - Sent to lead_linkedin_cto_authority_play_45@example.com
+2026-02-03 09:43:53,483 - INFO - --- PROGRESS REPORT: 48/162 ---
+2026-02-03 09:43:53,483 - INFO - Deliverability: 97.92% | Bounce Rate: 2.08%
+2026-02-03 09:43:53,614 - INFO - [DELIVERED] 48/162 - Sent to lead_linkedin_cto_authority_play_46@example.com
+2026-02-03 09:43:53,733 - INFO - [DELIVERED] 49/162 - Sent to lead_linkedin_cto_authority_play_47@example.com
+2026-02-03 09:43:53,872 - INFO - [DELIVERED] 50/162 - Sent to lead_linkedin_cto_authority_play_48@example.com
+2026-02-03 09:43:53,998 - INFO - [DELIVERED] 51/162 - Sent to lead_linkedin_cto_authority_play_49@example.com
+2026-02-03 09:43:54,116 - INFO - [DELIVERED] 52/162 - Sent to lead_linkedin_cto_authority_play_50@example.com
+2026-02-03 09:43:54,247 - INFO - [DELIVERED] 53/162 - Sent to lead_linkedin_cto_authority_play_51@example.com
+2026-02-03 09:43:54,374 - INFO - [DELIVERED] 54/162 - Sent to lead_linkedin_cto_authority_play_52@example.com
+2026-02-03 09:43:54,517 - INFO - [DELIVERED] 55/162 - Sent to lead_linkedin_cto_authority_play_53@example.com
+2026-02-03 09:43:54,650 - INFO - [DELIVERED] 56/162 - Sent to lead_linkedin_cto_authority_play_54@example.com
+2026-02-03 09:43:54,784 - INFO - [DELIVERED] 57/162 - Sent to lead_linkedin_cto_authority_play_55@example.com
+2026-02-03 09:43:54,925 - WARNING - [BOUNCE] Failed to deliver to lead_linkedin_cto_authority_play_56@example.com (Reason: Mailbox Full/Invalid)
+2026-02-03 09:43:55,066 - INFO - [DELIVERED] 58/162 - Sent to lead_linkedin_cto_authority_play_57@example.com
+2026-02-03 09:43:55,182 - INFO - [DELIVERED] 59/162 - Sent to lead_linkedin_cto_authority_play_58@example.com
+2026-02-03 09:43:55,324 - WARNING - [BOUNCE] Failed to deliver to lead_linkedin_cto_authority_play_59@example.com (Reason: Mailbox Full/Invalid)
+2026-02-03 09:43:55,470 - INFO - [DELIVERED] 60/162 - Sent to lead_linkedin_cto_authority_play_60@example.com
+2026-02-03 09:43:55,619 - INFO - [DELIVERED] 61/162 - Sent to lead_linkedin_cto_authority_play_61@example.com
+2026-02-03 09:43:55,620 - INFO - --- PROGRESS REPORT: 64/162 ---
+2026-02-03 09:43:55,621 - INFO - Deliverability: 95.31% | Bounce Rate: 4.69%
+2026-02-03 09:43:55,766 - INFO - [DELIVERED] 62/162 - Sent to lead_linkedin_cto_authority_play_62@example.com
+2026-02-03 09:43:55,899 - INFO - [DELIVERED] 63/162 - Sent to lead_linkedin_cto_authority_play_63@example.com
+2026-02-03 09:43:56,035 - INFO - [DELIVERED] 64/162 - Sent to lead_linkedin_cto_authority_play_64@example.com
+2026-02-03 09:43:56,158 - INFO - [DELIVERED] 65/162 - Sent to lead_x_comparison_thread_auditor_0@example.com
+2026-02-03 09:43:56,282 - INFO - [DELIVERED] 66/162 - Sent to lead_x_comparison_thread_auditor_1@example.com
+2026-02-03 09:43:56,406 - INFO - [DELIVERED] 67/162 - Sent to lead_x_comparison_thread_auditor_2@example.com
+2026-02-03 09:43:56,537 - INFO - [DELIVERED] 68/162 - Sent to lead_x_comparison_thread_auditor_3@example.com
+2026-02-03 09:43:56,649 - INFO - [DELIVERED] 69/162 - Sent to lead_x_comparison_thread_auditor_4@example.com
+2026-02-03 09:43:56,760 - INFO - [DELIVERED] 70/162 - Sent to lead_x_comparison_thread_auditor_5@example.com
+2026-02-03 09:43:56,894 - INFO - [DELIVERED] 71/162 - Sent to lead_x_comparison_thread_auditor_6@example.com
+2026-02-03 09:43:57,023 - INFO - [DELIVERED] 72/162 - Sent to lead_x_comparison_thread_auditor_7@example.com
+2026-02-03 09:43:57,147 - INFO - [DELIVERED] 73/162 - Sent to lead_x_comparison_thread_auditor_8@example.com
+2026-02-03 09:43:57,266 - INFO - [DELIVERED] 74/162 - Sent to lead_x_comparison_thread_auditor_9@example.com
+2026-02-03 09:43:57,377 - INFO - [DELIVERED] 75/162 - Sent to lead_x_comparison_thread_auditor_10@example.com
+2026-02-03 09:43:57,524 - INFO - [DELIVERED] 76/162 - Sent to lead_x_comparison_thread_auditor_11@example.com
+2026-02-03 09:43:57,639 - INFO - [DELIVERED] 77/162 - Sent to lead_x_comparison_thread_auditor_12@example.com
+2026-02-03 09:43:57,684 - INFO - --- PROGRESS REPORT: 80/162 ---
+2026-02-03 09:43:57,685 - INFO - Deliverability: 96.25% | Bounce Rate: 3.75%
+2026-02-03 09:43:57,771 - INFO - [DELIVERED] 78/162 - Sent to lead_x_comparison_thread_auditor_13@example.com
+2026-02-03 09:43:57,882 - INFO - [DELIVERED] 79/162 - Sent to lead_x_comparison_thread_auditor_14@example.com
+2026-02-03 09:43:58,011 - INFO - [DELIVERED] 80/162 - Sent to lead_x_comparison_thread_auditor_15@example.com
+2026-02-03 09:43:58,149 - INFO - [DELIVERED] 81/162 - Sent to lead_x_comparison_thread_auditor_16@example.com
+2026-02-03 09:43:58,270 - INFO - [DELIVERED] 82/162 - Sent to lead_x_comparison_thread_auditor_17@example.com
+2026-02-03 09:43:58,412 - INFO - [DELIVERED] 83/162 - Sent to lead_x_comparison_thread_auditor_18@example.com
+2026-02-03 09:43:58,554 - INFO - [DELIVERED] 84/162 - Sent to lead_x_comparison_thread_auditor_19@example.com
+2026-02-03 09:43:58,677 - INFO - [DELIVERED] 85/162 - Sent to lead_x_comparison_thread_auditor_20@example.com
+2026-02-03 09:43:58,788 - INFO - [DELIVERED] 86/162 - Sent to lead_x_comparison_thread_auditor_21@example.com
+2026-02-03 09:43:58,925 - INFO - [DELIVERED] 87/162 - Sent to lead_x_comparison_thread_auditor_22@example.com
+2026-02-03 09:43:59,069 - INFO - [DELIVERED] 88/162 - Sent to lead_x_comparison_thread_auditor_23@example.com
+2026-02-03 09:43:59,193 - INFO - [DELIVERED] 89/162 - Sent to lead_x_comparison_thread_auditor_24@example.com
+2026-02-03 09:43:59,343 - INFO - [DELIVERED] 90/162 - Sent to lead_x_comparison_thread_auditor_25@example.com
+2026-02-03 09:43:59,489 - WARNING - [BOUNCE] Failed to deliver to lead_x_comparison_thread_auditor_26@example.com (Reason: Mailbox Full/Invalid)
+2026-02-03 09:43:59,628 - WARNING - [BOUNCE] Failed to deliver to lead_x_comparison_thread_auditor_27@example.com (Reason: Mailbox Full/Invalid)
+2026-02-03 09:43:59,765 - INFO - [DELIVERED] 91/162 - Sent to lead_x_comparison_thread_auditor_28@example.com
+2026-02-03 09:43:59,765 - INFO - --- PROGRESS REPORT: 96/162 ---
+2026-02-03 09:43:59,766 - INFO - Deliverability: 94.79% | Bounce Rate: 5.21%
+2026-02-03 09:43:59,905 - WARNING - [BOUNCE] Failed to deliver to lead_x_comparison_thread_auditor_29@example.com (Reason: Mailbox Full/Invalid)
+2026-02-03 09:44:00,059 - INFO - [DELIVERED] 92/162 - Sent to lead_x_comparison_thread_auditor_30@example.com
+2026-02-03 09:44:00,190 - INFO - [DELIVERED] 93/162 - Sent to lead_x_comparison_thread_auditor_31@example.com
+2026-02-03 09:44:00,334 - INFO - [DELIVERED] 94/162 - Sent to lead_x_comparison_thread_auditor_32@example.com
+2026-02-03 09:44:00,484 - INFO - [DELIVERED] 95/162 - Sent to lead_x_comparison_thread_auditor_33@example.com
+2026-02-03 09:44:00,622 - WARNING - [BOUNCE] Failed to deliver to lead_x_comparison_thread_auditor_34@example.com (Reason: Mailbox Full/Invalid)
+2026-02-03 09:44:00,735 - INFO - [DELIVERED] 96/162 - Sent to lead_x_dev_builder_play_0@example.com
+2026-02-03 09:44:00,880 - INFO - [DELIVERED] 97/162 - Sent to lead_x_dev_builder_play_1@example.com
+2026-02-03 09:44:01,015 - INFO - [DELIVERED] 98/162 - Sent to lead_x_dev_builder_play_2@example.com
+2026-02-03 09:44:01,142 - INFO - [DELIVERED] 99/162 - Sent to lead_x_dev_builder_play_3@example.com
+2026-02-03 09:44:01,283 - INFO - [DELIVERED] 100/162 - Sent to lead_x_dev_builder_play_4@example.com
+2026-02-03 09:44:01,428 - INFO - [DELIVERED] 101/162 - Sent to lead_x_dev_builder_play_5@example.com
+2026-02-03 09:44:01,555 - INFO - [DELIVERED] 102/162 - Sent to lead_x_dev_builder_play_6@example.com
+2026-02-03 09:44:01,685 - INFO - [DELIVERED] 103/162 - Sent to lead_x_dev_builder_play_7@example.com
+2026-02-03 09:44:01,825 - INFO - [DELIVERED] 104/162 - Sent to lead_x_dev_builder_play_8@example.com
+2026-02-03 09:44:01,946 - INFO - [DELIVERED] 105/162 - Sent to lead_x_dev_builder_play_9@example.com
+2026-02-03 09:44:01,946 - INFO - --- PROGRESS REPORT: 112/162 ---
+2026-02-03 09:44:01,947 - INFO - Deliverability: 93.75% | Bounce Rate: 6.25%
+2026-02-03 09:44:02,074 - INFO - [DELIVERED] 106/162 - Sent to lead_x_dev_builder_play_10@example.com
+2026-02-03 09:44:02,185 - INFO - [DELIVERED] 107/162 - Sent to lead_x_dev_builder_play_11@example.com
+2026-02-03 09:44:02,333 - INFO - [DELIVERED] 108/162 - Sent to lead_x_dev_builder_play_12@example.com
+2026-02-03 09:44:02,476 - INFO - [DELIVERED] 109/162 - Sent to lead_x_dev_builder_play_13@example.com
+2026-02-03 09:44:02,606 - INFO - [DELIVERED] 110/162 - Sent to lead_x_dev_builder_play_14@example.com
+2026-02-03 09:44:02,745 - INFO - [DELIVERED] 111/162 - Sent to lead_x_dev_builder_play_15@example.com
+2026-02-03 09:44:02,861 - INFO - [DELIVERED] 112/162 - Sent to lead_x_dev_builder_play_16@example.com
+2026-02-03 09:44:02,993 - INFO - [DELIVERED] 113/162 - Sent to lead_x_dev_builder_play_17@example.com
+2026-02-03 09:44:03,106 - INFO - [DELIVERED] 114/162 - Sent to lead_x_dev_builder_play_18@example.com
+2026-02-03 09:44:03,254 - INFO - [DELIVERED] 115/162 - Sent to lead_x_dev_builder_play_19@example.com
+2026-02-03 09:44:03,395 - INFO - [DELIVERED] 116/162 - Sent to lead_x_dev_builder_play_20@example.com
+2026-02-03 09:44:03,517 - INFO - [DELIVERED] 117/162 - Sent to lead_x_dev_builder_play_21@example.com
+2026-02-03 09:44:03,655 - INFO - [DELIVERED] 118/162 - Sent to lead_x_dev_builder_play_22@example.com
+2026-02-03 09:44:03,797 - INFO - [DELIVERED] 119/162 - Sent to lead_x_dev_builder_play_23@example.com
+2026-02-03 09:44:03,947 - INFO - [DELIVERED] 120/162 - Sent to lead_x_dev_builder_play_24@example.com
+2026-02-03 09:44:04,082 - INFO - [DELIVERED] 121/162 - Sent to lead_x_dev_builder_play_25@example.com
+2026-02-03 09:44:04,083 - INFO - --- PROGRESS REPORT: 128/162 ---
+2026-02-03 09:44:04,083 - INFO - Deliverability: 94.53% | Bounce Rate: 5.47%
+2026-02-03 09:44:04,205 - INFO - [DELIVERED] 122/162 - Sent to lead_x_dev_builder_play_26@example.com
+2026-02-03 09:44:04,338 - INFO - [DELIVERED] 123/162 - Sent to lead_x_dev_builder_play_27@example.com
+2026-02-03 09:44:04,450 - INFO - [DELIVERED] 124/162 - Sent to lead_x_dev_builder_play_28@example.com
+2026-02-03 09:44:04,569 - INFO - [DELIVERED] 125/162 - Sent to lead_x_dev_builder_play_29@example.com
+2026-02-03 09:44:04,715 - INFO - [DELIVERED] 126/162 - Sent to lead_x_dev_builder_play_30@example.com
+2026-02-03 09:44:04,855 - INFO - [DELIVERED] 127/162 - Sent to lead_x_dev_builder_play_31@example.com
+2026-02-03 09:44:04,993 - INFO - [DELIVERED] 128/162 - Sent to lead_x_dev_builder_play_32@example.com
+2026-02-03 09:44:05,126 - INFO - [DELIVERED] 129/162 - Sent to lead_x_dev_builder_play_33@example.com
+2026-02-03 09:44:05,274 - INFO - [DELIVERED] 130/162 - Sent to lead_x_dev_builder_play_34@example.com
+2026-02-03 09:44:05,413 - INFO - [DELIVERED] 131/162 - Sent to lead_x_dev_builder_play_35@example.com
+2026-02-03 09:44:05,533 - INFO - [DELIVERED] 132/162 - Sent to lead_x_dev_builder_play_36@example.com
+2026-02-03 09:44:05,670 - INFO - [DELIVERED] 133/162 - Sent to lead_x_dev_builder_play_37@example.com
+2026-02-03 09:44:05,787 - INFO - [DELIVERED] 134/162 - Sent to lead_x_dev_builder_play_38@example.com
+2026-02-03 09:44:05,919 - INFO - [DELIVERED] 135/162 - Sent to lead_x_dev_builder_play_39@example.com
+2026-02-03 09:44:06,058 - INFO - [DELIVERED] 136/162 - Sent to lead_x_dev_builder_play_40@example.com
+2026-02-03 09:44:06,188 - INFO - [DELIVERED] 137/162 - Sent to lead_x_dev_builder_play_41@example.com
+2026-02-03 09:44:06,190 - INFO - --- PROGRESS REPORT: 144/162 ---
+2026-02-03 09:44:06,190 - INFO - Deliverability: 95.14% | Bounce Rate: 4.86%
+2026-02-03 09:44:06,336 - INFO - [DELIVERED] 138/162 - Sent to lead_x_comparison_thread_architect_0@example.com
+2026-02-03 09:44:06,480 - INFO - [DELIVERED] 139/162 - Sent to lead_x_comparison_thread_architect_1@example.com
+2026-02-03 09:44:06,616 - INFO - [DELIVERED] 140/162 - Sent to lead_x_comparison_thread_architect_2@example.com
+2026-02-03 09:44:06,761 - INFO - [DELIVERED] 141/162 - Sent to lead_x_comparison_thread_architect_3@example.com
+2026-02-03 09:44:06,876 - INFO - [DELIVERED] 142/162 - Sent to lead_x_comparison_thread_architect_4@example.com
+2026-02-03 09:44:07,018 - INFO - [DELIVERED] 143/162 - Sent to lead_x_comparison_thread_architect_5@example.com
+2026-02-03 09:44:07,159 - INFO - [DELIVERED] 144/162 - Sent to lead_x_comparison_thread_architect_6@example.com
+2026-02-03 09:44:07,297 - INFO - [DELIVERED] 145/162 - Sent to lead_x_comparison_thread_architect_7@example.com
+2026-02-03 09:44:07,423 - INFO - [DELIVERED] 146/162 - Sent to lead_x_comparison_thread_architect_8@example.com
+2026-02-03 09:44:07,555 - INFO - [DELIVERED] 147/162 - Sent to lead_x_comparison_thread_architect_9@example.com
+2026-02-03 09:44:07,692 - INFO - [DELIVERED] 148/162 - Sent to lead_x_comparison_thread_architect_10@example.com
+2026-02-03 09:44:07,835 - INFO - [DELIVERED] 149/162 - Sent to lead_x_comparison_thread_architect_11@example.com
+2026-02-03 09:44:07,985 - INFO - [DELIVERED] 150/162 - Sent to lead_x_comparison_thread_architect_12@example.com
+2026-02-03 09:44:08,128 - INFO - [DELIVERED] 151/162 - Sent to lead_x_comparison_thread_architect_13@example.com
+2026-02-03 09:44:08,254 - INFO - [DELIVERED] 152/162 - Sent to lead_x_comparison_thread_architect_14@example.com
+2026-02-03 09:44:08,369 - INFO - [DELIVERED] 153/162 - Sent to lead_x_comparison_thread_architect_15@example.com
+2026-02-03 09:44:08,370 - INFO - --- PROGRESS REPORT: 160/162 ---
+2026-02-03 09:44:08,370 - INFO - Deliverability: 95.62% | Bounce Rate: 4.38%
+2026-02-03 09:44:08,501 - INFO - [DELIVERED] 154/162 - Sent to lead_x_comparison_thread_architect_16@example.com
+2026-02-03 09:44:08,637 - INFO - [DELIVERED] 155/162 - Sent to lead_x_comparison_thread_architect_17@example.com
+2026-02-03 09:44:08,637 - INFO - --- PROGRESS REPORT: 162/162 ---
+2026-02-03 09:44:08,637 - INFO - Deliverability: 95.68% | Bounce Rate: 4.32%
+2026-02-03 09:44:08,638 - INFO - MOCK: Dispatch complete.
+2026-02-03 09:44:08,639 - INFO - Final Stats: Delivered: 155, Bounced: 7, Total: 162
+2026-02-03 10:04:55,671 - INFO - All subscribers are already synced. Use --force to sync anyway.
+2026-02-03 10:04:55,810 - INFO - Starting dispatch of '"Issue #2: Automated Risk Reporting Frameworks"' to 155 subscribers.
+2026-02-03 10:04:55,811 - INFO - [DRY RUN] Would send newsletter to 155 subscribers via SendGrid.
+2026-02-03 10:05:03,074 - INFO - All subscribers are already synced. Use --force to sync anyway.
+2026-02-03 10:05:03,181 - INFO - Starting dispatch of 'Issue #2: Automated Risk Reporting Frameworks' to 155 subscribers.
+2026-02-03 10:05:03,182 - INFO - [DRY RUN] Would send newsletter to 155 subscribers via SendGrid.
