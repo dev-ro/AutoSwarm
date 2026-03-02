@@ -1,5 +1,8 @@
 import random
-from card import Card
+try:
+    from .card import Card
+except ImportError:
+    from card import Card
 
 
 class Deck:
@@ -125,16 +128,18 @@ class Deck:
         return major_arcana + minor_arcana
 
     def shuffle_deck(self, times=1111):
-        """Shuffle the deck a specified number of times."""
+        """Shuffle the deck using cryptographically strong random numbers."""
         self.shuffled_deck = [Card(name, number, True) for name, number in self.cards]
+        sr = random.SystemRandom()
         for _ in range(times):
-            random.shuffle(self.shuffled_deck)
+            sr.shuffle(self.shuffled_deck)
 
     def draw_card(self, upright_only=False):
         """Draw a card from the shuffled deck."""
         while self.shuffled_deck:
             card = self.shuffled_deck.pop(0)
-            card.is_upright = random.choice([True, False])
+            # Use SystemRandom for upright choice too
+            card.is_upright = random.SystemRandom().choice([True, False])
             if upright_only and not card.is_upright:
                 continue
             return card

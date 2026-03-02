@@ -1,0 +1,170 @@
+{
+  "readings": [
+    {
+      "id": "20260204025035",
+      "timestamp": "2026-02-04T02:50:35.971153",
+      "spread": "celtic_cross",
+      "persona": "main_character",
+      "cards": [
+        {
+          "name": "The Star",
+          "number": 17,
+          "orientation": "reversed",
+          "element": "Major",
+          "astrology": "Aquarius",
+          "kabbalah": "Tzaddi (Aquarius)",
+          "vibe_check": {
+            "keywords": "Feeling \"washed.\" Despair, lack of faith, or losing your \"spark\" to cynicism.",
+            "narrative": "You\u2019re feeling \"washed.\" You\u2019ve lost faith in the vision. The \"Star\" feels too far away to reach. You\u2019re letting cynicism win. Remember: the night is darkest just before the \"Sun\" comes up."
+          },
+          "position": "Present",
+          "cusp_relevant": false
+        },
+        {
+          "name": "4 of Pentacles",
+          "number": 4,
+          "orientation": "reversed",
+          "element": "Earth",
+          "astrology": "Sun in Capricorn",
+          "kabbalah": "None",
+          "vibe_check": {
+            "keywords": "Greed or \"Scarcity Mindset.\"",
+            "narrative": "Wealth without Peace. Realizing that financial success does not equate to personal fulfillment or family harmony. The hollow victory of the grind."
+          },
+          "position": "Challenge",
+          "cusp_relevant": true
+        },
+        {
+          "name": "The Chariot",
+          "number": 7,
+          "orientation": "upright",
+          "element": "Major",
+          "astrology": "Cancer",
+          "kabbalah": "Cheth (Cancer)",
+          "vibe_check": {
+            "keywords": "Tunnel vision. Staying in your lane and driving toward the goal with intense willpower. Victory.",
+            "narrative": "Tunnel vision activated. You have the reins of two different \"horses\"\u2014maybe your day job and your passion project\u2014and you\u2019re making them run in the same direction. Victory is the only option. Stay in your lane and drive."
+          },
+          "position": "Past",
+          "cusp_relevant": false
+        },
+        {
+          "name": "Queen of Wands",
+          "number": 13,
+          "orientation": "reversed",
+          "element": "Fire",
+          "astrology": "None",
+          "kabbalah": "None",
+          "vibe_check": {
+            "keywords": "Jealousy or \"Mean Girl\" energy.",
+            "narrative": "\"Mean Girl\" energy. Using your charisma to manipulate or \"gatekeep\" the scene. Jealousy is a bad look on you."
+          },
+          "position": "Future",
+          "cusp_relevant": false
+        },
+        {
+          "name": "Ace of Swords",
+          "number": 1,
+          "orientation": "reversed",
+          "element": "Air",
+          "astrology": "None",
+          "kabbalah": "None",
+          "vibe_check": {
+            "keywords": "Misinformation. Being \"loud and wrong.\"",
+            "narrative": "Information Toxicity. Clouded judgment due to misinformation or the \"loud and wrong\" influence of the collective feed."
+          },
+          "position": "Above",
+          "cusp_relevant": false
+        },
+        {
+          "name": "3 of Swords",
+          "number": 3,
+          "orientation": "reversed",
+          "element": "Air",
+          "astrology": "Saturn in Libra",
+          "kabbalah": "None",
+          "vibe_check": {
+            "keywords": "Releasing the \"pain-body.\" Healing.",
+            "narrative": "Releasing the Pain. The healing process after a digital fallout. Forgiving oneself and others for past conflicts and moving beyond the \"pain-body.\""
+          },
+          "position": "Below",
+          "cusp_relevant": false
+        },
+        {
+          "name": "Ace of Wands",
+          "number": 1,
+          "orientation": "reversed",
+          "element": "Fire",
+          "astrology": "None",
+          "kabbalah": "None",
+          "vibe_check": {
+            "keywords": "Spark is dead; creative block.",
+            "narrative": "Creative dormancy. The inability to find the \"why\" behind the work. The fire has gone out, requiring a period of rest or a change in environment."
+          },
+          "position": "Advice",
+          "cusp_relevant": false
+        },
+        {
+          "name": "6 of Swords",
+          "number": 6,
+          "orientation": "reversed",
+          "element": "Air",
+          "astrology": "Mercury in Aquarius",
+          "kabbalah": "None",
+          "vibe_check": {
+            "keywords": "Unfinished business. \"Emotional baggage\" in the cloud.",
+            "narrative": "The Phoenix Protocol. A recovery from absolute depletion. The realization that once the worst has happened, the only remaining direction is upward."
+          },
+          "position": "External Influences",
+          "cusp_relevant": false
+        },
+        {
+          "name": "10 of Swords",
+          "number": 10,
+          "orientation": "upright",
+          "element": "Air",
+          "astrology": "Sun in Gemini",
+          "kabbalah": "None",
+          "vibe_check": {
+            "keywords": "Hit rock bottom. The \"absolute end\" of a mental cycle.",
+            "narrative": "Total System Failure. Reaching rock bottom in a mental or digital cycle. The end of a painful narrative that has finally exhausted itself."
+          },
+          "position": "Hopes and Fears",
+          "cusp_relevant": false
+        },
+        {
+          "name": "2 of Cups",
+          "number": 2,
+          "orientation": "reversed",
+          "element": "Water",
+          "astrology": "Venus in Cancer",
+          "kabbalah": "None",
+          "vibe_check": {
+            "keywords": "\"Ghosting\" or a break-up.",
+            "narrative": "The Aesthetic Facade. Maintaining a \"perfect\" appearance on the social grid while feeling hollow and disconnected in reality. A crisis of authenticity."
+          },
+          "position": "Outcome",
+          "cusp_relevant": false
+        }
+      ],
+      "synthesis": {
+        "elemental_dignities": {
+          "strengthen": 16,
+          "weaken": 6,
+          "neutral": 6
+        },
+        "cusp_analysis": {
+          "target_signs": [
+            "Sagittarius",
+            "Capricorn"
+          ],
+          "relevant_cards_count": 1,
+          "found_signs": [
+            "Capricorn"
+          ],
+          "summary": "Focus on Capricorn qualities within your cusp placement."
+        }
+      }
+    }
+  ]
+}

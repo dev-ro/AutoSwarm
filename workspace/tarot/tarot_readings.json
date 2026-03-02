@@ -1,0 +1,1439 @@
+{
+    "readings": [
+        {
+            "id": "20260204025248",
+            "timestamp": "2026-02-04T02:52:48.161290",
+            "spread": "celtic_cross",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "The Hermit",
+                    "number": 9,
+                    "orientation": "reversed",
+                    "element": "Major",
+                    "astrology": "Virgo",
+                    "kabbalah": "Yod (Virgo)",
+                    "vibe_check": {
+                        "keywords": "Loneliness masquerading as solitude. Being a \"shut-in\" or refusing to share your wisdom with the world.",
+                        "narrative": "You\u2019re isolating too hard. You\u2019re becoming a \"shut-in\" and losing touch with the world you\u2019re supposed to be helping. Loneliness is starting to look like \"enlightenment,\" but it\u2019s just a cage."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Star",
+                    "number": 17,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Aquarius",
+                    "kabbalah": "Tzaddi (Aquarius)",
+                    "vibe_check": {
+                        "keywords": "The \"Comeback.\" Authentic hope, renewal, and being a \"light\" in the community. Healing after the Tower.",
+                        "narrative": "The \"Comeback Era.\" You\u2019ve been through the Tower, and now you\u2019re the most authentic version of yourself. You\u2019re a beacon for others. Hope isn't just a feeling; it\u2019s your new strategy. The universe is backing you now."
+                    },
+                    "position": "Challenge",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Devil",
+                    "number": 15,
+                    "orientation": "reversed",
+                    "element": "Major",
+                    "astrology": "Capricorn",
+                    "kabbalah": "Ayin (Capricorn)",
+                    "vibe_check": {
+                        "keywords": "Breaking the contract. Quitting the toxic job, deleting the app, and reclaiming your agency.",
+                        "narrative": "Breaking the contract. The moment of detachment where one quits the toxic environment, deletes the dopamine-loop apps, and regains personal sovereignty."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Knight of Cups",
+                    "number": 12,
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "\"Love Bombing\" or being \"moody\" for the aesthetic.",
+                        "narrative": "\"Love Bombing.\" Or being \"moody\" as an aesthetic. You\u2019re in love with the \"idea\" of love, not the reality."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Lovers",
+                    "number": 6,
+                    "orientation": "reversed",
+                    "element": "Major",
+                    "astrology": "Gemini",
+                    "kabbalah": "Zain (Gemini)",
+                    "vibe_check": {
+                        "keywords": "Situationship hell. Disharmony in the DM\u2019s. Misalignment of values; choosing the \"wrong\" aesthetic.",
+                        "narrative": "Situationship vibes. You\u2019re trying to make a connection work when the frequencies are totally off. You\u2019re choosing based on \"clout\" rather than \"character.\" Time to check your values."
+                    },
+                    "position": "Above",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Ace of Wands",
+                    "number": 1,
+                    "orientation": "reversed",
+                    "element": "Fire",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Spark is dead; creative block.",
+                        "narrative": "Creative dormancy. The inability to find the \"why\" behind the work. The fire has gone out, requiring a period of rest or a change in environment."
+                    },
+                    "position": "Below",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "King of Wands",
+                    "number": 14,
+                    "orientation": "upright",
+                    "element": "Fire",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "The Visionary CEO. Leading with fire and inspiration.",
+                        "narrative": "The Visionary. You lead with \"Fire\" and people follow because you actually have a \"Why.\" Strategic and inspiring."
+                    },
+                    "position": "Advice",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "4 of Pentacles",
+                    "number": 4,
+                    "orientation": "reversed",
+                    "element": "Earth",
+                    "astrology": "Sun in Capricorn",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Greed or \"Scarcity Mindset.\"",
+                        "narrative": "Wealth without Peace. Realizing that financial success does not equate to personal fulfillment or family harmony. The hollow victory of the grind."
+                    },
+                    "position": "External Influences",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "5 of Pentacles",
+                    "number": 5,
+                    "orientation": "reversed",
+                    "element": "Earth",
+                    "astrology": "Mercury in Taurus",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Recovery. Finding a \"workaround.\"",
+                        "narrative": "Wealth without Peace. Realizing that financial success does not equate to personal fulfillment or family harmony. The hollow victory of the grind."
+                    },
+                    "position": "Hopes and Fears",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "2 of Pentacles",
+                    "number": 2,
+                    "orientation": "upright",
+                    "element": "Earth",
+                    "astrology": "Jupiter in Capricorn",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "The \"Hustle\" balance. Managing two jobs/vibrations.",
+                        "narrative": "Generational Security. Achieving passive income and long-term stability. The ultimate goal of the 2026 financial journey: wealth that provides freedom."
+                    },
+                    "position": "Outcome",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 7,
+                    "weaken": 2,
+                    "neutral": 6
+                }
+            }
+        },
+        {
+            "id": "20260204025556580745",
+            "timestamp": "2026-02-04T02:55:56.580745",
+            "spread": "celtic_cross",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "5 of Cups",
+                    "number": 5,
+                    "orientation": "upright",
+                    "element": "Water",
+                    "astrology": "Mars in Scorpio",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Crying on TikTok. Mourning a loss or a \"failed\" aesthetic.",
+                        "narrative": "The Public Grief. Mourning the \"could-haves\" and the failed plans. A fixation on the losses of the past that prevents one from seeing the opportunities still present."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Judgement",
+                    "number": 20,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Pluto",
+                    "kabbalah": "Shin (Fire)",
+                    "vibe_check": {
+                        "keywords": "Finding your \"true niche.\" A calling that transcends the ego. Rebirth and total clarity.",
+                        "narrative": "You\u2019ve found your \"True Niche.\" This isn't just about a job; it\u2019s a calling. You\u2019re being \"called up\" to a higher level of existence. You\u2019ve learned from the past and you\u2019re ready for the \"rebrand\" of a lifetime."
+                    },
+                    "position": "Challenge",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Ace of Swords",
+                    "number": 1,
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Misinformation. Being \"loud and wrong.\"",
+                        "narrative": "Information Toxicity. Clouded judgment due to misinformation or the \"loud and wrong\" influence of the collective feed."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "4 of Wands",
+                    "number": 4,
+                    "orientation": "upright",
+                    "element": "Fire",
+                    "astrology": "Venus in Aries",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Reaching a milestone. \"Community\" vibes. Celebrating the win.",
+                        "narrative": "The Solo-Founder's Burden. The weight of \"doing it all\" in the gig economy. Influencer burnout and the exhaustion of maintaining every aspect of a personal brand."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Queen of Swords",
+                    "number": 13,
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Bitterness. Using words as \"weapons.\"",
+                        "narrative": "\"Bitterness.\" Using your \"logic\" to hurt people. \"Cold\" and \"unforgiving\" energy."
+                    },
+                    "position": "Above",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Ace of Pentacles",
+                    "number": 1,
+                    "orientation": "reversed",
+                    "element": "Earth",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "A \"missed\" opportunity or bad crypto play.",
+                        "narrative": "Missed Opportunity. A failure to capitalize on an asset or a poor investment choice in a volatile market."
+                    },
+                    "position": "Below",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "King of Wands",
+                    "number": 14,
+                    "orientation": "reversed",
+                    "element": "Fire",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Overbearing boss. Controlling the narrative too hard.",
+                        "narrative": "The Tyrant. Overbearing and \"loud.\" You\u2019re trying to force your vision on people who didn't ask for it.\n\n---"
+                    },
+                    "position": "Advice",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "5 of Swords",
+                    "number": 5,
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "Venus in Aquarius",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Winning the argument but losing the \"vibe.\" Empty victory.",
+                        "narrative": "Total System Failure. Reaching rock bottom in a mental or digital cycle. The end of a painful narrative that has finally exhausted itself."
+                    },
+                    "position": "External Influences",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The World",
+                    "number": 21,
+                    "orientation": "reversed",
+                    "element": "Major",
+                    "astrology": "Saturn",
+                    "kabbalah": "Tau (Saturn)",
+                    "vibe_check": {
+                        "keywords": "Seeking closure. Unable to level up because of one tiny unfinished task. The loop won't close.",
+                        "narrative": "The Infinite Loop. Feeling stuck in a repetitive cycle; the inability to level up because of a single, unresolved task or a fear of the finality of success."
+                    },
+                    "position": "Hopes and Fears",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Tower",
+                    "number": 16,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Mars",
+                    "kabbalah": "Peh (Mars)",
+                    "vibe_check": {
+                        "keywords": "Platform crash. A sudden realization that your \"perfect life\" was a facade. Necessary chaos.",
+                        "narrative": "Systemic Collapse. A sudden realization that the \"perfect life\" or \"perfect career\" was built on a fragile facade. The necessary chaos that precedes a total infrastructure rebuild."
+                    },
+                    "position": "Outcome",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 11,
+                    "weaken": 5,
+                    "neutral": 5
+                }
+            }
+        },
+        {
+            "id": "20260204030744039037",
+            "timestamp": "2026-02-04T03:07:44.039037",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "The Emperor",
+                    "number": 4,
+                    "orientation": "reversed",
+                    "element": "Major",
+                    "astrology": "Aries",
+                    "kabbalah": "Heh (Aries)",
+                    "vibe_check": {
+                        "keywords": "Toxic boss energy. Rigidity, tyranny, or a total lack of discipline. Building on a shaky foundation.",
+                        "narrative": "You\u2019re giving \"Toxic Manager\" energy. You\u2019re being too rigid, too controlling, and honestly? It\u2019s making the vibe rancid. If you don't learn to lead with more than just an iron fist, your empire will see a mass exodus."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Queen of Swords",
+                    "number": 13,
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Bitterness. Using words as \"weapons.\"",
+                        "narrative": "\"Bitterness.\" Using your \"logic\" to hurt people. \"Cold\" and \"unforgiving\" energy."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "4 of Cups",
+                    "number": 4,
+                    "orientation": "upright",
+                    "element": "Water",
+                    "astrology": "Moon in Cancer",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Boredom. \"Doom-scrolling\" past opportunities. Apathy.",
+                        "narrative": "Found Family. The achievement of a \"soft life\" where emotional needs are met by a supportive community. Harmony in the digital and physical spheres."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 0,
+                    "weaken": 0,
+                    "neutral": 1
+                }
+            }
+        },
+        {
+            "id": "20260204030803138123",
+            "timestamp": "2026-02-04T03:08:03.138123",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "Temperance",
+                    "number": 14,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Sagittarius",
+                    "kabbalah": "Samekh (Sagittarius)",
+                    "vibe_check": {
+                        "keywords": "Digital-life balance. Integrating the \"IRL\" and the \"URL.\" Moderation and flow.",
+                        "narrative": "You\u2019re the \"Master of Flow.\" You\u2019ve found the balance between the hustle and the rest. You\u2019re mixing different parts of your life (art, tech, soul) into a perfect cocktail. You are \"centered\" in a chaotic world."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Fool",
+                    "number": 0,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Uranus",
+                    "kabbalah": "Aleph (Air)",
+                    "vibe_check": {
+                        "keywords": "\"Sending it.\" New venture with zero followers but 100% vibes. Pure potential, radical trust in the universe.",
+                        "narrative": "The \"Digital Nomad\" protocol. You are launching a venture with zero followers but absolute conviction. It is the archetype of the \"blind jump\" into the unknown\u2014entering a market or a relationship before the data has been fully analyzed."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The High Priestess",
+                    "number": 2,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Moon",
+                    "kabbalah": "Gimel (Moon)",
+                    "vibe_check": {
+                        "keywords": "Trusting the gut over the algorithm. Deep intuition, \"downloads\" from Spirit. Knowing what\u2019s behind the paywall.",
+                        "narrative": "The Inner Algorithm. Trusting intuitive downloads and subconscious patterns over the data provided by the \"Feed.\" It represents the sacred silence required to hear the truth in a world of constant noise."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 0,
+                    "weaken": 0,
+                    "neutral": 0
+                }
+            }
+        },
+        {
+            "id": "20260204030823935953",
+            "timestamp": "2026-02-04T03:08:23.935953",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "8 of Swords",
+                    "number": 8,
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "Jupiter in Gemini",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Taking the blindfold off. Breaking the \"loop.\"",
+                        "narrative": "The Great Unblocking. Taking the blindfold off. Breaking through \"analysis paralysis\" and regaining the ability to execute on one's intentions."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "3 of Pentacles",
+                    "number": 3,
+                    "orientation": "reversed",
+                    "element": "Earth",
+                    "astrology": "Mars in Capricorn",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Working with \"energy vampires.\"",
+                        "narrative": "Friction in the Machine. Working with \"energy vampires\" or collaborators who do not contribute their fair share. Misalignment in the production process."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "6 of Wands",
+                    "number": 6,
+                    "orientation": "upright",
+                    "element": "Fire",
+                    "astrology": "Jupiter in Leo",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Viral success. Public recognition. Getting your flowers.",
+                        "narrative": "The Solo-Founder's Burden. The weight of \"doing it all\" in the gig economy. Influencer burnout and the exhaustion of maintaining every aspect of a personal brand."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 1,
+                    "weaken": 1,
+                    "neutral": 1
+                }
+            }
+        },
+        {
+            "id": "20260204031210567520",
+            "timestamp": "2026-02-04T03:12:10.567520",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "Ace of Swords",
+                    "number": 1,
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "\"Real Talk\" moment. Cutting through the BS with a sharp insight.",
+                        "narrative": "Intellectual Breakthrough. Cutting through the \"noise\" of the network to find the \"signal.\" A moment of absolute clarity and brutal honesty."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Page of Cups",
+                    "number": 11,
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Emotional immaturity. \"Cringey\" oversharing.",
+                        "narrative": "\"Cringey\" Oversharing. Emotional immaturity. You\u2019re \"feeling\" too loud and it\u2019s making the vibe \"awkward.\""
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "3 of Wands",
+                    "number": 3,
+                    "orientation": "reversed",
+                    "element": "Fire",
+                    "astrology": "Sun in Aries",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Waiting for permission that\u2019s never coming.",
+                        "narrative": "Stalled Momentum. Your \"vessel\" is stuck in the port, waiting for permissions or validations that may never arrive. A failure to launch due to external dependencies."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 1,
+                    "weaken": 1,
+                    "neutral": 1
+                }
+            }
+        },
+        {
+            "id": "20260204031212382730",
+            "timestamp": "2026-02-04T03:12:12.382730",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "6 of Swords",
+                    "number": 6,
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "Mercury in Aquarius",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Unfinished business. \"Emotional baggage\" in the cloud.",
+                        "narrative": "The Phoenix Protocol. A recovery from absolute depletion. The realization that once the worst has happened, the only remaining direction is upward."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Ace of Wands",
+                    "number": 1,
+                    "orientation": "upright",
+                    "element": "Fire",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "The \"Lightbulb\" moment for a new project.",
+                        "narrative": "The \"Lightbulb\" moment. A sudden surge of inspiration for a new project or venture. The initial spark that powers the 2026 creative engine."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Chariot",
+                    "number": 7,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Cancer",
+                    "kabbalah": "Cheth (Cancer)",
+                    "vibe_check": {
+                        "keywords": "Tunnel vision. Staying in your lane and driving toward the goal with intense willpower. Victory.",
+                        "narrative": "Tunnel vision activated. You have the reins of two different \"horses\"\u2014maybe your day job and your passion project\u2014and you\u2019re making them run in the same direction. Victory is the only option. Stay in your lane and drive."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 1,
+                    "weaken": 0,
+                    "neutral": 0
+                }
+            }
+        },
+        {
+            "id": "20260204031214372345",
+            "timestamp": "2026-02-04T03:12:14.372345",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "The Hanged Man",
+                    "number": 12,
+                    "orientation": "reversed",
+                    "element": "Major",
+                    "astrology": "Neptune",
+                    "kabbalah": "Mem (Water)",
+                    "vibe_check": {
+                        "keywords": "Stalling just to stall. Procrastination masquerading as \"waiting for a sign.\" Indecision.",
+                        "narrative": "You\u2019re stalling. You\u2019re \"waiting for a sign\" as an excuse to not do the work. You\u2019re stuck in a cycle of indecision because you\u2019re scared to make a move that isn't \"perfect.\" Just move."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Hermit",
+                    "number": 9,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Virgo",
+                    "kabbalah": "Yod (Virgo)",
+                    "vibe_check": {
+                        "keywords": "\"Monk Mode.\" Digital detox for the sake of soul-searching. Finding truth in the silence away from the feed.",
+                        "narrative": "\"Monk Mode\" is the current aesthetic. You\u2019re stepping back from the noise to find the signal. This isn't about being lonely; it\u2019s about being \"exclusive\" with your own soul. The truth is found in the \"Do Not Disturb\" hours."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "6 of Swords",
+                    "number": 6,
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "Mercury in Aquarius",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Unfinished business. \"Emotional baggage\" in the cloud.",
+                        "narrative": "The Phoenix Protocol. A recovery from absolute depletion. The realization that once the worst has happened, the only remaining direction is upward."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 0,
+                    "weaken": 0,
+                    "neutral": 0
+                }
+            }
+        },
+        {
+            "id": "20260204031258831328",
+            "timestamp": "2026-02-04T03:12:58.831328",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "4 of Cups",
+                    "number": 4,
+                    "orientation": "upright",
+                    "element": "Water",
+                    "astrology": "Moon in Cancer",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Boredom. \"Doom-scrolling\" past opportunities. Apathy.",
+                        "narrative": "Found Family. The achievement of a \"soft life\" where emotional needs are met by a supportive community. Harmony in the digital and physical spheres."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "King of Cups",
+                    "number": 14,
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "\"Cold\" or manipulative leadership.",
+                        "narrative": "The \"Gaslighter.\" Or being \"cold\" because you\u2019re scared of your own \"feelings.\" Manipulative leadership."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Hanged Man",
+                    "number": 12,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Neptune",
+                    "kabbalah": "Mem (Water)",
+                    "vibe_check": {
+                        "keywords": "The \"Waiting Room.\" Surrendering to a new perspective. Pausing the hustle to see the truth.",
+                        "narrative": "You\u2019re in the \"Waiting Room\" of the universe. It\u2019s frustrating, but it\u2019s necessary. You\u2019re seeing the world from a completely different angle now. Use this pause to re-evaluate your \"why\" before the \"how\" resumes."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 1,
+                    "weaken": 0,
+                    "neutral": 0
+                }
+            }
+        },
+        {
+            "id": "20260204031300453009",
+            "timestamp": "2026-02-04T03:13:00.453009",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "4 of Cups",
+                    "number": 4,
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "Moon in Cancer",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "New awareness. Finally looking up from the phone.",
+                        "narrative": "The Aesthetic Facade. Maintaining a \"perfect\" appearance on the social grid while feeling hollow and disconnected in reality. A crisis of authenticity."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Page of Swords",
+                    "number": 11,
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "The \"Fact-Checker.\" Curiosity and mental agility.",
+                        "narrative": "\"The Fact-Checker.\" High-speed curiosity. You\u2019re \"sharpening\" your mind on new info. \"Real talk\" energy."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Devil",
+                    "number": 15,
+                    "orientation": "upright",
+                    "element": "Major",
+                    "astrology": "Capricorn",
+                    "kabbalah": "Ayin (Capricorn)",
+                    "vibe_check": {
+                        "keywords": "Toxic attachments. Being \"married to the grind\" or addicted to the \"doom-scroll.\" Golden handcuffs.",
+                        "narrative": "The Gilded Cage. Toxic attachments to the \"hustle\"\u2014being married to the grind or enslaved by a digital addiction. It is the realization that your \"success\" has become a form of servitude."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 0,
+                    "weaken": 0,
+                    "neutral": 1
+                }
+            }
+        },
+        {
+            "id": "20260204031302171610",
+            "timestamp": "2026-02-04T03:13:02.171610",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "Page of Pentacles",
+                    "number": 11,
+                    "orientation": "reversed",
+                    "element": "Earth",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Procrastination. \"All ideas, no execution.\"",
+                        "narrative": "\"Procrastination.\" Thinking about the \"bag\" but never actually \"applying\" for the job."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Ace of Swords",
+                    "number": 1,
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Misinformation. Being \"loud and wrong.\"",
+                        "narrative": "Information Toxicity. Clouded judgment due to misinformation or the \"loud and wrong\" influence of the collective feed."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Page of Cups",
+                    "number": 11,
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Emotional immaturity. \"Cringey\" oversharing.",
+                        "narrative": "\"Cringey\" Oversharing. Emotional immaturity. You\u2019re \"feeling\" too loud and it\u2019s making the vibe \"awkward.\""
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 1,
+                    "weaken": 1,
+                    "neutral": 1
+                }
+            }
+        },
+        {
+            "id": "20260204031327745409",
+            "timestamp": "2026-02-04T03:13:27.745409",
+            "spread": "past_present_future",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "5 of Swords",
+                    "number": 5,
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "Venus in Aquarius",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Reconciliation. Putting the \"swords\" down.",
+                        "narrative": "The Phoenix Protocol. A recovery from absolute depletion. The realization that once the worst has happened, the only remaining direction is upward."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Hanged Man",
+                    "number": 12,
+                    "orientation": "reversed",
+                    "element": "Major",
+                    "astrology": "Neptune",
+                    "kabbalah": "Mem (Water)",
+                    "vibe_check": {
+                        "keywords": "Stalling just to stall. Procrastination masquerading as \"waiting for a sign.\" Indecision.",
+                        "narrative": "You\u2019re stalling. You\u2019re \"waiting for a sign\" as an excuse to not do the work. You\u2019re stuck in a cycle of indecision because you\u2019re scared to make a move that isn't \"perfect.\" Just move."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "9 of Wands",
+                    "number": 9,
+                    "orientation": "upright",
+                    "element": "Fire",
+                    "astrology": "Moon in Sagittarius",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Resilience. The \"last push\" before the finish line. Protecting your energy.",
+                        "narrative": "The Solo-Founder's Burden. The weight of \"doing it all\" in the gig economy. Influencer burnout and the exhaustion of maintaining every aspect of a personal brand."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 1,
+                    "weaken": 0,
+                    "neutral": 0
+                }
+            }
+        },
+        {
+            "id": "20260204032702655087",
+            "timestamp": "2026-02-04T03:27:02.655087",
+            "spread": "celtic_cross",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "9 of Swords",
+                    "number": 9,
+                    "arcana": "Minor",
+                    "suit": "Swords",
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "Mars in Gemini",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Night-time anxiety. \"What if they hate it?\" Doom-scrolling at 3 AM.",
+                        "narrative": "Total System Failure. Reaching rock bottom in a mental or digital cycle. The end of a painful narrative that has finally exhausted itself.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Knight of Wands",
+                    "number": 12,
+                    "arcana": "Minor",
+                    "suit": "Wands",
+                    "orientation": "upright",
+                    "element": "Fire",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "\"Full Send.\" Passionate pursuit of the goal.",
+                        "narrative": "\"Full Send.\" You\u2019re chasing the goal with zero brakes. Passionate, impulsive, and high-energy.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Challenge",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "10 of Wands",
+                    "number": 10,
+                    "arcana": "Minor",
+                    "suit": "Wands",
+                    "orientation": "reversed",
+                    "element": "Fire",
+                    "astrology": "Saturn in Sagittarius",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Outsourcing. Finally letting go of the \"hustle culture\" lies.",
+                        "narrative": "Strategic Outsourcing. Letting go of the \"hustle culture\" myth. The realization that sustainability requires delegation and the shedding of non-essential tasks.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "4 of Cups",
+                    "number": 4,
+                    "arcana": "Minor",
+                    "suit": "Cups",
+                    "orientation": "upright",
+                    "element": "Water",
+                    "astrology": "Moon in Cancer",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Boredom. \"Doom-scrolling\" past opportunities. Apathy.",
+                        "narrative": "Found Family. The achievement of a \"soft life\" where emotional needs are met by a supportive community. Harmony in the digital and physical spheres.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Hierophant",
+                    "number": 5,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "upright",
+                    "element": "Earth",
+                    "astrology": "Taurus",
+                    "kabbalah": "Vau (Taurus)",
+                    "vibe_check": {
+                        "keywords": "The traditional path (University, 9-5, institutions). Finding wisdom in the \"tried and true.\" Mentorship.",
+                        "narrative": "You\u2019re finding value in the \"Classic\" ways. Maybe it\u2019s a mentor, a tradition, or a structure that actually works. You don't have to reinvent the wheel every day. Sometimes, the \"Standard Operating Procedure\" is the move.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Above",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "5 of Pentacles",
+                    "number": 5,
+                    "arcana": "Minor",
+                    "suit": "Pentacles",
+                    "orientation": "reversed",
+                    "element": "Earth",
+                    "astrology": "Mercury in Taurus",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Recovery. Finding a \"workaround.\"",
+                        "narrative": "Wealth without Peace. Realizing that financial success does not equate to personal fulfillment or family harmony. The hollow victory of the grind.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Below",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Queen of Wands",
+                    "number": 13,
+                    "arcana": "Minor",
+                    "suit": "Wands",
+                    "orientation": "upright",
+                    "element": "Fire",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "The \"It Girl\" of creativity. Confidence and social magnetism.",
+                        "narrative": "The \"It Girl\" CEO. Confident, magnetic, and social. You don't chase\u2014you attract. You are the \"vibe\" everyone wants.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Advice",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Ace of Swords",
+                    "number": 1,
+                    "arcana": "Minor",
+                    "suit": "Swords",
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "\"Real Talk\" moment. Cutting through the BS with a sharp insight.",
+                        "narrative": "Intellectual Breakthrough. Cutting through the \"noise\" of the network to find the \"signal.\" A moment of absolute clarity and brutal honesty.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "External Influences",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "3 of Cups",
+                    "number": 3,
+                    "arcana": "Minor",
+                    "suit": "Cups",
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "Mercury in Cancer",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Gossip and \"fake friends.\"",
+                        "narrative": "The Aesthetic Facade. Maintaining a \"perfect\" appearance on the social grid while feeling hollow and disconnected in reality. A crisis of authenticity.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Hopes and Fears",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "2 of Cups",
+                    "number": 2,
+                    "arcana": "Minor",
+                    "suit": "Cups",
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "Venus in Cancer",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "\"Ghosting\" or a break-up.",
+                        "narrative": "The Aesthetic Facade. Maintaining a \"perfect\" appearance on the social grid while feeling hollow and disconnected in reality. A crisis of authenticity.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Outcome",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 20,
+                    "weaken": 13,
+                    "neutral": 12
+                }
+            }
+        },
+        {
+            "id": "20260204032712876384",
+            "timestamp": "2026-02-04T03:27:12.876384",
+            "spread": "celtic_cross",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "The Hanged Man",
+                    "number": 12,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "upright",
+                    "element": "Water",
+                    "astrology": "Neptune",
+                    "kabbalah": "Mem (Water)",
+                    "vibe_check": {
+                        "keywords": "The \"Waiting Room.\" Surrendering to a new perspective. Pausing the hustle to see the truth.",
+                        "narrative": "You\u2019re in the \"Waiting Room\" of the universe. It\u2019s frustrating, but it\u2019s necessary. You\u2019re seeing the world from a completely different angle now. Use this pause to re-evaluate your \"why\" before the \"how\" resumes.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Knight of Cups",
+                    "number": 12,
+                    "arcana": "Minor",
+                    "suit": "Cups",
+                    "orientation": "upright",
+                    "element": "Water",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "The \"Romantic.\" Chasing the dream/vibe with heart.",
+                        "narrative": "The \"Romantic.\" Chasing a \"Dream\" or a \"Vibe\" with your whole heart. Charming and artistic.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Challenge",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Star",
+                    "number": 17,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "Aquarius",
+                    "kabbalah": "Tzaddi (Aquarius)",
+                    "vibe_check": {
+                        "keywords": "Feeling \"washed.\" Despair, lack of faith, or losing your \"spark\" to cynicism.",
+                        "narrative": "You\u2019re feeling \"washed.\" You\u2019ve lost faith in the vision. The \"Star\" feels too far away to reach. You\u2019re letting cynicism win. Remember: the night is darkest just before the \"Sun\" comes up.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Knight of Swords",
+                    "number": 12,
+                    "arcana": "Minor",
+                    "suit": "Swords",
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Chasing the \"Truth.\" Fast-paced logic.",
+                        "narrative": "\"The Debater.\" Chasing the \"Truth\" at 100mph. Bold, logical, and \"direct.\" Cutting through the BS.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Fool",
+                    "number": 0,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "Uranus",
+                    "kabbalah": "Aleph (Air)",
+                    "vibe_check": {
+                        "keywords": "\"Sending it.\" New venture with zero followers but 100% vibes. Pure potential, radical trust in the universe.",
+                        "narrative": "The \"Digital Nomad\" protocol. You are launching a venture with zero followers but absolute conviction. It is the archetype of the \"blind jump\" into the unknown\u2014entering a market or a relationship before the data has been fully analyzed.",
+                        "traditional": "New beginnings, optimism, trust in life, innocence, carefree, spontaneity."
+                    },
+                    "position": "Above",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Ace of Swords",
+                    "number": 1,
+                    "arcana": "Minor",
+                    "suit": "Swords",
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Misinformation. Being \"loud and wrong.\"",
+                        "narrative": "Information Toxicity. Clouded judgment due to misinformation or the \"loud and wrong\" influence of the collective feed.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Below",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Empress",
+                    "number": 3,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "upright",
+                    "element": "Earth",
+                    "astrology": "Venus",
+                    "kabbalah": "Daleth (Venus)",
+                    "vibe_check": {
+                        "keywords": "\"Soft life\" goals. Creative abundance, nurturing a community, peak aesthetic, and physical wellness.",
+                        "narrative": "The \"Soft Life\" is no longer a dream; it\u2019s your current reality. You are birthing projects, communities, and vibes that are actually sustainable. Everything you touch turns to aesthetic gold. You\u2019re in your \"Gardening and Growth\" era.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Advice",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "King of Cups",
+                    "number": 14,
+                    "arcana": "Minor",
+                    "suit": "Cups",
+                    "orientation": "upright",
+                    "element": "Water",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Emotional Stability. The \"Calm in the Storm.\"",
+                        "narrative": "The \"Calm in the Storm.\" You have total control over your \"Vibe.\" You lead with emotional intelligence.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "External Influences",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Strength",
+                    "number": 8,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "upright",
+                    "element": "Fire",
+                    "astrology": "Leo",
+                    "kabbalah": "Teth (Leo)",
+                    "vibe_check": {
+                        "keywords": "Taming the inner \"beast.\" Emotional intelligence, quiet confidence, and dealing with anxiety through grace.",
+                        "narrative": "You\u2019re taming your inner demons with a soft touch. No need to scream; your presence is enough. You\u2019re handling \"hard\" situations with high emotional intelligence. You\u2019re stronger than you think, but it\u2019s a \"quiet\" power.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Hopes and Fears",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "8 of Swords",
+                    "number": 8,
+                    "arcana": "Minor",
+                    "suit": "Swords",
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "Jupiter in Gemini",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Taking the blindfold off. Breaking the \"loop.\"",
+                        "narrative": "The Great Unblocking. Taking the blindfold off. Breaking through \"analysis paralysis\" and regaining the ability to execute on one's intentions.",
+                        "traditional": "Traditional meaning not available."
+                    },
+                    "position": "Outcome",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 21,
+                    "weaken": 8,
+                    "neutral": 16
+                }
+            }
+        },
+        {
+            "id": "20260204032723393061",
+            "timestamp": "2026-02-04T03:27:23.393061",
+            "spread": "celtic_cross",
+            "persona": "main_character",
+            "cards": [
+                {
+                    "name": "The High Priestess",
+                    "number": 2,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "upright",
+                    "element": "Water",
+                    "astrology": "Moon",
+                    "kabbalah": "Gimel (Moon)",
+                    "vibe_check": {
+                        "keywords": "Trusting the gut over the algorithm. Deep intuition, \"downloads\" from Spirit. Knowing what\u2019s behind the paywall.",
+                        "narrative": "The Inner Algorithm. Trusting intuitive downloads and subconscious patterns over the data provided by the \"Feed.\" It represents the sacred silence required to hear the truth in a world of constant noise.",
+                        "traditional": "Intuition, sacred knowledge, divine feminine, the subconscious mind."
+                    },
+                    "position": "Present",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "5 of Cups",
+                    "number": 5,
+                    "arcana": "Minor",
+                    "suit": "Cups",
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "Mars in Scorpio",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Moving on. The \"it is what it is\" stage.",
+                        "narrative": "Acceptance. Transitioning into the \"it is what it is\" stage of healing. Moving beyond regret and reclaiming the capacity for future joy.",
+                        "traditional": "Moving on, acceptance, forgiveness."
+                    },
+                    "position": "Challenge",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Queen of Cups",
+                    "number": 13,
+                    "arcana": "Minor",
+                    "suit": "Cups",
+                    "orientation": "reversed",
+                    "element": "Water",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Emotional manipulation or being \"drained.\"",
+                        "narrative": "\"Drained.\" Taking on everyone else\u2019s \"trauma\" and forgetting to protect your own \"peace.\" Emotional burnout.",
+                        "traditional": "Emotional insecurity, co-dependency, dishonesty, bitterness."
+                    },
+                    "position": "Past",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "8 of Swords",
+                    "number": 8,
+                    "arcana": "Minor",
+                    "suit": "Swords",
+                    "orientation": "reversed",
+                    "element": "Air",
+                    "astrology": "Jupiter in Gemini",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Taking the blindfold off. Breaking the \"loop.\"",
+                        "narrative": "The blindfold is finally off. You've closed the irrelevant tabs and muted the noise. You're regaining your cognitive sovereignty and realizing the 'trap' was just a lack of focus. It's time to execute.",
+                        "traditional": "Self-acceptance, new perspective, freedom, release."
+                    },
+                    "position": "Future",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "7 of Pentacles",
+                    "number": 7,
+                    "arcana": "Minor",
+                    "suit": "Pentacles",
+                    "orientation": "reversed",
+                    "element": "Earth",
+                    "astrology": "Saturn in Taurus",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Impatience. Quitting right before the \"harvest.\"",
+                        "narrative": "Impatience is your biggest enemy right now. You're ready to quit a project just because it didn't go viral in the first 48 hours. Real wealth isn't built on a single post.",
+                        "traditional": "Lack of long-term vision, limited success, reward."
+                    },
+                    "position": "Above",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Empress",
+                    "number": 3,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "reversed",
+                    "element": "Earth",
+                    "astrology": "Venus",
+                    "kabbalah": "Daleth (Venus)",
+                    "vibe_check": {
+                        "keywords": "Creative block. Over-dependence on external validation (likes). Smothering your projects or neglect.",
+                        "narrative": "You\u2019re trying to force the growth. Maybe you\u2019re over-invested in how things look rather than how they feel. Creative burnout is hitting because you\u2019ve forgotten to nurture yourself while you nurture the \"brand.\"",
+                        "traditional": "Creative block, dependence on others."
+                    },
+                    "position": "Below",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "The Star",
+                    "number": 17,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "Aquarius",
+                    "kabbalah": "Tzaddi (Aquarius)",
+                    "vibe_check": {
+                        "keywords": "The \"Comeback.\" Authentic hope, renewal, and being a \"light\" in the community. Healing after the Tower.",
+                        "narrative": "The \"Comeback Era.\" You\u2019ve been through the Tower, and now you\u2019re the most authentic version of yourself. You\u2019re a beacon for others. Hope isn't just a feeling; it\u2019s your new strategy. The universe is backing you now.",
+                        "traditional": "Hope, faith, purpose, renewal, spirituality."
+                    },
+                    "position": "Advice",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Queen of Swords",
+                    "number": 13,
+                    "arcana": "Minor",
+                    "suit": "Swords",
+                    "orientation": "upright",
+                    "element": "Air",
+                    "astrology": "None",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Unfiltered Truth. Sharp, independent, and clear.",
+                        "narrative": "You're in your 'Logic First' era. You're cutting through the marketing fluff and the toxic positivity of the 'feed' to see exactly what's going on. Your boundaries are razor-sharp, and your signal is pure.",
+                        "traditional": "Independent, unbiased judgement, clear boundaries, direct communication."
+                    },
+                    "position": "External Influences",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "4 of Wands",
+                    "number": 4,
+                    "arcana": "Minor",
+                    "suit": "Wands",
+                    "orientation": "reversed",
+                    "element": "Fire",
+                    "astrology": "Venus in Aries",
+                    "kabbalah": "None",
+                    "vibe_check": {
+                        "keywords": "Tension at home/in the \"inner circle.\"",
+                        "narrative": "The 'vibe' at home or in your inner circle is rancid. You're trying to celebrate a win, but the people around you are bringing 'hater' energy. Time to check who's actually on your team.",
+                        "traditional": "Lack of support, transience, home-conflict."
+                    },
+                    "position": "Hopes and Fears",
+                    "cusp_relevant": false
+                },
+                {
+                    "name": "Wheel of Fortune",
+                    "number": 10,
+                    "arcana": "Major",
+                    "suit": "None",
+                    "orientation": "reversed",
+                    "element": "Fire",
+                    "astrology": "Jupiter",
+                    "kabbalah": "Kaph (Jupiter)",
+                    "vibe_check": {
+                        "keywords": "Resistance to change. Fighting \"cancel culture\" or a \"rebrand\" that the universe is forcing on you. Bad timing.",
+                        "narrative": "Resisting the pivot. Fighting against an inevitable decline or trying to maintain an outdated \"brand\" when the cycle has moved on. The struggle against the \"cancel culture\" or obsolescence.",
+                        "traditional": "Bad luck, resistance to change, breaking cycles."
+                    },
+                    "position": "Outcome",
+                    "cusp_relevant": false
+                }
+            ],
+            "synthesis": {
+                "elemental_dignities": {
+                    "strengthen": 20,
+                    "weaken": 12,
+                    "neutral": 13
+                }
+            }
+        }
+    ]
+}

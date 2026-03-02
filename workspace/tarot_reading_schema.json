@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TarotReadingKnowledgeBase",
+  "type": "object",
+  "properties": {
+    "readings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the reading, typically a timestamp."
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The date and time when the reading was performed."
+          },
+          "spread": {
+            "type": "string",
+            "description": "The name of the spread used (e.g., 'celtic_cross')."
+          },
+          "persona": {
+            "type": "string",
+            "description": "The interpretation persona used (e.g., 'main_character')."
+          },
+          "cards": {
+            "type": "array",
+            "items": {
+"name": {
+                  "type": "string",
+                  "description": "The name of the card (e.g., 'The Moon')."
+                },
+                "number": {
+                  "type": "integer",
+                  "description": "The card number."
+                },
+                "arcana": {
+                  "type": "string",
+                  "enum": ["Major", "Minor"],
+                  "description": "The arcana type (Major or Minor)."
+                },
+                "suit": {
+                  "type": "string",
+                  "description": "The suit of the card (Wands, Cups, Swords, Pentacles, or None)."
+                },
+                "orientation": {
+                  "type": "string",
+                  "enum": [
+                    "upright",
+                    "reversed"
+                  ],
+                  "description": "The orientation of the card."
+                },
+                "element": {
+                  "type": "string",
+                  "description": "The elemental association of the card."
+                },
+                "astrology": {
+                  "type": "string",
+                  "description": "The astrological correspondence."
+                },
+                "kabbalah": {
+                  "type": "string",
+                  "description": "The Kabbalistic correspondence."
+                },
+                "vibe_check": {
+                  "type": "object",
+                  "properties": {
+                    "keywords": {
+                      "type": "string"
+                    },
+                    "narrative": {
+                      "type": "string"
+                    },
+                    "traditional": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "keywords",
+                    "narrative",
+                    "traditional"
+                  ]
+                },
+                "cusp_relevant": {
+                  "type": "boolean",
+                  "description": "Whether the card is relevant to the target cusp signs."
+                }
+              },
+              "required": [
+                "position",
+                "name",
+                "number",
+                "arcana",
+                "suit",
+                "orientation",
+                "element",
+                "astrology",
+                "kabbalah",
+                "vibe_check"
+              ]
+                "cusp_relevant": {
+                  "type": "boolean",
+                  "description": "Whether the card is relevant to the target cusp signs."
+                }
+              },
+              "required": [
+                "position",
+                "name",
+                "orientation",
+                "element",
+                "astrology",
+                "kabbalah",
+                "vibe_check"
+              ]
+            }
+          },
+          "synthesis": {
+            "type": "object",
+            "properties": {
+              "elemental_dignities": {
+                "type": "object",
+                "properties": {
+                  "strengthen": {
+                    "type": "integer"
+                  },
+                  "weaken": {
+                    "type": "integer"
+                  },
+                  "neutral": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "strengthen",
+                  "weaken",
+                  "neutral"
+                ]
+              },
+              "cusp_analysis": {
+                "type": "object",
+                "properties": {
+                  "target_signs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "relevant_cards_count": {
+                    "type": "integer"
+                  },
+                  "found_signs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "summary": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "target_signs",
+                  "relevant_cards_count",
+                  "found_signs",
+                  "summary"
+                ]
+              }
+            },
+            "required": [
+              "elemental_dignities"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "timestamp",
+          "spread",
+          "persona",
+          "cards",
+          "synthesis"
+        ]
+      }
+    }
+  },
+  "required": [
+    "readings"
+  ]
+}

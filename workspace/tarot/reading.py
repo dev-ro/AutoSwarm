@@ -1,4 +1,7 @@
-from spread import Spread
+try:
+    from .spread import Spread
+except ImportError:
+    from spread import Spread
 
 
 class Reading:
@@ -676,11 +679,11 @@ class Reading:
             ),
         }
 
-    def perform_reading(self, spread_name, upright_only=False):
+    def perform_reading(self, spread_name, upright_only=False, target_signs=None):
         if spread_name in self.spreads:
             spread = self.spreads[spread_name]
             self.deck.shuffle_deck()  # Shuffle the deck before each spread
             spread.draw_cards(self.deck, upright_only=upright_only)
-            spread.display()
+            spread.display(target_signs=target_signs)
         else:
             print(f"Spread '{spread_name}' not found.")

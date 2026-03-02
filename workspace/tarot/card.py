@@ -92,32 +92,81 @@ class Card:
         "Judgement": "Shin (Fire)",
         "The World": "Tau (Saturn)",
     }
+    major_elements = {
+        "The Fool": "Air",
+        "The Magician": "Air",
+        "The High Priestess": "Water",
+        "The Empress": "Earth",
+        "The Emperor": "Fire",
+        "The Hierophant": "Earth",
+        "The Lovers": "Air",
+        "The Chariot": "Water",
+        "Strength": "Fire",
+        "The Hermit": "Earth",
+        "Wheel of Fortune": "Fire",
+        "Justice": "Air",
+        "The Hanged Man": "Water",
+        "Death": "Water",
+        "Temperance": "Fire",
+        "The Devil": "Earth",
+        "The Tower": "Fire",
+        "The Star": "Air",
+        "The Moon": "Water",
+        "The Sun": "Fire",
+        "Judgement": "Fire",
+        "The World": "Earth",
+    }
 
     def __init__(self, name, number, is_upright=True):
         self.name = name
         self.number = number
         self.is_upright = is_upright
+        self.arcana = self.get_arcana()
+        self.suit = self.get_suit()
         self.element = self.get_element()
         self.astrology = self.get_astrological_correspondence()
         self.kabbalah = self.get_kabbalistic_correspondence()
         self._load_database()
 
+    def get_arcana(self):
+        if any(suit in self.name for suit in ["Wands", "Cups", "Swords", "Pentacles"]):
+            return "Minor"
+        return "Major"
+
+    def get_suit(self):
+        for suit in ["Wands", "Cups", "Swords", "Pentacles"]:
+            if suit in self.name:
+                return suit
+        return "None"
+
     def _load_database(self):
         if Card._database is None:
-            paths = [
-                Path("tarot/tarot_database.json"),
-                Path("tarot_database.json"),
-                Path("../tarot/tarot_database.json"),
-                Path("workspace/tarot/tarot_database.json")
-            ]
-            for path in paths:
-                if path.exists():
-                    try:
-                        with open(path, 'r', encoding='utf-8') as f:
-                            Card._database = json.load(f)
-                        break
-                    except Exception:
-                        continue
+            # Use absolute path relative to this file
+            base_dir = Path(__file__).parent
+            db_path = base_dir / "tarot_database.json"
+            
+            if db_path.exists():
+                try:
+                    with open(db_path, 'r', encoding='utf-8') as f:
+                        Card._database = json.load(f)
+                except Exception as e:
+                    print(f"Error loading tarot database: {e}")
+                    Card._database = {}
+            else:
+                # Fallback to current working directory or other common locations
+                paths = [
+                    Path("tarot/tarot_database.json"),
+                    Path("tarot_database.json"),
+                ]
+                for path in paths:
+                    if path.exists():
+                        try:
+                            with open(path, 'r', encoding='utf-8') as f:
+                                Card._database = json.load(f)
+                            return
+                        except Exception:
+                            continue
+                Card._database = {}
     
     def _normalize(self, s):
         is_minor = any(suit in s for suit in ["Wands", "Cups", "Swords", "Pentacles"])
@@ -129,7 +178,7 @@ class Card:
 
     def get_vibe_check(self, persona="main_character"):
         if not Card._database:
-            return "Vibe check data not found."
+            return {"keywords": "Data not found", "narrative": "Data not found", "traditional": "Data not found"}
         
         norm_name = self._normalize(self.name)
         card_data = None
@@ -144,7 +193,11 @@ class Card:
                     break
         
         if not card_data:
-            return f"Modern narrative not available for {self.name} ({norm_name})."
+            return {
+                "keywords": "Narrative not available", 
+                "narrative": f"Modern narrative not available for {self.name}",
+                "traditional": "Traditional meaning not available."
+            }
         
         personas = card_data.get("personas", {})
         # Get selected persona or default to main_character
@@ -157,13 +210,28 @@ class Card:
         if self.is_upright:
             return {
                 "keywords": card_data.get("keywords", {}).get("upright", ""),
-                "narrative": selected_persona_data.get("upright", "")
+                "narrative": selected_persona_data.get("upright", ""),
+                "traditional": card_data.get("traditional", {}).get("upright", "Traditional meaning not available.")
             }
         else:
             return {
                 "keywords": card_data.get("keywords", {}).get("reversed", ""),
-                "narrative": selected_persona_data.get("reversed", "")
+                "narrative": selected_persona_data.get("reversed", ""),
+                "traditional": card_data.get("traditional", {}).get("reversed", "Traditional meaning not available.")
             }
+
+    def to_dict(self, persona="main_character"):
+        return {
+            "name": self.name,
+            "number": self.number,
+            "arcana": self.arcana,
+            "suit": self.suit,
+            "orientation": "upright" if self.is_upright else "reversed",
+            "element": self.element,
+            "astrology": self.astrology,
+            "kabbalah": self.kabbalah,
+            "vibe_check": self.get_vibe_check(persona)
+        }
 
     def get_element(self):
         if "Wands" in self.name:
@@ -175,7 +243,7 @@ class Card:
         elif "Pentacles" in self.name:
             return "Earth"
         else:
-            return "Major"
+            return Card.major_elements.get(self.name, "Major")
 
     def get_astrological_correspondence(self):
         return Card.astrological_correspondences.get(
@@ -185,6 +253,11 @@ class Card:
     def get_kabbalistic_correspondence(self):
         return Card.kabbalistic_correspondences.get(self.name, "None")
 
+    def matches_sign(self, sign):
+        if not self.astrology:
+            return False
+        return sign.lower() in self.astrology.lower()
+
     def __str__(self):
         status = " - upright" if self.is_upright else " - reversed"
-        return f"    {self.name + status:<30} Number: {self.number:<5} Element: {self.element:<10} Astrology: {self.astrology:<10}"
+        return f"    {self.name + status:<30} Arcana: {self.arcana:<10} Suit: {self.suit:<10} Number: {self.number:<5} Element: {self.element:<10} Astrology: {self.astrology:<10}"

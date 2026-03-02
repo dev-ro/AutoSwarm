@@ -2,7 +2,7 @@
 from typing import List
 import re
 from src.agents.schemas import Plan, Task, AgentType, PlanReview
-from src.agents.researcher import get_research_agent, verify_knowledge
+from src.agents.researcher import get_research_agent, verify_knowledge, save_to_knowledge_base
 from src.agents.social import get_social_agent
 from src.agents.finance import get_finance_agent
 from src.agents.coder import get_coder_agent
@@ -138,8 +138,32 @@ class Manager:
             # 4. Update Context Memory
             execution_context += f"\n\n[Step {current_step_index} Result by {task.assigned_agent.value}]:\n{result}"
             
+            # --- [NEW] Feedback Loop Check ---
+            # If the Editor requests revisions, strictly enforce a feedback loop
+            trigger_phrases = [
+                "Instructions for Revision", 
+                "CRITIQUE", 
+                "Specific Instructions for the Writer", 
+                "Instructions for the Writer"
+            ]
+            
+            if task.assigned_agent == AgentType.EDITOR and any(phrase.upper() in str(result).upper() for phrase in trigger_phrases):
+                 print("\n" + "+"*50)
+                 print(" [Feedback Loop] Editor requested revisions. Scheduling revision task...")
+                 print("+"*50)
+                 
+                 fix_task = Task(
+                     description=f"Implement Editor Feedback:\n{result}\n\nTask: Update reports/drafts based on the critique above.",
+                     assigned_agent=AgentType.WRITER,
+                     project_context=task.project_context or plan.project_default
+                 )
+                 # Insert immediately after current step
+                 plan.steps.insert(current_step_index, fix_task)
+                 print(f"  -> Added 'Writer' revision task. Plan Length: {len(plan.steps)}")
+            
             # 5. OODA Loop / Review Phase
-            if current_step_index < len(plan.steps):
+            # We allow the loop to run even on the last step (<=) to check if we missed anything or need to extend.
+            if current_step_index <= len(plan.steps):
                 print(f"  [Review] Analyzing result of Step {current_step_index}...")
                 
                 remaining_steps_desc = [t.description for t in plan.steps[current_step_index:]]
@@ -251,6 +275,12 @@ class Manager:
                         print("\n" + "!"*60)
                         print(" [WARNING] Memory Leak Detected: Agent found data but failed to save to KB.")
                         print(f"           Artifacts: {artifact_count} | KB Growth: 0")
+                        print(" [Self-Healing] Automatically saving result to Knowledge Base...")
+                        
+                        # Fallback save
+                        fallback_msg = f"Auto-saved by Manager from Task {task_id}.\n\n{result_content}"
+                        save_result = save_to_knowledge_base(fallback_msg, source="Manager/SelfHealing")
+                        print(f"           {save_result}")
                         print("!"*60 + "\n")
                     elif kb_delta > 0:
                         print(f"  [Memory] Knowledge Base grew by {kb_delta} documents.")

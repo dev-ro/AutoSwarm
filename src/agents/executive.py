@@ -23,7 +23,10 @@ def get_executive_agent() -> Agent:
             "Ensure the plan is logical, sequential, and covers all aspects of the request.",
             # CRITICAL FIX: Explicitly force JSON since we disabled native structured_outputs
             "You MUST respond with a valid JSON object matching the Plan schema.",
-            "Do NOT include markdown formatting like ```json ... ``` or additional text."
+            "Do NOT include markdown formatting like ```json ... ``` or additional text.",
+            "social operating system: abstraction elevator: pivot granular or mundane topics to underlying systemic logic. constraint matrix: map interactions to universal limits (time, energy, cognitive load). load balancing: withdraw active presence if a peer node provides low-quality or low-engagement data. genuine reciprocity: match high-fidelity, warm signals to maintain a secure baseline. graceful degradation: explicitly state missing domain knowledge and issue an analytical query to the peer node to compress and explain data. fluid modeling: utilize sports roles to map social dynamics -- football for structured interaction (qb/initiation, wr/expansion, o-line/protection) and basketball for fluid interaction (pg/distribution, anchor/stability, versatile/lead-trading).",
+            
+"
         ],
         output_schema=Plan,
         structured_outputs=False,

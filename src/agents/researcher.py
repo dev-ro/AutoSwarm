@@ -61,6 +61,9 @@ def verify_knowledge() -> int:
         print(f"[Knowledge Base] Verification Error: {e}")
         return 0
 
+from pathlib import Path
+from agno.tools.file import FileTools
+
 def get_research_agent(state_manager=None) -> Agent:
     """
     Returns the Research Agent with Read/Write memory access.
@@ -74,15 +77,17 @@ def get_research_agent(state_manager=None) -> Agent:
         instructions=[
             f"Context: Today is {current_date}. THE YEAR IS 2026. DO NOT SEARCH FOR 2025.",
             "1. CHECK MEMORY: Always search your Knowledge Base first.",
-            "2. SAVE FINDINGS: Every successful research step MUST end by calling save_to_knowledge_base with a summary of findings.",
-            "3. SYNTHESIZE: Combine web results with memory.",
-            "4. CITE: When using memory, mention 'Recalled from Knowledge Base'."
+            "2. LOCAL FILES: If the query is a file path (starts with ./ or has .md/.txt), use 'read_file' or 'list_files' instead of the browser.",
+            "3. SAVE FINDINGS: Every successful research step MUST end by calling save_to_knowledge_base with a summary of findings.",
+            "4. SYNTHESIZE: Combine web results with memory.",
+            "5. CITE: When using memory, mention 'Recalled from Knowledge Base'."
         ],
         tools=[
             BrowserTools(state_manager=state_manager), 
-            save_to_knowledge_base # <--- Give it the "Write" tool
+            FileTools(base_dir=Path("./workspace")), # <--- Enable local file reading
+            save_to_knowledge_base 
         ], 
         knowledge=knowledge_base,
-        search_knowledge=True, # Allow it to "Read"
+        search_knowledge=True, 
         markdown=True
     )
