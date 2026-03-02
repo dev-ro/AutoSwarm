@@ -5,17 +5,14 @@ from pathlib import Path
 # Use the explicitly appropriate Knowledge class for local file systems if available
 from agno.knowledge import Knowledge 
 from agno.vectordb.lancedb import LanceDb
-from agno.embedder.openai import OpenAIEmbedder
+from agno.knowledge.embedder.openai import OpenAIEmbedder
 from agno.vectordb.search import SearchType
 
-# Assuming Local/FileSystem Knowledge is utilized for the ingest loader
-try:
-    from agno.knowledge import FileSystemKnowledge as LocalWorkspaceKnowledge
-except ImportError:
-    # Fallback to standard Knowledge if Agno version dictates differently
-    LocalWorkspaceKnowledge = Knowledge
+# Use standard Knowledge class
+from agno.knowledge import Knowledge
 
-def get_knowledge_base() -> LocalWorkspaceKnowledge:
+
+def get_knowledge_base() -> Knowledge:
     """
     Returns the persistent Knowledge Base backed by LanceDB.
     """
@@ -45,10 +42,8 @@ def get_knowledge_base() -> LocalWorkspaceKnowledge:
     ] if workspace_dir.exists() else []
 
     # Initialize Knowledge Base targeting safe filepaths
-    knowledge_base = LocalWorkspaceKnowledge(
+    knowledge_base = Knowledge(
         vector_db=vector_db,
-        # Pass the vetted flat files to the reader (API varies by Agno release version)
-        # document_paths=valid_files, 
     )
     
     # Store the pre-filtered safe paths to the crawler/reader instance state if manual loading is required

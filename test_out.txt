@@ -1,0 +1,171 @@
+[*] Initializing Knowledge Base...
+[*] Starting ingestion of 20 documents...
+INFO Creating table: research_knowledge                                        
+[2026-03-02T15:36:15Z WARN  lance::dataset::write::insert] No existing dataset at C:\Users\kyle0\Desktop\code\AutoSwarm\data\knowledge_base\research_knowledge.lance, it will be created
+INFO Adding content from doc_0.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_1.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_2.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_3.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_4.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_5.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_6.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_7.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_8.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from doc_9.txt                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_0.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_1.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_2.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_3.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_4.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_5.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_6.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_7.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_8.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+INFO Adding content from note_9.md                                             
+INFO Selecting reader for extension: Text                                      
+WARNING  Error code: 429 - {'error': {'message': 'You exceeded your current    
+         quota, please check your plan and billing details. For more           
+         information on this error, read the docs:                             
+         https://platform.openai.com/docs/guides/error-codes/api-errors.',     
+         'type': 'insufficient_quota', 'param': None, 'code':                  
+         'insufficient_quota'}}                                                
+[*] Ingestion Complete:
+    - Time elapsed:  31.418 seconds
+    - Velocity:      0.64 docs/sec
+    - Vectors Stored:20
+
+[SUCCESS] Knowledge Base Velocity & Integrity Test Passed.
+[*] Cleaned up temporary directory: C:\Users\kyle0\AppData\Local\Temp\autoswarm_kb_test_u72nry6_

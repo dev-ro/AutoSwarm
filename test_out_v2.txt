@@ -1,0 +1,52 @@
+[*] Initializing Knowledge Base...
+[*] Starting ingestion of 20 documents...
+INFO Creating table: research_knowledge                                        
+[2026-03-02T16:11:17Z WARN  lance::dataset::write::insert] No existing dataset at C:\Users\kyle0\Desktop\code\AutoSwarm\data\knowledge_base\research_knowledge.lance, it will be created
+INFO Adding content from doc_0.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_1.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_2.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_3.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_4.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_5.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_6.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_7.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_8.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from doc_9.txt                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_0.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_1.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_2.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_3.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_4.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_5.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_6.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_7.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_8.md                                             
+INFO Selecting reader for extension: Text                                      
+INFO Adding content from note_9.md                                             
+INFO Selecting reader for extension: Text                                      
+    - Vector Dim:    1536
+[*] Ingestion Complete:
+    - Time elapsed:  7.481 seconds
+    - Velocity:      2.67 docs/sec
+    - Vectors Stored:20
+
+[SUCCESS] Knowledge Base Velocity & Integrity Test Passed.
+[*] Cleaned up temporary directory: C:\Users\kyle0\AppData\Local\Temp\autoswarm_kb_test_p_pswexn
