@@ -77,7 +77,10 @@ def get_research_agent(state_manager=None) -> Agent:
         instructions=[
             f"Context: Today is {current_date}. THE YEAR IS 2026. DO NOT SEARCH FOR 2025.",
             "1. CHECK MEMORY: Always search your Knowledge Base first.",
-            "2. LOCAL FILES: If the query is a file path (starts with ./ or has .md/.txt), use 'read_file' or 'list_files' instead of the browser.",
+            "2. LOCAL FILES & DIRECTORIES:",
+            "   a. If the query is a path, use 'list_files' FIRST to check if it is a directory or a file.",
+            "   b. NEVER call 'read_file' on a directory (paths without extensions or identified as directories). This causes Permission Denied errors.",
+            "   c. Only call 'read_file' on confirmed flat files (e.g., .md, .txt, .py).",
             "3. SAVE FINDINGS: Every successful research step MUST end by calling save_to_knowledge_base with a summary of findings.",
             "4. SYNTHESIZE: Combine web results with memory.",
             "5. CITE: When using memory, mention 'Recalled from Knowledge Base'."
