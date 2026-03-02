@@ -64,6 +64,16 @@ def verify_knowledge() -> int:
 from pathlib import Path
 from agno.tools.file import FileTools
 
+class SafeFileTools(FileTools):
+    """
+    A safer version of FileTools that prevents reading directories.
+    """
+    def read_file(self, path: str) -> str:
+        full_path = Path(self.base_dir) / path if self.base_dir else Path(path)
+        if full_path.is_dir():
+            return f"Error: '{path}' is a directory. Use 'list_files' to see its contents instead of 'read_file'."
+        return super().read_file(path)
+
 def get_research_agent(state_manager=None) -> Agent:
     """
     Returns the Research Agent with Read/Write memory access.
@@ -87,7 +97,7 @@ def get_research_agent(state_manager=None) -> Agent:
         ],
         tools=[
             BrowserTools(state_manager=state_manager), 
-            FileTools(base_dir=Path("./workspace")), # <--- Enable local file reading
+            SafeFileTools(base_dir=Path("./workspace")), # <--- Enable safer local file reading
             save_to_knowledge_base 
         ], 
         knowledge=knowledge_base,
