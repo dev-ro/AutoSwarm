@@ -108,3 +108,6 @@ def load_social_personas() -> Dict[str, SocialPersona]:
             print(f"[Config] Loaded {platform_prefix.lower()} credentials for persona {bot_id}")
 
     return personas
+
+# Global Model Configuration
+MODEL = os.getenv("MODEL", "gemini-3-flash-preview")

@@ -31,6 +31,15 @@ def get_knowledge_base() -> Knowledge:
         embedder=OpenAIEmbedder(id="text-embedding-3-small") 
     )
 
+    # Ensure the database exists before returning (safe for multiple processes)
+    if not vector_db.exists():
+        try:
+             vector_db.create()
+        except Exception as e:
+             # If another process created it simultaneously, ignore the error
+             if "already exists" not in str(e).lower():
+                  print(f"[Knowledge Base] Warning during creation: {e}")
+
     # Filter to isolate local workspace reader logic to explicitly approved flat files
     approved_extensions = {".txt", ".md"}
     workspace_dir = Path("workspace")

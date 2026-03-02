@@ -1,8 +1,10 @@
 import os
 from agno.models.google import Gemini
 
-# Default configuration
-GEMINI_MODEL_ID = os.getenv("GEMINI_MODEL_ID", "gemini-3-flash-preview")
+from src.core.config import MODEL
+
+# Default configuration (deprecated local check, now centralized in config.py)
+GEMINI_MODEL_ID = MODEL
 
 def get_executive_model():
     """
