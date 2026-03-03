@@ -203,6 +203,7 @@ class Manager:
         print("="*50 + "\n")
         
         self.state_manager.complete_plan(plan_id)
+        return plan_id
 
     def delegate_task(self, task: Task, full_prompt: str, task_id: int = None) -> str:
         """

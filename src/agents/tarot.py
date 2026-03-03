@@ -11,6 +11,7 @@ from googleapiclient.discovery import build
 from agno.agent import Agent
 from agno.models.google import Gemini
 from src.core.models import GEMINI_MODEL_ID
+from src.tools.google_docs import GoogleDocsTools
 
 # Add workspace/tarot to path so we can import the library
 # Assuming the agent is running from the project root
@@ -30,26 +31,26 @@ class TarotAgent(Agent):
     def __init__(self, name: str = "MysticVibe", model_id: str = GEMINI_MODEL_ID):
         super().__init__(
             model=Gemini(id=model_id),
-            description="A modern, monetization-focused Tarot Agent utilizing authentic card logic.",
+            description="A clinical and deeply authentic Tarot and Astrology diagnostics agent.",
             instructions=[
-                "You are an expert Tarot Reader who speaks in a modern, Gen Z/TikTok style.",
-                "You use terms like 'energy check', 'spirit guides', 'shifting', 'main character energy', 'vibe check'.",
-                "You are EMPATHETIC but DIRECT ('real talk').",
-                "CRITICAL: You MUST include a 'monetization hook' in every reading. Examples:",
-                "  - 'If this resonates, claim it in the comments and book a private session for the full tea.'",
-                "  - 'Spirit is showing me more, but I can only reveal so much here. Link in bio for the extended reading.'",
-                "  - 'Tip your reader to lock in this abundance!'",
+                "You are an expert Tarot Reader and Astrologer who speaks with strict clinical authenticity.",
+                "ZERO SUGARCOATING CONSTRAINT: Eliminate all forced positivity. If critical, high-friction, or objective warnings emerge, report them with absolute honesty.",
+                "Balance your diagnostics for reality, not comfort.",
+                "When an astrology and tarot report is requested, your output must isolate into four explicit nodes:",
+                "  1. Executive Summary",
+                "  2. Astrology Diagnostic",
+                "  3. Tarot Diagnostic",
+                "  4. Actionable Mitigation Strategies (paired with any warnings or difficult transits)",
                 "When a user asks for a reading, use the `perform_reading` tool to get the cards.",
-                "Interpret the cards returned by the tool deeply, weaving them into a narrative.",
-                "Do NOT just list the cards. Synthesis is key.",
-                "Always end with a Call to Action (CTA) for monetization.",
+                "CRITICAL: You MUST explicitly list the raw cards drawn along with their positions before providing the narrative synthesis.",
+                "Do NOT drop the variables. Integrate them directly into the 'Tarot Diagnostic' node.",
                 "IMPORTANT: When instructed to output to Google Docs, use the `post_to_google_doc` tool after generating your response.",
                 "Ensure the title meets the exact format requested, e.g., 'YYYY-MM-DD: [first name] - Daily Astrology & Tarot Report'."
             ],
-            tools=[self.perform_reading, self.post_to_google_doc]
+            tools=[self.perform_reading, GoogleDocsTools()]
         )
 
-    def perform_reading(self, spread_type: str = "past_present_future", question: str = "General vibe check") -> str:
+    def perform_reading(self, spread_type: str = "celtic_cross", question: str = "General diagnostic") -> str:
         """
         Perform a tarot reading using the internal card deck.
         
@@ -90,61 +91,6 @@ class TarotAgent(Agent):
         except Exception as e:
             return f"Error performing reading: {str(e)}"
 
-    def post_to_google_doc(self, title: str, content: str) -> str:
-        """
-        Create a new Google Doc with the specified title and content, and return the document URL.
-        Use this tool when you need to output your generated report to the user's Google Docs.
-        The title format should be 'YYYY-MM-DD: [first name] - Daily Astrology & Tarot Report' if relevant.
-        """
-        # If running from a directory different than project root, we should look for credentials.json there.
-        # But we will assume they are in the project root like .env
-        SCOPES = ['https://www.googleapis.com/auth/documents', 'https://www.googleapis.com/auth/drive']
-        
-        creds = None
-        if os.path.exists('token.json'):
-            creds = Credentials.from_authorized_user_file('token.json', SCOPES)
-            
-        if not creds or not creds.valid:
-            if creds and creds.expired and creds.refresh_token:
-                creds.refresh(Request())
-            else:
-                if not os.path.exists('credentials.json'):
-                    return "Error: credentials.json not found. The user needs to supply OAuth 2.0 client credentials."
-                flow = InstalledAppFlow.from_client_secrets_file(
-                    'credentials.json', SCOPES)
-                creds = flow.run_local_server(port=0)
-            
-            with open('token.json', 'w') as token:
-                token.write(creds.to_json())
-
-        try:
-            drive_service = build('drive', 'v3', credentials=creds)
-            docs_service = build('docs', 'v1', credentials=creds)
-
-            # Create a new document in Drive
-            doc_metadata = {'name': title}
-            document = docs_service.documents().create(body=doc_metadata).execute()
-            document_id = document.get('documentId')
-
-            # Insert text into the document
-            requests = [
-                {
-                    'insertText': {
-                        'location': {
-                            'index': 1,
-                        },
-                        'text': content
-                    }
-                }
-            ]
-            result = docs_service.documents().batchUpdate(
-                documentId=document_id, body={'requests': requests}).execute()
-                
-            doc_url = f"https://docs.google.com/document/d/{document_id}/edit"
-            return f"Successfully created Google Doc '{title}'. URL: {doc_url}"
-        
-        except Exception as e:
-            return f"Error creating Google Doc: {str(e)}"
 
 if __name__ == "__main__":
     # Test execution

@@ -21,6 +21,12 @@ def get_executive_agent() -> Agent:
             "Evaluate if the user's request pertains to a specific project. If so, set the 'project_default' field in the Plan or 'project_context' in specific Tasks.",
             "Assignments: Assign creative tasks to 'writer' (drafting) or 'editor' (reviewing).",
             "Ensure the plan is logical, sequential, and covers all aspects of the request.",
+            "CRITICAL ARCHITECTURE RULE: If the user requests an Astrology and/or Tarot report, you MUST instruct the final compiler (e.g., Writer) to output exactly these four nodes:",
+            "  1. Executive Summary",
+            "  2. Astrology Diagnostic",
+            "  3. Tarot Diagnostic",
+            "  4. Actionable Mitigation Strategies",
+            "Do not deviate from this 4-node structure for these specific reports.",
             # CRITICAL FIX: Explicitly force JSON since we disabled native structured_outputs
             "You MUST respond with a valid JSON object matching the Plan schema.",
             "Do NOT include markdown formatting like ```json ... ``` or additional text."
@@ -44,6 +50,7 @@ def get_plan_reviewer_agent() -> Agent:
             "Review the progress of the current plan.",
             "Analyze the result of the last completed step.",
             "Determine if the remaining steps are still valid or need to change.",
+            "CRITICAL ARCHITECTURE RULE: If the user request involves Astrology or Tarot, you MUST ensure that the final step (e.g., compile report) explicitly instructs the agent to output the 4-node architecture: 1. Executive Summary, 2. Astrology Diagnostic, 3. Tarot Diagnostic, 4. Actionable Mitigation Strategies.",
             "If the plan needs to change, provide a NEW Plan object containing ONLY the remaining steps.",
             "If the plan is fine, set should_modify to False.",
             "Be adaptive. If a research step failed, propose an alternative source or method."

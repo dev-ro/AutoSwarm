@@ -3,6 +3,7 @@ from pathlib import Path
 from agno.agent import Agent
 from agno.tools.file import FileTools
 from src.core.models import get_executive_model
+from src.tools.google_docs import GoogleDocsTools
 
 WORKSPACE_ROOT = "./workspace"
 
@@ -39,7 +40,16 @@ def get_writer_agent(project_name: str = "general", persona: Optional[Dict[str, 
         "3. You MUST save significant work to files.",
         "4. DO NOT create nested workspace folders (e.g., workspace/workspace/...). All paths are relative to your root.",
         "5. Structure your project logically (e.g., 01_concept.md, 02_outline.md).",
-        "--- END PROTOCOL ---"
+        "--- END PROTOCOL ---",
+        "--- ASTROLOGY & TAROT REPORTING RULES ---",
+        "If you are requested to compile an Astrology or Tarot report, YOU MUST strictly enforce the following 4-node architecture:",
+        "1. Executive Summary: High-level overview of the day's energy.",
+        "2. Astrology Diagnostic: Technical breakdown of transits and aspects.",
+        "3. Tarot Diagnostic: Detailed analysis of the DRAWN CARDS. You MUST include the raw card names and positions exactly as provided by the TarotAgent in the context. DO NOT draw new cards, do not modify the names, and do not hallucinate different results.",
+        "4. Actionable Mitigation Strategies: Practical steps to handle difficulties.",
+        "CRITICAL: YOUR ROLE IS A SYNTHESIZER. You must treat the data from previous steps as the GROUND TRUTH. If you find cards in the context, you MUST use those specific cards and no others.",
+        "IMPORTANT: When instructed to output to Google Docs, use the `post_to_google_doc` tool after generating your response.",
+        "--- END REPORTING RULES ---"
     ]
 
     return Agent(
@@ -47,7 +57,8 @@ def get_writer_agent(project_name: str = "general", persona: Optional[Dict[str, 
         description=f"You are {agent_name}, working on {project_name}.",
         instructions=instructions,
         tools=[
-            FileTools(base_dir=project_dir)
+            FileTools(base_dir=project_dir),
+            GoogleDocsTools()
         ],
         markdown=True
     )
