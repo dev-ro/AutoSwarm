@@ -9,4 +9,6 @@ praw
 atproto
 python-substack
 texttable
-termcolor
+termcolorgoogle-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
