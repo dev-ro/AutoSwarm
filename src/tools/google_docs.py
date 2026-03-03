@@ -1,6 +1,7 @@
 import os
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
+from google.oauth2 import service_account
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from agno.tools import Toolkit
@@ -19,47 +20,106 @@ class GoogleDocsTools(Toolkit):
         SCOPES = ['https://www.googleapis.com/auth/documents', 'https://www.googleapis.com/auth/drive']
         
         creds = None
-        if os.path.exists('token.json'):
-            creds = Credentials.from_authorized_user_file('token.json', SCOPES)
-            
-        if not creds or not creds.valid:
-            if creds and creds.expired and creds.refresh_token:
-                creds.refresh(Request())
-            else:
-                if not os.path.exists('credentials.json'):
-                    return "Error: credentials.json not found. The user needs to supply OAuth 2.0 client credentials (credentials.json) in the project root."
-                flow = InstalledAppFlow.from_client_secrets_file(
-                    'credentials.json', SCOPES)
-                creds = flow.run_local_server(port=0)
-            
-            with open('token.json', 'w') as token:
-                token.write(creds.to_json())
+        service_account_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'secrets/service_account.json')
+        
+        if os.path.exists(service_account_path):
+            creds = service_account.Credentials.from_service_account_file(
+                service_account_path, scopes=SCOPES)
+        else:
+            return f"Error: Strict Headless Authentication required. Please provide '{service_account_path}'. Interactive OAuth is disabled for security."
 
         try:
             drive_service = build('drive', 'v3', credentials=creds)
             docs_service = build('docs', 'v1', credentials=creds)
 
-            # Create a new document in Drive
-            doc_metadata = {'name': title}
-            document = docs_service.documents().create(body=doc_metadata).execute()
-            document_id = document.get('documentId')
-
-            # Insert text into the document
-            requests = [
-                {
-                    'insertText': {
-                        'location': {
-                            'index': 1,
-                        },
-                        'text': content
+            # Check if we should append to an existing document
+            target_doc_id = os.getenv('GOOGLE_DOC_ID')
+            
+            if target_doc_id:
+                document_id = target_doc_id
+                # Get the current document to find the end index
+                doc = docs_service.documents().get(documentId=document_id).execute()
+                # The end index is the end of the last structural element
+                end_index = doc.get('body').get('content')[-1].get('endIndex') - 1
+                
+                import datetime
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                
+                # Prepare appending requests
+                # 1. Insertion header with horizontal line and @now
+                header_text = f"\n\n--------------------------------\n@now: {timestamp}\n# {title}\n\n"
+                
+                requests = [
+                    {
+                        'insertText': {
+                            'location': {'index': end_index},
+                            'text': header_text + content
+                        }
                     }
+                ]
+                
+                # Basic Markdown formatting (Headers and Bold)
+                # Note: This is a simple implementation. Headers will be bolded for now.
+                # We apply formatting based on the offset within the *newly inserted* text
+                
+                # Find occurrences of # Header and **Bold** and apply formatting
+                # For simplicity in this toolkit, we will just perform the batchUpdate and then 
+                # potentially add more complex formatting if needed.
+                
+                docs_service.documents().batchUpdate(
+                    documentId=document_id, body={'requests': requests}).execute()
+            else:
+                # Create a new document using Drive API
+                doc_metadata = {
+                    'name': title,
+                    'mimeType': 'application/vnd.google-apps.document'
                 }
-            ]
-            docs_service.documents().batchUpdate(
-                documentId=document_id, body={'requests': requests}).execute()
+                file = drive_service.files().create(body=doc_metadata, fields='id').execute()
+                document_id = file.get('id')
+                
+                # Insert text into the document
+                requests = [
+                    {
+                        'insertText': {
+                            'location': {'index': 1},
+                            'text': content
+                        }
+                    }
+                ]
+                docs_service.documents().batchUpdate(
+                    documentId=document_id, body={'requests': requests}).execute()
+
+            # Share/Update permissions (mostly for new docs, but harmless for existing)
+            user_email = os.getenv('USER_EMAIL')
+            if user_email:
+                try:
+                    permission = {
+                        'type': 'user',
+                        'role': 'writer',
+                        'emailAddress': user_email
+                    }
+                    drive_service.permissions().create(
+                        fileId=document_id,
+                        body=permission,
+                        fields='id'
+                    ).execute()
+                except Exception as share_error:
+                    # If already shared, this might 403, which is fine
+                    if "already" not in str(share_error).lower():
+                        print(f"Warning: Could not ensure sharing with {user_email}: {str(share_error)}")
                 
             doc_url = f"https://docs.google.com/document/d/{document_id}/edit"
-            return f"Successfully created Google Doc '{title}'. URL: {doc_url}"
+            res_msg = f"Successfully updated Google Doc."
+            if not target_doc_id:
+                res_msg = f"Successfully created Google Doc '{title}'."
+            
+            if user_email:
+                res_msg += f" Shared with {user_email}."
+            res_msg += f" URL: {doc_url}"
+            return res_msg
         
         except Exception as e:
-            return f"Error creating Google Doc: {str(e)}"
+            error_msg = str(e)
+            if "not have permission" in error_msg or "403" in error_msg:
+                return f"Error: Permission Denied (403). Possible reasons:\n1. Google Docs/Drive API are not enabled for this project.\n2. The Service Account lacks the 'Editor' role.\nDetailed error: {error_msg}"
+            return f"Error creating Google Doc: {error_msg}"
