@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 from typing import List
 
 # Ensure the src directory is in the python path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 from src.agents.executive import get_executive_agent
 from src.agents.manager import Manager

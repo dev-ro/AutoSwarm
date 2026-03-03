@@ -1,0 +1,1952 @@
+{
+    "Fool": {
+        "full_name": "The Fool",
+        "keywords": {
+            "upright": "\"Sending it.\" New venture with zero followers but 100% vibes. Pure potential, radical trust in the universe.",
+            "reversed": "Total \"delulu\" energy. Moving too fast without checking the T&Cs. Recklessness that leads to a flop."
+        },
+        "traditional": {
+            "upright": "New beginnings, optimism, trust in life, innocence, carefree, spontaneity.",
+            "reversed": "Recklessness, risk-taking, being naive, foolishness, gullibility, distraction."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Digital Nomad\" protocol. You are launching a venture with zero followers but absolute conviction. It is the archetype of the \"blind jump\" into the unknown\u2014entering a market or a relationship before the data has been fully analyzed.",
+                "reversed": "Reckless momentum. Moving too fast without checking the terms and conditions. It represents a state of \"delusional optimism\" that lacks the infrastructure to survive the first contact with reality."
+            },
+            "stoic": {
+                "upright": "Represents the \"First-Mover\" advantage in an unvetted environment. It signifies the courage to initiate action before all variables are quantified.",
+                "reversed": "Represents the \"First-Mover\" advantage in an unvetted environment. It signifies the courage to initiate action before all variables are quantified."
+            },
+            "analyst": {
+                "upright": "Launching into an unvetted or highly volatile sector. First-mover advantage combined with high risk. No established infrastructure.",
+                "reversed": "Launching into an unvetted or highly volatile sector. First-mover advantage combined with high risk. No established infrastructure."
+            }
+        }
+    },
+    "Magician": {
+        "full_name": "The Magician",
+        "keywords": {
+            "upright": "Manifesting with the full tech stack. Using AI, networking, and skill to create something from nothing. Mastery.",
+            "reversed": "Gatekeeping info or using influence to manipulate the narrative. Wasted talent; high specs, zero output."
+        },
+        "traditional": {
+            "upright": "Manifestation, resourcefulness, power, inspired action, conscious awareness.",
+            "reversed": "Manipulation, poor planning, untapped talents, illusions, trickery."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Full-stack manifestation. Using every available tool\u2014AI, personal branding, and technical skill\u2014to synthesize a new reality. It is the moment of high-leverage creation where the individual becomes an orchestrator of complex systems.",
+                "reversed": "The misuse of influence. Gatekeeping information or manipulating the narrative to serve a hidden agenda. It is the \"bad actor\" in the network, using mastery for extraction rather than creation."
+            },
+            "stoic": {
+                "upright": "Symbolizes the integration of advanced tools and personal skill. It is the archetype of the \"Orchestrator\" who synthesizes complex systems into a single vision.",
+                "reversed": "Symbolizes the integration of advanced tools and personal skill. It is the archetype of the \"Orchestrator\" who synthesizes complex systems into a single vision."
+            },
+            "analyst": {
+                "upright": "The integration of proprietary AI agents and automation protocols to reduce operational overhead and maximize output. Mastery of the \"Tech-Stack.\"",
+                "reversed": "The integration of proprietary AI agents and automation protocols to reduce operational overhead and maximize output. Mastery of the \"Tech-Stack.\""
+            }
+        }
+    },
+    "High Priestess": {
+        "full_name": "The High Priestess",
+        "keywords": {
+            "upright": "Trusting the gut over the algorithm. Deep intuition, \"downloads\" from Spirit. Knowing what\u2019s behind the paywall.",
+            "reversed": "Ignoring the \"ping.\" Disconnected from the inner self because of infinite scrolling. Shallow vibes."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The Inner Algorithm. Trusting intuitive downloads and subconscious patterns over the data provided by the \"Feed.\" It represents the sacred silence required to hear the truth in a world of constant noise.",
+                "reversed": "Information overload. Ignoring the inner voice because the external volume is too high. A total disconnection from the \"Higher Self\" due to constant scrolling and external stimulation."
+            },
+            "stoic": {
+                "upright": "Focuses on \"Information Sovereignty\"\u2014the ability to prioritize internal intuition over external data noise.",
+                "reversed": "Focuses on \"Information Sovereignty\"\u2014the ability to prioritize internal intuition over external data noise."
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Intuition, sacred knowledge, divine feminine, the subconscious mind.",
+            "reversed": "Secrets, disconnected from intuition, withdrawal and silence."
+        }
+    },
+    "Empress": {
+        "full_name": "The Empress",
+        "keywords": {
+            "upright": "\"Soft life\" goals. Creative abundance, nurturing a community, peak aesthetic, and physical wellness.",
+            "reversed": "Creative block. Over-dependence on external validation (likes). Smothering your projects or neglect."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Soft Life\" is no longer a dream; it\u2019s your current reality. You are birthing projects, communities, and vibes that are actually sustainable. Everything you touch turns to aesthetic gold. You\u2019re in your \"Gardening and Growth\" era.",
+                "reversed": "You\u2019re trying to force the growth. Maybe you\u2019re over-invested in how things look rather than how they feel. Creative burnout is hitting because you\u2019ve forgotten to nurture yourself while you nurture the \"brand.\""
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Femininity, beauty, nature, nurturing, abundance.",
+            "reversed": "Creative block, dependence on others."
+        }
+    },
+    "Emperor": {
+        "full_name": "The Emperor",
+        "keywords": {
+            "upright": "Legacy brand energy. Building structure, setting boundaries, and being the \"Final Boss\" of your own life.",
+            "reversed": "Toxic boss energy. Rigidity, tyranny, or a total lack of discipline. Building on a shaky foundation."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You are the Final Boss. You\u2019ve built the structure, set the boundaries, and now you\u2019re running the empire. This isn't just about power; it\u2019s about protection and legacy. You are the architect of your own 2026.",
+                "reversed": "You\u2019re giving \"Toxic Manager\" energy. You\u2019re being too rigid, too controlling, and honestly? It\u2019s making the vibe rancid. If you don't learn to lead with more than just an iron fist, your empire will see a mass exodus."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "The establishment of governance frameworks for decentralized entities or AI-augmented systems. The transition from chaos to established order.",
+                "reversed": "The establishment of governance frameworks for decentralized entities or AI-augmented systems. The transition from chaos to established order."
+            }
+        },
+        "traditional": {
+            "upright": "Authority, structure, control, fatherhood, logical thought.",
+            "reversed": "Tyranny, rigidity, coldness, lack of discipline, dominance."
+        }
+    },
+    "Hierophant": {
+        "full_name": "The Hierophant",
+        "keywords": {
+            "upright": "The traditional path (University, 9-5, institutions). Finding wisdom in the \"tried and true.\" Mentorship.",
+            "reversed": "Deconstructing the system. Unschooling, rebellion against the status quo, and \"finding your own religion.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You\u2019re finding value in the \"Classic\" ways. Maybe it\u2019s a mentor, a tradition, or a structure that actually works. You don't have to reinvent the wheel every day. Sometimes, the \"Standard Operating Procedure\" is the move.",
+                "reversed": "You\u2019re deconstructing everything. The old institutions don't speak your language anymore. You\u2019re \"unschooling\" your brain and finding a path that has zero \"legacy\" baggage. Break the mold."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Tradition, social groups, conventionality, education, belief systems.",
+            "reversed": "Rebellion, unconventionality, subverting the status quo, personal beliefs."
+        }
+    },
+    "Lovers": {
+        "full_name": "The Lovers",
+        "keywords": {
+            "upright": "Soul-contract level alignment. Choosing a partner or path that matches your frequency. Radical vulnerability.",
+            "reversed": "Situationship hell. Disharmony in the DM\u2019s. Misalignment of values; choosing the \"wrong\" aesthetic."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "This is a soul-contract moment. Whether it\u2019s a partnership or a career path, you\u2019re in total alignment. Your \"Yes\" is a full-body experience. No masks, no filters\u2014just radical authenticity and shared vision.",
+                "reversed": "Situationship vibes. You\u2019re trying to make a connection work when the frequencies are totally off. You\u2019re choosing based on \"clout\" rather than \"character.\" Time to check your values."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Love, harmony, partnerships, choices, alignment of values.",
+            "reversed": "Disharmony, imbalance, misalignment of values, indecision."
+        }
+    },
+    "Chariot": {
+        "full_name": "The Chariot",
+        "keywords": {
+            "upright": "Tunnel vision. Staying in your lane and driving toward the goal with intense willpower. Victory.",
+            "reversed": "Losing control. Internet beef that derails your progress. Road rage or getting \"ego-tripped\" into a crash."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Tunnel vision activated. You have the reins of two different \"horses\"\u2014maybe your day job and your passion project\u2014and you\u2019re making them run in the same direction. Victory is the only option. Stay in your lane and drive.",
+                "reversed": "You\u2019re spinning your wheels. You\u2019re getting distracted by internet beef or minor setbacks. You\u2019ve lost the steering, and the \"ego\" is driving you into a ditch. Regain control."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Willpower, determination, success, action, self-discipline.",
+            "reversed": "Lack of control, lack of direction, aggression, self-doubt."
+        }
+    },
+    "Strength": {
+        "full_name": "Strength",
+        "keywords": {
+            "upright": "Taming the inner \"beast.\" Emotional intelligence, quiet confidence, and dealing with anxiety through grace.",
+            "reversed": "Self-doubt \"era.\" Feeling weak or letting raw emotions (rage, fear) run the show. \"Flopping\" mentally."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You\u2019re taming your inner demons with a soft touch. No need to scream; your presence is enough. You\u2019re handling \"hard\" situations with high emotional intelligence. You\u2019re stronger than you think, but it\u2019s a \"quiet\" power.",
+                "reversed": "You\u2019re feeling like a \"flop.\" Your confidence is in the basement, and you\u2019re letting fear or anger run the show. You\u2019re \"masking\" instead of actually coping. Reclaim your inner calm."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Courage, persuasion, influence, compassion, inner strength.",
+            "reversed": "Self-doubt, weakness, raw emotion, lack of self-control."
+        }
+    },
+    "Hermit": {
+        "full_name": "The Hermit",
+        "keywords": {
+            "upright": "\"Monk Mode.\" Digital detox for the sake of soul-searching. Finding truth in the silence away from the feed.",
+            "reversed": "Loneliness masquerading as solitude. Being a \"shut-in\" or refusing to share your wisdom with the world."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "\"Monk Mode\" is the current aesthetic. You\u2019re stepping back from the noise to find the signal. This isn't about being lonely; it\u2019s about being \"exclusive\" with your own soul. The truth is found in the \"Do Not Disturb\" hours.",
+                "reversed": "You\u2019re isolating too hard. You\u2019re becoming a \"shut-in\" and losing touch with the world you\u2019re supposed to be helping. Loneliness is starting to look like \"enlightenment,\" but it\u2019s just a cage."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Introspection, soul-searching, solitude, inner guidance.",
+            "reversed": "Isolation, loneliness, withdrawal, foolishness."
+        }
+    },
+    "Wheel Of Fortune": {
+        "full_name": "Wheel of Fortune",
+        "keywords": {
+            "upright": "Going viral for the right reasons. A pivot that actually works. The universe is \"boosting\" your post.",
+            "reversed": "Resistance to change. Fighting \"cancel culture\" or a \"rebrand\" that the universe is forcing on you. Bad timing."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Algorithmic favor. A sudden, viral pivot that shifts your trajectory upward. It represents the recognition of patterns and the ability to ride the wave of a shifting market or cultural moment.",
+                "reversed": "Resisting the pivot. Fighting against an inevitable decline or trying to maintain an outdated \"brand\" when the cycle has moved on. The struggle against the \"cancel culture\" or obsolescence."
+            },
+            "stoic": {
+                "upright": "Addresses \"Cyclic Volatility.\" It is the recognition of shifting market or social tides and the agility required to navigate them.",
+                "reversed": "Addresses \"Cyclic Volatility.\" It is the recognition of shifting market or social tides and the agility required to navigate them."
+            },
+            "analyst": {
+                "upright": "Navigating the fluctuations of the late-2020s \"K-shaped\" recovery. Understanding that market momentum is a function of algorithmic cycles.",
+                "reversed": "Navigating the fluctuations of the late-2020s \"K-shaped\" recovery. Understanding that market momentum is a function of algorithmic cycles."
+            }
+        },
+        "traditional": {
+            "upright": "Good luck, karma, life cycles, destiny, a turning point.",
+            "reversed": "Bad luck, resistance to change, breaking cycles."
+        }
+    },
+    "Justice": {
+        "full_name": "Justice",
+        "keywords": {
+            "upright": "Radical accountability. Truth coming to light. The \"receipts\" are presented and the balance is restored.",
+            "reversed": "Unfair \"shadow-ban.\" Dishonesty, lack of accountability, or legal drama that doesn't go your way."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Receipts\" are out. Everything is coming into balance. If you\u2019ve been doing the work, the rewards are arriving. If you\u2019ve been \"cutting corners,\" the bill is due. Radical honesty is the only way forward.",
+                "reversed": "Something feels \"unfair.\" Maybe you\u2019re being shadow-banned, or a deal went sideways because someone wasn't being real. Don't play the victim\u2014just fix your side of the street and let the law of karma do the rest."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Justice, fairness, truth, cause and effect, law.",
+            "reversed": "Injustice, lack of accountability, dishonesty, unfairness."
+        }
+    },
+    "Hanged Man": {
+        "full_name": "The Hanged Man",
+        "keywords": {
+            "upright": "The \"Waiting Room.\" Surrendering to a new perspective. Pausing the hustle to see the truth.",
+            "reversed": "Stalling just to stall. Procrastination masquerading as \"waiting for a sign.\" Indecision."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You\u2019re in the \"Waiting Room\" of the universe. It\u2019s frustrating, but it\u2019s necessary. You\u2019re seeing the world from a completely different angle now. Use this pause to re-evaluate your \"why\" before the \"how\" resumes.",
+                "reversed": "You\u2019re stalling. You\u2019re \"waiting for a sign\" as an excuse to not do the work. You\u2019re stuck in a cycle of indecision because you\u2019re scared to make a move that isn't \"perfect.\" Just move."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Pause, surrender, letting go, new perspectives.",
+            "reversed": "Delays, resistance, stalling, indecision."
+        }
+    },
+    "Death": {
+        "full_name": "Death",
+        "keywords": {
+            "upright": "Hard pivot. Deleting the old version of yourself to make room for the 2.0. End of an era.",
+            "reversed": "Clinging to a dead aesthetic. Refusing to let a toxic relationship or a failed project die."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The Hard Pivot. The intentional deletion of an old version of the self to make room for a superior iteration. This is a total transition of identity, aesthetic, and purpose.",
+                "reversed": "Clinging to the ghost. Holding onto an expired relationship, career, or persona because of the fear of the \"void.\" Stagnation through the refusal to let go of what has already died."
+            },
+            "stoic": {
+                "upright": "Signifies \"Systemic Transformation.\" The necessity of shedding obsolete structures to facilitate growth.",
+                "reversed": "Signifies \"Systemic Transformation.\" The necessity of shedding obsolete structures to facilitate growth."
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Endings, change, transformation, transition.",
+            "reversed": "Resistance to change, personal transformation, inner purging."
+        }
+    },
+    "Temperance": {
+        "full_name": "Temperance",
+        "keywords": {
+            "upright": "Digital-life balance. Integrating the \"IRL\" and the \"URL.\" Moderation and flow.",
+            "reversed": "Excess. Being \"too online.\" Misalignment of energy; trying to mix things that don't belong together."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You\u2019re the \"Master of Flow.\" You\u2019ve found the balance between the hustle and the rest. You\u2019re mixing different parts of your life (art, tech, soul) into a perfect cocktail. You are \"centered\" in a chaotic world.",
+                "reversed": "You\u2019re out of whack. Maybe you\u2019re too \"online,\" or maybe you\u2019re ignoring your physical health for the \"grind.\" The mix is off, and the vibe is getting muddy. Re-calibrate your boundaries."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Balance, moderation, patience, purpose, experiment.",
+            "reversed": "Imbalance, excess, self-healing, re-alignment."
+        }
+    },
+    "Devil": {
+        "full_name": "The Devil",
+        "keywords": {
+            "upright": "Toxic attachments. Being \"married to the grind\" or addicted to the \"doom-scroll.\" Golden handcuffs.",
+            "reversed": "Breaking the contract. Quitting the toxic job, deleting the app, and reclaiming your agency."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The Gilded Cage. Toxic attachments to the \"hustle\"\u2014being married to the grind or enslaved by a digital addiction. It is the realization that your \"success\" has become a form of servitude.",
+                "reversed": "Breaking the contract. The moment of detachment where one quits the toxic environment, deletes the dopamine-loop apps, and regains personal sovereignty."
+            },
+            "stoic": {
+                "upright": "Represents \"Compulsive Attachment.\" The state of being trapped by one's own success or habits of consumption.",
+                "reversed": "Represents \"Compulsive Attachment.\" The state of being trapped by one's own success or habits of consumption."
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Shadow self, attachment, addiction, restriction, sexuality.",
+            "reversed": "Releasing limiting beliefs, detachment, reclaiming control."
+        }
+    },
+    "Tower": {
+        "full_name": "The Tower",
+        "keywords": {
+            "upright": "Platform crash. A sudden realization that your \"perfect life\" was a facade. Necessary chaos.",
+            "reversed": "Avoiding the inevitable. Staying in a \"burning building\" because you\u2019re scared of the rebuild. Delaying the crash."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Systemic Collapse. A sudden realization that the \"perfect life\" or \"perfect career\" was built on a fragile facade. The necessary chaos that precedes a total infrastructure rebuild.",
+                "reversed": "Avoiding the breakdown. Staying within a failing structure because the fear of the rebuild is greater than the fear of the collapse. Living in the ruins and pretending they are still standing."
+            },
+            "stoic": {
+                "upright": "Symbolizes \"Disruptive Re-organization.\" A sudden breakdown of a facade that forces a confrontation with foundational truth.",
+                "reversed": "Symbolizes \"Disruptive Re-organization.\" A sudden breakdown of a facade that forces a confrontation with foundational truth."
+            },
+            "analyst": {
+                "upright": "A systemic shock to legacy industries (e.g., traditional finance vs. DeFi). A forced infrastructure rebuild triggered by disruptive innovation or platform failure.\n\n---\n\n## Micro-Economic Indicators (Minor Arcana)",
+                "reversed": "A systemic shock to legacy industries (e.g., traditional finance vs. DeFi). A forced infrastructure rebuild triggered by disruptive innovation or platform failure.\n\n---\n\n## Micro-Economic Indicators (Minor Arcana)"
+            }
+        },
+        "traditional": {
+            "upright": "Sudden change, upheaval, chaos, revelation, awakening.",
+            "reversed": "Avoiding disaster, fear of change, delaying the inevitable."
+        }
+    },
+    "Star": {
+        "full_name": "The Star",
+        "keywords": {
+            "upright": "The \"Comeback.\" Authentic hope, renewal, and being a \"light\" in the community. Healing after the Tower.",
+            "reversed": "Feeling \"washed.\" Despair, lack of faith, or losing your \"spark\" to cynicism."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Comeback Era.\" You\u2019ve been through the Tower, and now you\u2019re the most authentic version of yourself. You\u2019re a beacon for others. Hope isn't just a feeling; it\u2019s your new strategy. The universe is backing you now.",
+                "reversed": "You\u2019re feeling \"washed.\" You\u2019ve lost faith in the vision. The \"Star\" feels too far away to reach. You\u2019re letting cynicism win. Remember: the night is darkest just before the \"Sun\" comes up."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Hope, faith, purpose, renewal, spirituality.",
+            "reversed": "Lack of faith, despair, self-trust, disconnection."
+        }
+    },
+    "Moon": {
+        "full_name": "The Moon",
+        "keywords": {
+            "upright": "Uncanny valley energy. Fear, illusions, and the \"subconscious\" noise. Things aren't what they seem on the grid.",
+            "reversed": "Reality check. Seeing through the filters and the deepfakes. Releasing paranoia."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Uncanny Valley. Things aren't what they seem. You\u2019re navigating a world of deepfakes, illusions, and your own subconscious fears. Trust your gut, but don't believe everything you think. It\u2019s a \"mood,\" not a fact.",
+                "reversed": "The fog is lifting. You\u2019re seeing through the \"filters\" and the lies. The anxiety is fading because you finally have the \"facts.\" No more paranoia; just the weird, unfiltered truth."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Illusion, fear, anxiety, subconscious, intuition.",
+            "reversed": "Release of fear, repressed emotion, confusion, clarity."
+        }
+    },
+    "Sun": {
+        "full_name": "The Sun",
+        "keywords": {
+            "upright": "Peak Main Character Energy. Vitality, success, and transparency. Everything is \"lit.\"",
+            "reversed": "Burnt out. Fake \"positivity\" that masks temporary sadness. The \"Sun\" is behind a cloud."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Main Character Energy is at 100%. You are visible, successful, and radiating vitality. Everything you do \"eats.\" There are no secrets here\u2014just pure, high-frequency success. Enjoy the spotlight.",
+                "reversed": "You\u2019re \"burnt out.\" The spotlight feels too hot. You\u2019re putting on a \"happy\" face for the grid while feeling empty inside. Take a break from being \"on\" and just exist in the shade for a minute."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Positivity, fun, warmth, success, vitality.",
+            "reversed": "Inner child, feeling down, overly optimistic, temporary sadness."
+        }
+    },
+    "Judgement": {
+        "full_name": "Judgement",
+        "keywords": {
+            "upright": "Finding your \"true niche.\" A calling that transcends the ego. Rebirth and total clarity.",
+            "reversed": "Ignoring the \"wake-up call.\" Self-doubt and the refusal to learn from past \"flops.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You\u2019ve found your \"True Niche.\" This isn't just about a job; it\u2019s a calling. You\u2019re being \"called up\" to a higher level of existence. You\u2019ve learned from the past and you\u2019re ready for the \"rebrand\" of a lifetime.",
+                "reversed": "You\u2019re ignoring the \"wake-up call.\" You\u2019re stuck in self-doubt, refusing to believe you\u2019re ready for the next level. You\u2019re playing small because you\u2019re scared of the \"Judgment\" of others."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Judgement, rebirth, inner calling, absolution.",
+            "reversed": "Self-doubt, inner critic, ignoring the call."
+        }
+    },
+    "World": {
+        "full_name": "The World",
+        "keywords": {
+            "upright": "\"End Game\" status. Completion of a major cycle. Remote work while traveling the globe. Perfection.",
+            "reversed": "Seeking closure. Unable to level up because of one tiny unfinished task. The loop won't close."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Completion of the Cycle. Reaching \"End Game\" status in a specific narrative. The achievement of global integration\u2014remote work while traversing the planet, total mastery of one's domain.",
+                "reversed": "The Infinite Loop. Feeling stuck in a repetitive cycle; the inability to level up because of a single, unresolved task or a fear of the finality of success."
+            },
+            "stoic": {
+                "upright": "Indicates \"Global Integration.\" The achievement of a state of mastery where one's internal reality and external world are in total alignment.",
+                "reversed": "Indicates \"Global Integration.\" The achievement of a state of mastery where one's internal reality and external world are in total alignment."
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Completion, integration, accomplishment, travel.",
+            "reversed": "Seeking closure, shortcuts, delays, incompletion."
+        }
+    },
+    "Ace Of Wands": {
+        "full_name": "Ace of Wands",
+        "keywords": {
+            "upright": "The \"Lightbulb\" moment for a new project.",
+            "reversed": "Spark is dead; creative block."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Lightbulb\" moment. A sudden surge of inspiration for a new project or venture. The initial spark that powers the 2026 creative engine.",
+                "reversed": "Creative dormancy. The inability to find the \"why\" behind the work. The fire has gone out, requiring a period of rest or a change in environment."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Inspiration, new opportunities, growth, potential.",
+            "reversed": "Emerging idea, lack of direction, distractions, delays."
+        }
+    },
+    "2 Of Wands": {
+        "full_name": "2 of Wands",
+        "keywords": {
+            "upright": "Planning the global takeover. Mapping out the \"Era.\"",
+            "reversed": "Fear of leaving the comfort zone."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You're at the 'Global Takeover' stage of your planning. You've conquered your local niche, and now you're looking at the world map. It's time to decide which territory you're invading next.",
+                "reversed": "You're scared to leave the safety of your current 'followers' count. You're playing it safe in the shallow end when the deep ocean is where the real opportunities are."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Future planning, progress, decisions, discovery.",
+            "reversed": "Fear of unknown, lack of planning, playing it safe."
+        }
+    },
+    "3 Of Wands": {
+        "full_name": "3 of Wands",
+        "keywords": {
+            "upright": "Expansion. Your \"ships\" (collabs/investments) are coming in.",
+            "reversed": "Waiting for permission that\u2019s never coming."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Global Expansion. Looking beyond the local horizon toward international collaborations and decentralized opportunities. Your reach is extending into new territories.",
+                "reversed": "Stalled Momentum. Your \"vessel\" is stuck in the port, waiting for permissions or validations that may never arrive. A failure to launch due to external dependencies."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Expansion, foresight, overseas opportunities.",
+            "reversed": "Playing small, lack of foresight, delays."
+        }
+    },
+    "4 Of Wands": {
+        "full_name": "4 of Wands",
+        "keywords": {
+            "upright": "Reaching a milestone. \"Community\" vibes. Celebrating the win.",
+            "reversed": "Tension at home/in the \"inner circle.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You've reached a stable milestone in your personal brand. The community you've built is actually showing up for you IRL, not just in the comments. It's a moment of peak harmony before the next expansion.",
+                "reversed": "The 'vibe' at home or in your inner circle is rancid. You're trying to celebrate a win, but the people around you are bringing 'hater' energy. Time to check who's actually on your team."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Celebration, joy, harmony, relaxation, homecoming.",
+            "reversed": "Lack of support, transience, home-conflict."
+        }
+    },
+    "5 Of Wands": {
+        "full_name": "5 of Wands",
+        "keywords": {
+            "upright": "Healthy competition. The \"grind\" is loud. Brainstorming through conflict.",
+            "reversed": "Avoiding necessary \"real talk.\" Petty drama."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The comments section is a battlefield, but it's the healthy kind. Everyone is trying to out-innovate each other. This friction is where your best ideas are going to be forged.",
+                "reversed": "The competition has turned petty. Instead of building something better, people are just trying to trip you up. Don't get bogged down in the 'drama'\u2014it's a distraction from your mission."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Conflict, disagreements, competition, tension.",
+            "reversed": "Inner conflict, conflict avoidance, tension release."
+        }
+    },
+    "6 Of Wands": {
+        "full_name": "6 of Wands",
+        "keywords": {
+            "upright": "Viral success. Public recognition. Getting your flowers.",
+            "reversed": "Fall from grace. Being \"ratioed\" or losing your \"crown.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You've gone viral for all the right reasons. The 'algorithm' has chosen you as the hero of the day. Enjoy your flowers, but remember that the 'public' is a fickle master.",
+                "reversed": "You're getting 'ratioed' or your latest launch flopped in the public eye. It's a temporary hit to the ego, but it's also a chance to re-evaluate your 'brand' before the next attempt."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Success, public recognition, victory, progress.",
+            "reversed": "Private achievement, fall from grace, egotism, lack of recognition."
+        }
+    },
+    "7 Of Wands": {
+        "full_name": "7 of Wands",
+        "keywords": {
+            "upright": "Defending your niche. Standing your ground against \"haters.\"",
+            "reversed": "Feeling overwhelmed by the \"comments section.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You're the target of the day, but you're holding the high ground. Every 'hate' comment is just proof that you're doing something worth noticing. Keep defending your niche.",
+                "reversed": "The 'cancel culture' noise is getting to you. You're feeling overwhelmed by the volume of opinions. It's time to log off and remember who you are away from the 'feed'."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Challenge, competition, protection, perseverance.",
+            "reversed": "Giving up, overwhelmed, over-protectiveness."
+        }
+    },
+    "8 Of Wands": {
+        "full_name": "8 of Wands",
+        "keywords": {
+            "upright": "DMs blowing up. High-speed manifestations. Things moving at \"fiber-optic\" speed.",
+            "reversed": "Communication breakdown."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "High-Speed Manifestation. A period of rapid-fire communication and rapid growth. Information and opportunities are moving at the speed of the network.",
+                "reversed": "Communication Breakdown. The system is overwhelmed; messages are lost, and the intended impact is diluted by noise and technical friction."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Movement, fast paced change, action, air travel.",
+            "reversed": "Delays, frustration, resisting change."
+        }
+    },
+    "9 Of Wands": {
+        "full_name": "9 of Wands",
+        "keywords": {
+            "upright": "Resilience. The \"last push\" before the finish line. Protecting your energy.",
+            "reversed": "Paranoia. Thinking everyone is \"out to get you.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You're on the last 5% of a massive project and you're exhausted. Every fiber of your being wants to quit, but you're one 'push' away from the finish line. Don't stop now.",
+                "reversed": "You're being overly defensive about your work. You're seeing 'threats' where there are only suggestions. Your paranoia is starting to leak into your productivity."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Resilience, grit, persistence, test of faith.",
+            "reversed": "Exhaustion, fatigue, giving up, paranoia."
+        }
+    },
+    "10 Of Wands": {
+        "full_name": "10 of Wands",
+        "keywords": {
+            "upright": "Burnout. Carrying the whole brand on your back.",
+            "reversed": "Outsourcing. Finally letting go of the \"hustle culture\" lies."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The Solo-Founder's Burden. The weight of \"doing it all\" in the gig economy. Influencer burnout and the exhaustion of maintaining every aspect of a personal brand.",
+                "reversed": "Strategic Outsourcing. Letting go of the \"hustle culture\" myth. The realization that sustainability requires delegation and the shedding of non-essential tasks."
+            },
+            "stoic": {
+                "upright": "A warning against the \"Solo-Operator\" fallacy. It highlights the diminishing returns of refusing to delegate or automate, leading to a state of total system fatigue.",
+                "reversed": "A warning against the \"Solo-Operator\" fallacy. It highlights the diminishing returns of refusing to delegate or automate, leading to a state of total system fatigue."
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Burden, extra responsibility, hard work, completion.",
+            "reversed": "Doing it all, carrying a burden, delegation, release."
+        }
+    },
+    "Page Of Wands": {
+        "full_name": "Page of Wands",
+        "keywords": {
+            "upright": "The \"Newbie\" energy. Exploring new platforms.",
+            "reversed": "All talk, no action. A \"wannabe\" who doesn't post."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Newbie\" Spark. Exploring a new platform or a new hobby with zero ego. \"Let\u2019s see what happens\" energy.",
+                "reversed": "A \"Wannabe.\" All the gear, no idea. You\u2019re talking about the \"project\" but never actually clicking \"publish.\""
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Inspiration, ideas, discovery, limitless potential.",
+            "reversed": "New ideas, redirection, lack of ideas, procrastination."
+        }
+    },
+    "Knight Of Wands": {
+        "full_name": "Knight of Wands",
+        "keywords": {
+            "upright": "\"Full Send.\" Passionate pursuit of the goal.",
+            "reversed": "Reckless \"crash and burn.\" Impulsiveness."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "\"Full Send.\" You\u2019re chasing the goal with zero brakes. Passionate, impulsive, and high-energy.",
+                "reversed": "\"Crash and Burn.\" You\u2019re moving too fast and breaking things that actually mattered. Reckless \"main character\" energy."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Energy, passion, inspired action, adventure, impulsiveness.",
+            "reversed": "Passion project, haste, scattered energy, delays, frustration."
+        }
+    },
+    "Queen Of Wands": {
+        "full_name": "Queen of Wands",
+        "keywords": {
+            "upright": "The \"It Girl\" of creativity. Confidence and social magnetism.",
+            "reversed": "Jealousy or \"Mean Girl\" energy."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"It Girl\" CEO. Confident, magnetic, and social. You don't chase\u2014you attract. You are the \"vibe\" everyone wants.",
+                "reversed": "\"Mean Girl\" energy. Using your charisma to manipulate or \"gatekeep\" the scene. Jealousy is a bad look on you."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Courage, confidence, independence, social butterfly, determination.",
+            "reversed": "Self-respect, self-confidence, introverted, re-establishing boundaries."
+        }
+    },
+    "King Of Wands": {
+        "full_name": "King of Wands",
+        "keywords": {
+            "upright": "The Visionary CEO. Leading with fire and inspiration.",
+            "reversed": "Overbearing boss. Controlling the narrative too hard."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The Visionary. You lead with \"Fire\" and people follow because you actually have a \"Why.\" Strategic and inspiring.",
+                "reversed": "The Tyrant. Overbearing and \"loud.\" You\u2019re trying to force your vision on people who didn't ask for it."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Natural-born leader, vision, entrepreneur, honor.",
+            "reversed": "Impulsiveness, haste, ruthless, high expectations."
+        }
+    },
+    "Ace Of Cups": {
+        "full_name": "Ace of Cups",
+        "keywords": {
+            "upright": "New \"situationship\" that feels healthy. Emotional reset.",
+            "reversed": "Emotional dry spell. Repressed feelings."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Emotional Renewal. A new relationship or \"situationship\" that prioritizes health and mutual support. A fresh start in the realm of feeling.",
+                "reversed": "Emotional Exhaustion. A \"dry spell\" of the heart. The inability to connect deeply due to emotional burnout or the prioritization of the material over the relational."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Love, new relationships, compassion, creativity.",
+            "reversed": "Self-love, intuition, suppressed emotions."
+        }
+    },
+    "2 Of Cups": {
+        "full_name": "2 of Cups",
+        "keywords": {
+            "upright": "The \"Perfect Match.\" Mutual respect and \"vibe\" alignment.",
+            "reversed": "\"Ghosting\" or a break-up."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The 'Perfect Match' in the DM. You've found someone or a partnership that aligns perfectly with your current vibe. It's a high-frequency connection where both of you are 'seeing' each other clearly.",
+                "reversed": "The 'Unfollow' or a disconnection. You're trying to force a partnership that just doesn't have the chemistry. The energy is off, and it's time to stop trying to 'patch' a relationship that has a fundamental bug."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Unified love, partnership, mutual attraction.",
+            "reversed": "Self-love, break-ups, disharmony, distrust."
+        }
+    },
+    "3 Of Cups": {
+        "full_name": "3 of Cups",
+        "keywords": {
+            "upright": "Girls' night / \"The Squad.\" Shared joy and community.",
+            "reversed": "Gossip and \"fake friends.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The Squad is thriving. You're in a group chat where the ideas are flowing and the support is real. It's time to celebrate a collective win. The 'vibe' is infectious and productive.",
+                "reversed": "Gossip in the ranks. The group energy has turned toxic or you're feeling like an outsider in your own circle. Someone is being 'fake' and it's messing with the collective signal."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Celebration, friendship, creativity, collaborations.",
+            "reversed": "An independent project, gossip, 'three's a crowd', isolation."
+        }
+    },
+    "4 Of Cups": {
+        "full_name": "4 of Cups",
+        "keywords": {
+            "upright": "Boredom. \"Doom-scrolling\" past opportunities. Apathy.",
+            "reversed": "New awareness. Finally looking up from the phone."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Boredom in the abundance. You're doom-scrolling past actual opportunities because nothing feels 'new' enough. You're ignoring the universe's 'ping' because you're too caught up in your own apathy.",
+                "reversed": "Looking up from the screen. You're finally realizing that the world is bigger than your curated feed. You're ready to accept the 'cup' you've been ignoring and re-engage with reality."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Meditation, contemplation, apathy, re-evaluation.",
+            "reversed": "Retreat, withdrawal, checking in for awareness."
+        }
+    },
+    "5 Of Cups": {
+        "full_name": "5 of Cups",
+        "keywords": {
+            "upright": "Crying on TikTok. Mourning a loss or a \"failed\" aesthetic.",
+            "reversed": "Moving on. The \"it is what it is\" stage."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The Public Grief. Mourning the \"could-haves\" and the failed plans. A fixation on the losses of the past that prevents one from seeing the opportunities still present.",
+                "reversed": "Acceptance. Transitioning into the \"it is what it is\" stage of healing. Moving beyond regret and reclaiming the capacity for future joy."
+            },
+            "stoic": {
+                "upright": "Addressing the psychological impact of \"past-performance\" anxiety. It emphasizes the need for a realistic appraisal of losses in order to pivot toward remaining assets.",
+                "reversed": "Addressing the psychological impact of \"past-performance\" anxiety. It emphasizes the need for a realistic appraisal of losses in order to pivot toward remaining assets."
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Loss, regret, disappointment, despair, bereavement.",
+            "reversed": "Moving on, acceptance, forgiveness."
+        }
+    },
+    "6 Of Cups": {
+        "full_name": "6 of Cups",
+        "keywords": {
+            "upright": "Nostalgia. Throwback energy. Healing the \"inner child.\"",
+            "reversed": "Stuck in the past. Living for \"the way it was.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Throwback Energy. You're finding inspiration in your 'archives'. Whether it's an old aesthetic or a childhood passion, it's time to bring that pure, unfiltered joy into your current project. Nostalgia is your superpower today.",
+                "reversed": "Stuck in the 'Golden Era'. You're comparing your current growth to a past version of yourself that no longer exists. You're trying to recreate a 'vibe' that has already reached its expiration date. Move forward."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Revisiting the past, childhood memories, innocence, joy.",
+            "reversed": "Living in the past, forgiveness, lacking playfulness."
+        }
+    },
+    "7 Of Cups": {
+        "full_name": "7 of Cups",
+        "keywords": {
+            "upright": "Decision paralysis. Too many \"tabs\" open. Illusion of choice.",
+            "reversed": "Clarity. Picking a lane and sticking to it."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Choice Paralysis. Having too many \"tabs\" open in the mind. A state of being overwhelmed by possibilities and unable to commit to a single path.",
+                "reversed": "Decisive Clarity. Picking a lane and committing to it. The removal of illusions and the focus on a tangible, achievable goal."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Opportunities, choices, wishful thinking, illusion.",
+            "reversed": "Alignment, personal values, overwhelmed by choices."
+        }
+    },
+    "8 Of Cups": {
+        "full_name": "8 of Cups",
+        "keywords": {
+            "upright": "Walking away. Leaving a \"toxic\" situation for higher ground.",
+            "reversed": "Fear of \"leaving.\" Staying for the \"aesthetic.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Walking away from the 'curated' life. You've realized that the current situation, no matter how good it looks on paper (or Instagram), isn't feeding your soul. You're leaving the 'shallow' for the 'deep'.",
+                "reversed": "Staying in a toxic 'aesthetic' because you're scared of the void. You know it's over, but you're clinging to the wreckage because you haven't planned your 'exit strategy'. Don't let fear keep you in a dead vibe."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Disillusionment, abandonment, withdrawal, into the unknown.",
+            "reversed": "Trying one last time, indecision, aimless drifting, fear of change."
+        }
+    },
+    "9 Of Cups": {
+        "full_name": "9 of Cups",
+        "keywords": {
+            "upright": "\"Main Character\" satisfaction. Having everything you wanted.",
+            "reversed": "Smugness or realizing \"having it all\" feels empty."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Main Character Satisfaction. You've reached a point where you actually have what you wanted. Your 'internal algorithm' is satisfied. Enjoy the smugness\u2014you earned it. This is peak contentment.",
+                "reversed": "The 'Hollow' Win. You got the likes, you got the bag, but you still feel like something is missing. You're realizing that external validation is a temporary 'high' and you need to find a more sustainable source of joy."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Contentment, satisfaction, gratitude, wish come true.",
+            "reversed": "Inner happiness, materialism, dissatisfaction, indulgence."
+        }
+    },
+    "10 Of Cups": {
+        "full_name": "10 of Cups",
+        "keywords": {
+            "upright": "Found Family. The ultimate \"Soft Life\" goals.",
+            "reversed": "Looking \"perfect\" on the grid but feeling empty IRL."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Happily Ever After (2026 Edition). Your IRL and URL worlds are in perfect harmony. Your family (found or biological) is aligned with your vision. This is the ultimate 'Soft Life' achievement.",
+                "reversed": "The 'Perfect' Facade is cracking. You're trying to maintain the image of a happy 'brand' or family, but the underlying connections are frayed. It's time to stop performing and start actually connecting."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Divine love, blissful relationships, harmony, alignment.",
+            "reversed": "Disconnection, misaligned values, struggling relationships."
+        }
+    },
+    "Page Of Cups": {
+        "full_name": "Page of Cups",
+        "keywords": {
+            "upright": "Emotional \"soft launch.\" Intuitive news.",
+            "reversed": "Emotional immaturity. \"Cringey\" oversharing."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "An \"Emotional Soft Launch.\" A new, \"cautious\" feeling. Intuitive news or a \"crush\" on a new idea.",
+                "reversed": "\"Cringey\" Oversharing. Emotional immaturity. You\u2019re \"feeling\" too loud and it\u2019s making the vibe \"awkward.\""
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Creative opportunity, intuitive messages, curiosity, possibility.",
+            "reversed": "New ideas, doubting intuition, creative blocks, emotional immaturity."
+        }
+    },
+    "Knight Of Cups": {
+        "full_name": "Knight of Cups",
+        "keywords": {
+            "upright": "The \"Romantic.\" Chasing the dream/vibe with heart.",
+            "reversed": "\"Love Bombing\" or being \"moody\" for the aesthetic."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Romantic.\" Chasing a \"Dream\" or a \"Vibe\" with your whole heart. Charming and artistic.",
+                "reversed": "\"Love Bombing.\" Or being \"moody\" as an aesthetic. You\u2019re in love with the \"idea\" of love, not the reality."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Creativity, romance, charm, imagination, beauty.",
+            "reversed": "Overactive imagination, unrealistic, jealous, moody."
+        }
+    },
+    "Queen Of Cups": {
+        "full_name": "Queen of Cups",
+        "keywords": {
+            "upright": "The Intuitive Healer. Emotional intelligence \"Final Boss.\"",
+            "reversed": "Emotional manipulation or being \"drained.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Intuitive Final Boss.\" You feel everything and you use it as power. Compassionate, grounded, and \"soulful.\"",
+                "reversed": "\"Drained.\" Taking on everyone else\u2019s \"trauma\" and forgetting to protect your own \"peace.\" Emotional burnout."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Compassionate, caring, emotionally stable, intuitive, in tune.",
+            "reversed": "Emotional insecurity, co-dependency, dishonesty, bitterness."
+        }
+    },
+    "King Of Cups": {
+        "full_name": "King of Cups",
+        "keywords": {
+            "upright": "Emotional Stability. The \"Calm in the Storm.\"",
+            "reversed": "\"Cold\" or manipulative leadership."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The \"Calm in the Storm.\" You have total control over your \"Vibe.\" You lead with emotional intelligence.",
+                "reversed": "The \"Gaslighter.\" Or being \"cold\" because you\u2019re scared of your own \"feelings.\" Manipulative leadership."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Emotional balance, compassion, diplomatic.",
+            "reversed": "Self-compassion, inner feelings, moodiness, emotionally manipulative."
+        }
+    },
+    "Ace Of Swords": {
+        "full_name": "Ace of Swords",
+        "keywords": {
+            "upright": "\"Real Talk\" moment. Cutting through the BS with a sharp insight.",
+            "reversed": "Misinformation. Being \"loud and wrong.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Intellectual Breakthrough. Cutting through the \"noise\" of the network to find the \"signal.\" A moment of absolute clarity and brutal honesty.",
+                "reversed": "Information Toxicity. Clouded judgment due to misinformation or the \"loud and wrong\" influence of the collective feed."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Breakthroughs, new ideas, mental clarity, success.",
+            "reversed": "Inner clarity, re-evaluating an idea, clouded judgement, confusion."
+        }
+    },
+    "2 Of Swords": {
+        "full_name": "2 of Swords",
+        "keywords": {
+            "upright": "Stalemate. \"Analysis paralysis.\" Weighing two options.",
+            "reversed": "Info overload. Choosing the \"wrong\" side."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The 'Analysis Paralysis' Stalemate. You're weighing two options and both seem equally 'mid'. You're stuck in a loop of pro-and-con lists. Sometimes the only way to choose is to stop thinking and just flip a coin.",
+                "reversed": "Information Overload. The blindfold is coming off, but you're being hit with too much data at once. You're forced to make a choice, but you're doing it in a state of high-speed panic. Ground yourself before you click 'confirm'."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Difficult decisions, weighing up options, an impasse, avoidance.",
+            "reversed": "Indecision, confusion, information overload, no right choice."
+        }
+    },
+    "3 Of Swords": {
+        "full_name": "3 of Swords",
+        "keywords": {
+            "upright": "Digital betrayal. Heartbreak that went public. The \"unfollow.\"",
+            "reversed": "Releasing the \"pain-body.\" Healing."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Digital Betrayal. The pain of a public heartbreak or a betrayal within a network. The sting of being \"blocked\" or \"muted\" by those we once trusted.",
+                "reversed": "Releasing the Pain. The healing process after a digital fallout. Forgiving oneself and others for past conflicts and moving beyond the \"pain-body.\""
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Heartbreak, emotional pain, sorrow, grief, hurt.",
+            "reversed": "Negative self-talk, releasing pain, optimism, forgiveness."
+        }
+    },
+    "4 Of Swords": {
+        "full_name": "4 of Swords",
+        "keywords": {
+            "upright": "Mental rest. \"Do Not Disturb\" mode.",
+            "reversed": "Burnout because you refused to log off."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Do Not Disturb Mode. You're taking a necessary mental sabbatical. The 'system' is offline for maintenance. This isn't laziness; it's a strategic reboot so you don't crash when things get 'high-bandwidth' again.",
+                "reversed": "Forced Downtime. You refused to rest, so your body/mind is doing it for you. You're 'glitching' because you haven't taken a break in months. This isn't a productive 'rest'\u2014it's a crash. Re-evaluate your pace."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Rest, relaxation, meditation, contemplation, recuperation.",
+            "reversed": "Exhaustion, burnout, deep soul-searching, stagnation."
+        }
+    },
+    "5 Of Swords": {
+        "full_name": "5 of Swords",
+        "keywords": {
+            "upright": "Winning the argument but losing the \"vibe.\" Empty victory.",
+            "reversed": "Reconciliation. Putting the \"swords\" down."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The Pyrrhic Victory. You 'won' the internet beef, but at what cost? Your reputation is slightly charred and the vibe is rancid. You've proven your point, but you've lost the respect of the people who actually matter.",
+                "reversed": "Putting the Swords Down. You're over the drama. You're choosing 'peace' over being 'right'. This is the moment you leave the group chat and realize that your energy is better spent elsewhere. Total release of resentment."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Conflict, disagreements, competition, defeat, winning at all costs.",
+            "reversed": "Reconciliation, making amends, past resentment, regret."
+        }
+    },
+    "6 Of Swords": {
+        "full_name": "6 of Swords",
+        "keywords": {
+            "upright": "Transition. Moving to a \"safer\" platform or mindset.",
+            "reversed": "Unfinished business. \"Emotional baggage\" in the cloud."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Digital Migration. You're moving your energy to a 'safer' or more aligned platform. The journey is quiet and maybe a bit sad, but it's necessary for your survival. You're leaving the 'toxic' waters for a clearer horizon.",
+                "reversed": "Dragging the 'Baggage' across the border. You're trying to move forward, but you're still carrying all the 'drafts' and 'receipts' from your last fallout. You can't start a new chapter if you're still re-reading the last one."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Transition, change, rite of passage, releasing baggage.",
+            "reversed": "Personal transition, resistance to change, unfinished business."
+        }
+    },
+    "7 Of Swords": {
+        "full_name": "7 of Swords",
+        "keywords": {
+            "upright": "\"Sneaky\" energy. Hacking, \"gatekeeping,\" or strategic moves.",
+            "reversed": "Getting caught. Self-deceit."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The 'Stealth' Move. You're playing your cards close to your chest. Maybe you're 'hacking' a system or just being very strategic about your next launch. It's 'sneaky' energy, but in a way that serves your goals. Stay low-key.",
+                "reversed": "The 'Imposter' is caught. You've been trying to 'fake it' and now the truth is leaking out. Or maybe you're just sabotaging yourself because you don't think you deserve the win. Stop hiding and own your 'code'."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Betrayal, deception, getting away with something, acting strategically.",
+            "reversed": "Imposter syndrome, self-deceit, kept secrets."
+        }
+    },
+    "8 Of Swords": {
+        "full_name": "8 of Swords",
+        "keywords": {
+            "upright": "**The Executive Dysfunction Card.** Trapped by \"mental tabs.\"",
+            "reversed": "Taking the blindfold off. Breaking the \"loop.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You're stuck in 'Infinite Scroll' mode, paralyzed by too many open tabs in your brain. You know what you need to do, but the sheer volume of data is keeping you from clicking 'execute'.",
+                "reversed": "The blindfold is finally off. You've closed the irrelevant tabs and muted the noise. You're regaining your cognitive sovereignty and realizing the 'trap' was just a lack of focus. It's time to execute."
+            },
+            "stoic": {
+                "upright": "In the 2026 context, this card specifically addresses the phenomenon of **Executive Dysfunction**. It represents a state where choice overload and information asymmetry lead to a paralysis of the will. The focus is on regaining agency by simplifying the cognitive field.",
+                "reversed": "In the 2026 context, this card specifically addresses the phenomenon of **Executive Dysfunction**. It represents a state where choice overload and information asymmetry lead to a paralysis of the will. The focus is on regaining agency by simplifying the cognitive field."
+            },
+            "analyst": {
+                "upright": "A state of \"Analysis Paralysis\" where a surplus of data prevents effective decision-making. Executive dysfunction at a corporate or strategic scale.",
+                "reversed": "A state of \"Analysis Paralysis\" where a surplus of data prevents effective decision-making. Executive dysfunction at a corporate or strategic scale."
+            }
+        },
+        "traditional": {
+            "upright": "Trapped, restricted, blinded, victimhood.",
+            "reversed": "Self-acceptance, new perspective, freedom, release."
+        }
+    },
+    "9 Of Swords": {
+        "full_name": "9 of Swords",
+        "keywords": {
+            "upright": "Night-time anxiety. \"What if they hate it?\" Doom-scrolling at 3 AM.",
+            "reversed": "Releasing worry. Seeing it was \"all in your head.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "3 AM Doom-scroll Anxiety. You're making up 'scenarios' in your head about how everyone hates your latest project. The 'mental noise' is at an all-time high. It's a 'nightmare' of your own making. Turn off the phone.",
+                "reversed": "Waking up from the 'Simulation'. You've realized that 90% of what you were worried about was just 'noise'. The anxiety is fading because you've finally looked at the 'data' and realized you're actually fine."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Anxiety, worry, fear, depression, nightmares.",
+            "reversed": "Inner turmoil, deep-seated fears, secrets, releasing worry."
+        }
+    },
+    "10 Of Swords": {
+        "full_name": "10 of Swords",
+        "keywords": {
+            "upright": "Hit rock bottom. The \"absolute end\" of a mental cycle.",
+            "reversed": "The \"Phoenix\" moment. It can only get better."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Total System Failure. The 'absolute' end of a mental cycle. You've been 'stabbed' in the back by a situation, but the good news is: it literally cannot get worse. The only way is up from here. Let it die.",
+                "reversed": "The Phoenix Protocol. You're crawling out from the wreckage. You've survived the 'worst-case scenario' and now you're invincible because you have nothing left to lose. Rebuilding starts now, with zero baggage."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Painful endings, deep wounds, betrayal, loss, crisis.",
+            "reversed": "Recovery, regeneration, resisting an inevitable end."
+        }
+    },
+    "Page Of Swords": {
+        "full_name": "Page of Swords",
+        "keywords": {
+            "upright": "The \"Fact-Checker.\" Curiosity and mental agility.",
+            "reversed": "Being \"all talk.\" Trolling."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "\"The Fact-Checker.\" High-speed curiosity. You\u2019re \"sharpening\" your mind on new info. \"Real talk\" energy.",
+                "reversed": "\"The Troll.\" Being \"edgy\" for the sake of it. All talk, no substance. A \"snarky\" vibe that\u2019s unhelpful."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "New ideas, curiosity, thirst for knowledge, new ways of communicating.",
+            "reversed": "Self-expression, all talk and no action, haphazard action, haste."
+        }
+    },
+    "Knight Of Swords": {
+        "full_name": "Knight of Swords",
+        "keywords": {
+            "upright": "Chasing the \"Truth.\" Fast-paced logic.",
+            "reversed": "Haste. Being \"reckless\" with your words."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "\"The Debater.\" Chasing the \"Truth\" at 100mph. Bold, logical, and \"direct.\" Cutting through the BS.",
+                "reversed": "\"Haste.\" Being \"reckless\" with your words. Starting a fire because you were \"too fast\" to check the facts."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Ambitious, action-oriented, driven to succeed, fast-thinking.",
+            "reversed": "Restless, unfocused, impulsive, burn-out."
+        }
+    },
+    "Queen Of Swords": {
+        "full_name": "Queen of Swords",
+        "keywords": {
+            "upright": "Unfiltered Truth. Sharp, independent, and clear.",
+            "reversed": "Bitterness. Using words as \"weapons.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You're in your 'Logic First' era. You're cutting through the marketing fluff and the toxic positivity of the 'feed' to see exactly what's going on. Your boundaries are razor-sharp, and your signal is pure.",
+                "reversed": "You're using your sharp mind as a weapon. Your 'critiques' are crossing the line into bitterness, and you're alienating the very people you're trying to lead. Dial back the coldness before you freeze your network."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Independent, unbiased judgement, clear boundaries, direct communication.",
+            "reversed": "Overly-critical, vicious, cold-hearted."
+        }
+    },
+    "King Of Swords": {
+        "full_name": "King of Swords",
+        "keywords": {
+            "upright": "The Intellectual Authority. Master of the \"narrative.\"",
+            "reversed": "Manipulation. \"Gaslighting\" as an art form."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "\"Intellectual Authority.\" You master the \"narrative.\" Logical leadership and high-level strategy.",
+                "reversed": "\"The Gaslighter.\" Using your \"intelligence\" to manipulate the \"facts.\" Controlling the \"story\" for selfish ends."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Mental clarity, intellectual power, authority, truth.",
+            "reversed": "Quiet power, inner truth, misuse of power, manipulation."
+        }
+    },
+    "Ace Of Pentacles": {
+        "full_name": "Ace of Pentacles",
+        "keywords": {
+            "upright": "New revenue stream. Seed money.",
+            "reversed": "A \"missed\" opportunity or bad crypto play."
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Asset Genesis. A new revenue stream or the arrival of seed capital. The beginning of a tangible wealth-building journey.",
+                "reversed": "Missed Opportunity. A failure to capitalize on an asset or a poor investment choice in a volatile market."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "The entry of new liquidity into a project or personal portfolio. This may manifest as seed funding or the tokenization of real-world assets (RWAs).",
+                "reversed": "The entry of new liquidity into a project or personal portfolio. This may manifest as seed funding or the tokenization of real-world assets (RWAs)."
+            }
+        },
+        "traditional": {
+            "upright": "A new financial or career opportunity, manifestation, abundance.",
+            "reversed": "Lost opportunity, lack of planning and foresight."
+        }
+    },
+    "2 Of Pentacles": {
+        "full_name": "2 of Pentacles",
+        "keywords": {
+            "upright": "The \"Hustle\" balance. Managing two jobs/vibrations.",
+            "reversed": "Disorganized. Dropping the \"ball.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The 'Multi-Hyphenate' Hustle. You're juggling two different revenue streams and somehow making it look easy. You're in a 'flow state' where the balance is dynamic and high-energy. Keep the balls in the air.",
+                "reversed": "Dropping the Bag. You're trying to do too much and you're starting to 'glitch'. Your 'calendar' is a mess and you're missing deadlines. It's time to pick one 'priority' and stick to it before the whole system crashes."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Multiple priorities, time management, adaptability, prioritization.",
+            "reversed": "Over-committed, disorganized, reprioritization."
+        }
+    },
+    "3 Of Pentacles": {
+        "full_name": "3 of Pentacles",
+        "keywords": {
+            "upright": "The \"Collab.\" Teamwork that actually \"eats.\"",
+            "reversed": "Working with \"energy vampires.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Strategic Collaboration. A partnership where the combined skillsets create a competitive advantage. The architecture of a successful venture.",
+                "reversed": "Friction in the Machine. Working with \"energy vampires\" or collaborators who do not contribute their fair share. Misalignment in the production process."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "A high-value collaboration where the integration of disparate technologies or skillsets creates a significant competitive moat.",
+                "reversed": "A high-value collaboration where the integration of disparate technologies or skillsets creates a significant competitive moat."
+            }
+        },
+        "traditional": {
+            "upright": "Teamwork, collaboration, learning, implementation.",
+            "reversed": "Disharmony, misaligned goals, working alone, lack of teamwork."
+        }
+    },
+    "4 Of Pentacles": {
+        "full_name": "4 of Pentacles",
+        "keywords": {
+            "upright": "Financial security or \"Gatekeeping\" your resources.",
+            "reversed": "Greed or \"Scarcity Mindset.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Gatekeeping the Bag. You're being very protective of your resources (time, money, energy). You've built a 'moat' around your project. It's 'secure', but are you being too 'closed off' to new growth?",
+                "reversed": "Scarcity Mindset. You're so scared of 'losing' what you have that you're not 'investing' in what you could be. You're clutching your 'coins' so hard you can't use your hands to build anything new. Let go."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Saving money, security, conservatism, scarcity, control.",
+            "reversed": "Over-spending, greed, self-protection, letting go."
+        }
+    },
+    "5 Of Pentacles": {
+        "full_name": "5 of Pentacles",
+        "keywords": {
+            "upright": "\"Broke\" era. Feeling left out in the cold.",
+            "reversed": "Recovery. Finding a \"workaround.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "The 'Broke' Era (Digital Edition). You're feeling 'shut out' of the opportunities. Maybe your 'reach' is down or your 'liquidity' is low. You're looking through the window at everyone else's 'success'. It's a temporary dip in the graph.",
+                "reversed": "Finding the 'Workaround'. You're coming out of the 'financial cold'. You've found a new way to 'monetize' or a community that actually supports you. The 'recession' in your personal economy is ending."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Financial loss, poverty, lack of mindset, isolation, worry.",
+            "reversed": "Recovery from financial loss, spiritual poverty."
+        }
+    },
+    "6 Of Pentacles": {
+        "full_name": "6 of Pentacles",
+        "keywords": {
+            "upright": "\"Giving back.\" Generosity. High-frequency exchange.",
+            "reversed": "One-sided deals. \"Strings attached.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "High-Frequency Exchange. You're in a position to 'give back' or 'mentor' others. The 'karma' in your network is flowing perfectly. You're sharing the 'bag' and it's coming back to you twofold. Abundance mindset.",
+                "reversed": "One-Sided Deals. You're giving away your 'value' for free or someone is 'exploiting' your 'vibe'. There are 'strings attached' to the help you're receiving. Time to check the 'terms of service' on your relationships."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Giving, receiving, sharing wealth, generosity, charity.",
+            "reversed": "Self-care, unpaid debts, one-sidedness, strings attached."
+        }
+    },
+    "7 Of Pentacles": {
+        "full_name": "7 of Pentacles",
+        "keywords": {
+            "upright": "Waiting for the \"payout.\" Long-term ROI.",
+            "reversed": "Impatience. Quitting right before the \"harvest.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "You're playing the long game with your investments and your energy. The seeds you planted months ago are starting to show real ROI. Don't rush the harvest; quality takes time.",
+                "reversed": "Impatience is your biggest enemy right now. You're ready to quit a project just because it didn't go viral in the first 48 hours. Real wealth isn't built on a single post."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Long-term view, sustainable results, perseverance, investment.",
+            "reversed": "Lack of long-term vision, limited success, reward."
+        }
+    },
+    "8 Of Pentacles": {
+        "full_name": "8 of Pentacles",
+        "keywords": {
+            "upright": "Mastering the craft. The 10,000 hours.",
+            "reversed": "Perfectionism keeping you from \"posting.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Mastery of the Craft. Putting in the dedicated hours to refine a skill. The \"slow grind\" of a true professional in the information age.",
+                "reversed": "Toxic Perfectionism. Allowing the fear of an imperfect \"post\" or \"launch\" to prevent any progress at all. Stagnation through over-polishing."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Apprenticeship, repetitive tasks, mastery, skill development.",
+            "reversed": "Self-development, perfectionism, misdirected activity."
+        }
+    },
+    "9 Of Pentacles": {
+        "full_name": "9 of Pentacles",
+        "keywords": {
+            "upright": "Independent Wealth. \"Self-made\" and enjoying it.",
+            "reversed": "Over-spending to look \"rich.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Independent Wealth Status. You've built an 'ecosystem' that works for you. You're enjoying the 'luxuries' of your hard work\u2014high-quality coffee, a curated space, and absolute freedom. You are 'self-made'.",
+                "reversed": "The 'Cost' of the Lifestyle. You look 'rich' on the grid but you're 'time-poor' in reality. You're 'over-spending' to maintain an 'aesthetic' that your 'bank account' isn't actually ready for. Stop 'larping' success and build it."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Abundance, luxury, self-sufficiency, financial independence.",
+            "reversed": "Self-worth, over-investment in work, hustle culture."
+        }
+    },
+    "10 Of Pentacles": {
+        "full_name": "10 of Pentacles",
+        "keywords": {
+            "upright": "Generational wealth. Passive income goals.",
+            "reversed": "Family drama over the \"bag.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "Legacy Brand. You've built something that will outlast the current 'cycle'. It's 'Generational Wealth' (even if it's just digital assets). You're the 'anchor' of your 'family' or 'community'. Solid gold vibes.",
+                "reversed": "Family Drama over the 'Bag'. Your 'success' is causing friction in your inner circle. Or maybe your 'empire' is built on a shaky foundation of 'legacy' tech that's about to become 'obsolete'. Protect the foundation."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "Wealth building that aligns with 2026 Environmental, Social, and Governance standards. Legacy viewed through the lens of sustainability scores and long-term impact.",
+                "reversed": "Wealth building that aligns with 2026 Environmental, Social, and Governance standards. Legacy viewed through the lens of sustainability scores and long-term impact."
+            }
+        },
+        "traditional": {
+            "upright": "Wealth, financial security, family, long-term success, contribution.",
+            "reversed": "The 'dark side' of wealth, financial failure or loss, family dispute."
+        }
+    },
+    "Page Of Pentacles": {
+        "full_name": "Page of Pentacles",
+        "keywords": {
+            "upright": "The \"Side Hustle.\" Learning a new skill for money.",
+            "reversed": "Procrastination. \"All ideas, no execution.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "\"The Manifestor.\" Learning a new \"skill\" that\u2019s going to make you \"money.\" A \"grounded\" new idea.",
+                "reversed": "\"Procrastination.\" Thinking about the \"bag\" but never actually \"applying\" for the job."
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Manifestation, financial opportunity, skill development, new job.",
+            "reversed": "Manifestation, lack of progress, procrastination, learning from failure."
+        }
+    },
+    "Knight Of Pentacles": {
+        "full_name": "Knight of Pentacles",
+        "keywords": {
+            "upright": "**Sustainable Productivity.** The \"Slow & Steady\" grind.",
+            "reversed": "Stagnant. Laziness disguised as \"self-care.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "**Sustainable Productivity.** The reliable, low-variance grind that produces long-term results. The backbone of the gig economy: consistency and reliability.",
+                "reversed": "Stagnation as Self-Care. Masking laziness or a lack of growth as \"rest.\" A failure to evolve due to a comfort in the status quo."
+            },
+            "stoic": {
+                "upright": "This card is redefined as the archetype of **Reliable Output**. In a gig-based and automated economy, the \"superpower\" represented here is not speed, but the consistency of contribution and the maintenance of a sustainable work-life boundary.",
+                "reversed": "This card is redefined as the archetype of **Reliable Output**. In a gig-based and automated economy, the \"superpower\" represented here is not speed, but the consistency of contribution and the maintenance of a sustainable work-life boundary."
+            },
+            "analyst": {
+                "upright": "The backbone of the 2026 service economy. Focuses on low-variance productivity, supply-chain reliability, and long-term asset maintenance.",
+                "reversed": "The backbone of the 2026 service economy. Focuses on low-variance productivity, supply-chain reliability, and long-term asset maintenance."
+            }
+        },
+        "traditional": {
+            "upright": "Hard work, productivity, routine, conservatism.",
+            "reversed": "Self-discipline, boredom, feeling 'stuck', perfectionism."
+        }
+    },
+    "Queen Of Pentacles": {
+        "full_name": "Queen of Pentacles",
+        "keywords": {
+            "upright": "The \"High Value\" provider. Wealth + Wellness.",
+            "reversed": "Work-life balance issues. Neglecting the \"physical.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "\"The High Value Provider.\" Wealth + Wellness. You take care of the \"bag\" and the \"body.\" Grounded abundance.",
+                "reversed": "\"Work-Life Imbalance.\" Neglecting your \"health\" for the \"wealth.\" Or being \"possessive\" of your \"comfort.\""
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Nurturing, practical, providing financially, working parent.",
+            "reversed": "Self-care, work-life balance, smothering, insecurity."
+        }
+    },
+    "King Of Pentacles": {
+        "full_name": "King of Pentacles",
+        "keywords": {
+            "upright": "The \"Wealth Magnet.\" Stability and abundance.",
+            "reversed": "Stubbornness. Losing it all on a \"bad bet.\""
+        },
+        "personas": {
+            "main_character": {
+                "upright": "\"The Wealth Magnet.\" Total mastery of the \"physical world.\" Stability, abundance, and \"Boss\" energy.",
+                "reversed": "\"The Miser.\" Or losing it all on a \"bad bet.\" Stubbornness in \"business\" that leads to a \"loss.\""
+            },
+            "stoic": {
+                "upright": "",
+                "reversed": ""
+            },
+            "analyst": {
+                "upright": "",
+                "reversed": ""
+            }
+        },
+        "traditional": {
+            "upright": "Wealth, business, leadership, security, abundance, discipline.",
+            "reversed": "Financially inept, obsessed with wealth and status, stubborn."
+        }
+    }
+}

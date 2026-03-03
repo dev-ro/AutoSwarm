@@ -38,6 +38,21 @@ Run the main entry point to start the swarm:
 python main.py
 ```
 
+## Repository Structure
+
+- `src/`: Core application code
+  - `agents/`: Specialized agent implementations (Executive, Coder, Tarot, etc.)
+  - `core/`: Core orchestrator, state management, and knowledge base
+  - `orchestration/`: Multi-agent routing and team management
+  - `personality/`: NLU-driven personality routing and `profiles/`
+  - `tarot/`: The core tarot reading engine
+  - `tools/`: Shared tools (Google Docs, report generators)
+- `tests/`: Unit and end-to-end tests
+- `scripts/`: Utility scripts for population and debugging
+- `workspace/`: Agents' working directory (sandbox output)
+- `secrets/`: Local secrets (e.g., service accounts)
+
+
 ## detailed System Upgrades
 
 ### 1. Robustness: The "Smart" Coder

@@ -1,0 +1,127 @@
+date: 7/13/2024
+time: 
+times shuffled per spread: 1111
+result:
+
+Past present future:
+  Past: The Moon (reversed) - Number: 18, Element: Major, Astrology: Pisces, Kabbalah: Qoph (Pisces)
+  Present: 5 of Pentacles (upright) - Number: 5, Element: Earth, Astrology: Mercury in Taurus, Kabbalah: None
+  Future: 9 of Pentacles (upright) - Number: 9, Element: Earth, Astrology: Venus in Virgo, Kabbalah: None
+Elemental Dignities: {'strengthen': 1, 'weaken': 0, 'neutral': 0}
+
+Celtic cross:
+  Present: Page of Cups (reversed) - Number: 11, Element: Water, Astrology: None, Kabbalah: None
+  Challenge: 5 of Cups (reversed) - Number: 5, Element: Water, Astrology: Mars in Scorpio, Kabbalah: None
+  Past: The Chariot (upright) - Number: 7, Element: Major, Astrology: Cancer, Kabbalah: Cheth (Cancer)
+  Future: 9 of Cups (reversed) - Number: 9, Element: Water, Astrology: Jupiter in Pisces, Kabbalah: None
+  Above: 7 of Pentacles (reversed) - Number: 7, Element: Earth, Astrology: Saturn in Taurus, Kabbalah: None
+  Below: Knight of Wands (upright) - Number: 12, Element: Fire, Astrology: None, Kabbalah: None
+  Advice: Death (upright) - Number: 13, Element: Major, Astrology: Scorpio, Kabbalah: Nun (Scorpio)
+  External Influences: Page of Wands (upright) - Number: 11, Element: Fire, Astrology: None, Kabbalah: None
+  Hopes and Fears: Wheel of Fortune (upright) - Number: 10, Element: Major, Astrology: Jupiter, Kabbalah: Kaph (Jupiter)
+  Outcome: Page of Pentacles (upright) - Number: 11, Element: Earth, Astrology: None, Kabbalah: None
+Elemental Dignities: {'strengthen': 11, 'weaken': 6, 'neutral': 4}
+
+Horseshoe:
+  Past: The Fool (upright) - Number: 0, Element: Major, Astrology: Uranus, Kabbalah: Aleph (Air)
+  Present: 3 of Swords (upright) - Number: 3, Element: Air, Astrology: Saturn in Libra, Kabbalah: None
+  Hidden Influences: 9 of Swords (upright) - Number: 9, Element: Air, Astrology: Mars in Gemini, Kabbalah: None
+  Obstacles: 2 of Wands (reversed) - Number: 2, Element: Fire, Astrology: Mars in Aries, Kabbalah: None
+  External Influences: The Hanged Man (upright) - Number: 12, Element: Major, Astrology: Neptune, Kabbalah: Mem (Water)
+  Suggested Action: Knight of Pentacles (reversed) - Number: 12, Element: Earth, Astrology: None, Kabbalah: None
+  Outcome: 8 of Wands (upright) - Number: 8, Element: Fire, Astrology: Mercury in Sagittarius, Kabbalah: None
+Elemental Dignities: {'strengthen': 6, 'weaken': 2, 'neutral': 2}
+
+Relationship:
+  You: 2 of Swords (reversed) - Number: 2, Element: Air, Astrology: Moon in Libra, Kabbalah: None
+  Partner: Knight of Cups (upright) - Number: 12, Element: Water, Astrology: None, Kabbalah: None
+  Foundation: 2 of Cups (reversed) - Number: 2, Element: Water, Astrology: Venus in Cancer, Kabbalah: None
+  Strengths: King of Wands (upright) - Number: 14, Element: Fire, Astrology: None, Kabbalah: None
+  Weaknesses: 10 of Swords (upright) - Number: 10, Element: Air, Astrology: Sun in Gemini, Kabbalah: None
+  Future: 4 of Pentacles (reversed) - Number: 4, Element: Earth, Astrology: Sun in Capricorn, Kabbalah: None
+Elemental Dignities: {'strengthen': 6, 'weaken': 4, 'neutral': 5}
+
+Astrological:
+  House 1: 8 of Swords (upright) - Number: 8, Element: Air, Astrology: Jupiter in Gemini, Kabbalah: None
+  House 2: 6 of Swords (upright) - Number: 6, Element: Air, Astrology: Mercury in Aquarius, Kabbalah: None
+  House 3: The Hermit (upright) - Number: 9, Element: Major, Astrology: Virgo, Kabbalah: Yod (Virgo)
+  House 4: 6 of Cups (reversed) - Number: 6, Element: Water, Astrology: Sun in Scorpio, Kabbalah: None
+  House 5: The Devil (reversed) - Number: 15, Element: Major, Astrology: Capricorn, Kabbalah: Ayin (Capricorn)
+  House 6: Strength (upright) - Number: 8, Element: Major, Astrology: Leo, Kabbalah: Teth (Leo)
+  House 7: 3 of Pentacles (reversed) - Number: 3, Element: Earth, Astrology: Mars in Capricorn, Kabbalah: None
+  House 8: 7 of Swords (upright) - Number: 7, Element: Air, Astrology: Moon in Aquarius, Kabbalah: None
+  House 9: Queen of Cups (reversed) - Number: 13, Element: Water, Astrology: None, Kabbalah: None
+  House 10: 7 of Wands (upright) - Number: 7, Element: Fire, Astrology: Mars in Leo, Kabbalah: None
+  House 11: King of Cups (reversed) - Number: 14, Element: Water, Astrology: None, Kabbalah: None
+  House 12: 10 of Wands (reversed) - Number: 10, Element: Fire, Astrology: Saturn in Sagittarius, Kabbalah: None
+Elemental Dignities: {'strengthen': 16, 'weaken': 9, 'neutral': 11}
+
+Yearly:
+  Month 1: Temperance (reversed) - Number: 14, Element: Major, Astrology: Sagittarius, Kabbalah: Samekh (Sagittarius)
+  Month 2: The Empress (upright) - Number: 3, Element: Major, Astrology: Venus, Kabbalah: Daleth (Venus)
+  Month 3: The Magician (reversed) - Number: 1, Element: Major, Astrology: Mercury, Kabbalah: Beth (Mercury)
+  Month 4: 10 of Pentacles (reversed) - Number: 10, Element: Earth, Astrology: Mercury in Virgo, Kabbalah: None
+  Month 5: 4 of Swords (upright) - Number: 4, Element: Air, Astrology: Jupiter in Libra, Kabbalah: None
+  Month 6: Knight of Swords (upright) - Number: 12, Element: Air, Astrology: None, Kabbalah: None
+  Month 7: King of Pentacles (reversed) - Number: 14, Element: Earth, Astrology: None, Kabbalah: None
+  Month 8: King of Swords (upright) - Number: 14, Element: Air, Astrology: None, Kabbalah: None
+  Month 9: 7 of Cups (reversed) - Number: 7, Element: Water, Astrology: Venus in Scorpio, Kabbalah: None
+  Month 10: The Sun (upright) - Number: 19, Element: Major, Astrology: Sun, Kabbalah: Resh (Sun)
+  Month 11: The High Priestess (upright) - Number: 2, Element: Major, Astrology: Moon, Kabbalah: Gimel (Moon)
+  Month 12: 8 of Cups (reversed) - Number: 8, Element: Water, Astrology: Saturn in Pisces, Kabbalah: None
+Elemental Dignities: {'strengthen': 9, 'weaken': 6, 'neutral': 6}
+
+Karmic:
+  Past Life: 10 of Cups (reversed) - Number: 10, Element: Water, Astrology: Mars in Pisces, Kabbalah: None
+  Current Life Purpose: The World (upright) - Number: 21, Element: Major, Astrology: Saturn, Kabbalah: Tau (Saturn)
+  Karmic Lessons: The Star (reversed) - Number: 17, Element: Major, Astrology: Aquarius, Kabbalah: Tzaddi (Aquarius)
+  Future Life Influence: The Hierophant (upright) - Number: 5, Element: Major, Astrology: Taurus, Kabbalah: Vau (Taurus)
+Elemental Dignities: {'strengthen': 0, 'weaken': 0, 'neutral': 0}
+
+Elemental:
+  Fire: Justice (upright) - Number: 11, Element: Major, Astrology: Libra, Kabbalah: Lamed (Libra)
+  Water: Judgement (upright) - Number: 20, Element: Major, Astrology: Pluto, Kabbalah: Shin (Fire)
+  Air: 4 of Wands (upright) - Number: 4, Element: Fire, Astrology: Venus in Aries, Kabbalah: None
+  Earth: 3 of Wands (reversed) - Number: 3, Element: Fire, Astrology: Sun in Aries, Kabbalah: None
+Elemental Dignities: {'strengthen': 1, 'weaken': 0, 'neutral': 0}
+
+Career:
+  Current Position: 5 of Wands (reversed) - Number: 5, Element: Fire, Astrology: Saturn in Leo, Kabbalah: None
+  Challenges: 2 of Pentacles (upright) - Number: 2, Element: Earth, Astrology: Jupiter in Capricorn, Kabbalah: None
+  Strengths: 9 of Wands (upright) - Number: 9, Element: Fire, Astrology: Moon in Sagittarius, Kabbalah: None
+  Opportunities: Page of Swords (upright) - Number: 11, Element: Air, Astrology: None, Kabbalah: None
+  Advice: 3 of Cups (upright) - Number: 3, Element: Water, Astrology: Mercury in Cancer, Kabbalah: None
+  Outcome: Queen of Swords (upright) - Number: 13, Element: Air, Astrology: None, Kabbalah: None
+Elemental Dignities: {'strengthen': 7, 'weaken': 4, 'neutral': 4}
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Deck: Rider-Waite-Smith**
+The Rider-Waite-Smith deck is renowned for its detailed and symbolic imagery, making it an excellent choice for both beginners and experienced readers. Its rich esoteric symbols draw from various traditions, offering deep insights through its well-known illustrations.
+
+**Spread: Past, Present, Future**
+This classic spread provides a comprehensive overview of the querent's life, showing the journey from past experiences to future possibilities.
+
+**Past: 6 of Swords (upright)**
+The 6 of Swords indicates a transition or journey, often one that involves leaving difficulties behind and moving towards a more positive future. In the Rider-Waite-Smith deck, the imagery of a boat moving across calm waters, guided by a hooded figure, symbolizes the passage from turmoil to tranquility. The association with Mercury in Aquarius suggests intellectual progress and innovative thinking. The querent has likely gone through a period of change, finding solace and clarity after overcoming challenges.
+
+**Present: The Devil (upright)**
+The Devil card, associated with Capricorn and the Kabbalistic letter Ayin, represents bondage, materialism, and the darker aspects of the self. In the Rider-Waite-Smith deck, the imagery depicts a horned devil figure holding two individuals in chains, highlighting feelings of entrapment. The querent may currently feel restricted by unhealthy habits or relationships, facing the shadow side of their nature. This card calls for self-awareness and the courage to break free from negative influences.
+
+**Future: Judgement (upright)**
+Judgement signifies rebirth, renewal, and a calling to higher consciousness. The Rider-Waite-Smith deck portrays an angel blowing a trumpet, awakening people from their graves, symbolizing a profound transformation. With its association to Pluto and the Kabbalistic letter Shin, this card suggests that the querent will undergo a significant awakening or realization, leading to a new phase of life. They will likely experience a sense of liberation and purpose, emerging stronger and more enlightened.
+
+**Elemental Dignities:**
+The elemental dignities do not show any particular strengthening or weakening, indicating a balanced spread. The transition from the intellectual clarity of the 6 of Swords (Air) to the material challenges of The Devil (Earth) and finally to the transformative fire of Judgement suggests a well-rounded journey. The querent should embrace the changes ahead with confidence, knowing that each phase prepares them for the next stage of growth.
+
+Overall, this reading highlights a journey of moving from past challenges towards a transformative and liberating future. The querent is encouraged to acknowledge their current constraints and work towards personal freedom and higher understanding.

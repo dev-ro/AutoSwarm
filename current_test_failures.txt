@@ -1,0 +1,31 @@
+FFF.............                                                         [100%]
+================================== FAILURES ===================================
+__________________ TestPersonaLoader.test_agent_instructions __________________
+tests\test_config_persona.py:59: in test_agent_instructions
+    agent = get_social_agent()
+E   TypeError: get_social_agent() missing 1 required positional argument: 'state_manager'
+____________________ TestPersonaLoader.test_load_personas _____________________
+tests\test_config_persona.py:46: in test_load_personas
+    self.assertEqual(p1.api_key, "secret_key_1")
+E   AttributeError: 'SocialPersona' object has no attribute 'api_key'
+---------------------------- Captured stdout call -----------------------------
+[Config] Loaded twitter credentials for persona 1
+[Config] Loaded twitter credentials for persona 2
+[Config] Loaded twitter credentials for persona 3
+________________ TestPersonaLoader.test_tool_usage_simulation _________________
+tests\test_config_persona.py:77: in test_tool_usage_simulation
+    self.assertIn("@test_bot_1", result)
+E   AssertionError: '@test_bot_1' not found in "PENDING USER APPROVAL (Draft ID: <MagicMock name='mock.create_post()' id='1891288941296'>). Content saved for twitter."
+---------------------------- Captured stdout call -----------------------------
+[Config] Loaded twitter credentials for persona 1
+[Config] Loaded twitter credentials for persona 2
+[Config] Loaded twitter credentials for persona 3
+[Config] Loaded twitter credentials for persona 1
+[Config] Loaded twitter credentials for persona 2
+[Config] Loaded twitter credentials for persona 3
+  [SocialPublisher] Drafting post for twitter as persona 1...
+=========================== short test summary info ===========================
+FAILED tests/test_config_persona.py::TestPersonaLoader::test_agent_instructions
+FAILED tests/test_config_persona.py::TestPersonaLoader::test_load_personas - ...
+FAILED tests/test_config_persona.py::TestPersonaLoader::test_tool_usage_simulation
+3 failed, 13 passed in 47.46s

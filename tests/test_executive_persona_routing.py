@@ -2,7 +2,8 @@ import os
 import sys
 
 # Ensure src module is discoverable if run from the project root
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 from src.personality.selector import PersonalitySelector
 from src.personality.schemas import NLUClassification
@@ -10,7 +11,7 @@ from src.personality.schemas import NLUClassification
 def test_persona_routing():
     # Construct absolute path to the persona library
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    persona_path = os.path.join(base_dir, 'src', 'personality', 'persona_library.json')
+    persona_path = os.path.join(base_dir, '..', 'src', 'personality', 'persona_library.json')
     
     # Initialize the PersonalitySelector
     selector = PersonalitySelector(persona_library_path=persona_path)

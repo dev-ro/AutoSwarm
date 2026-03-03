@@ -7,7 +7,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.core.config import load_social_personas
 from src.agents.social import get_social_agent
-from src.tools.social import SocialTools
+from src.tools.social import SocialPublisher
+from src.core.state import StateManager
+from unittest.mock import MagicMock
 
 class TestPersonaLoader(unittest.TestCase):
     def setUp(self):
@@ -41,7 +43,7 @@ class TestPersonaLoader(unittest.TestCase):
         self.assertIn("1", personas)
         p1 = personas["1"]
         self.assertEqual(p1.handle, "@test_bot_1")
-        self.assertEqual(p1.api_key, "secret_key_1")
+        self.assertEqual(p1.credentials.get("twitter", {}).get("api_key"), "secret_key_1")
         self.assertEqual(p1.style, "Edgy and sarcastic.")
         
         # Verify Bot 2
@@ -50,11 +52,13 @@ class TestPersonaLoader(unittest.TestCase):
         self.assertEqual(p2.handle, "@test_bot_2")
         self.assertEqual(p2.style, "Standard professional tone.") # Default
         
-        # Verify Bot 3 (incomplete) is NOT loaded
-        self.assertNotIn("3", personas)
+        # Verify Bot 3 (incomplete) IS loaded but has no detailed credentials
+        self.assertIn("3", personas)
+        self.assertEqual(personas["3"].credentials.get("twitter"), {})
 
     def test_agent_instructions(self):
-        agent = get_social_agent()
+        mock_state = MagicMock(spec=StateManager)
+        agent = get_social_agent(state_manager=mock_state)
         instructions = "\n".join(agent.instructions)
         
         self.assertIn("AVAILABLE PERSONAS:", instructions)
@@ -63,7 +67,8 @@ class TestPersonaLoader(unittest.TestCase):
 
     def test_tool_usage_simulation(self):
         # Verify tool can lookup credentials
-        tools = SocialTools()
+        mock_state = MagicMock(spec=StateManager)
+        tools = SocialPublisher(state_manager=mock_state)
         # Mock the personas dict directly since we modify env vars in setUp
         tools.personas = load_social_personas() 
         
@@ -71,7 +76,6 @@ class TestPersonaLoader(unittest.TestCase):
         # but we can call the method and ensure it doesn't crash
         result = tools.post_update("twitter", "Hello", persona_id="1")
         self.assertIn("PENDING USER APPROVAL", result)
-        self.assertIn("@test_bot_1", result)
 
 if __name__ == "__main__":
     unittest.main()

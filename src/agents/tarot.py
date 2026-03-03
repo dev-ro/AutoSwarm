@@ -12,19 +12,9 @@ from agno.agent import Agent
 from src.core.models import get_executive_model
 from src.tools.google_docs import GoogleDocsTools
 
-# Add workspace/tarot to path so we can import the library
-# Assuming the agent is running from the project root
-WORKSPACE_DIR = Path("workspace/tarot")
-sys.path.append(str(WORKSPACE_DIR.absolute()))
-
-try:
-    from deck import Deck
-    from reading import Reading
-    from spread import Spread
-except ImportError:
-    # Fallback if paths are tricky or running from different context
-    # This might fail layout if not careful, but sticking to plan
-    print("Warning: Could not import tarot library directly. TarotAgent features may be limited.")
+from src.tarot.deck import Deck
+from src.tarot.reading import Reading
+from src.tarot.spread import Spread
 
 class TarotAgent(Agent):
     def __init__(self, name: str = "MysticVibe"):
@@ -55,20 +45,19 @@ class TarotAgent(Agent):
         Perform a tarot reading using the internal card deck.
         
         Args:
-            spread_type: The type of spread to use. Options: 'past_present_future', 'celtic_cross', 'horseshoe', 'relationship', 'career', 'daily_vibe' (maps to 'weekly' or 'single').
+            spread_type: The type of spread to use. Options: 'past_present_future', 'celtic_cross', 'horseshoe', 'relationship', 'career', 'astrological', 'yearly', 'karmic', 'elemental', 'journey', 'healing', 'decision_making', 'spiritual_growth', 'new_beginnings', 'inner_conflict', 'financial_insight', 'personal_growth', 'life_purpose', 'life_path', 'elemental_balance', 'conflict_resolution', 'creativity', 'self_discovery', 'manifestation', 'change_and_transition', 'dream_interpretation', 'family_dynamics', 'spiritual_awakening', 'personal_power', 'relationship_potential', 'decision_clarifier', 'soul_purpose', 'love_and_relationship', 'clarity', 'empowerment', 'soulmate', 'intuition', 'weekly'.
             question: The specific question to focus the reading on.
         """
+        # Re-initialize deck for fresh shuffle
+        deck = Deck()
+        deck.shuffle_deck()
+        reading_engine = Reading(deck)
+        
         try:
-            # Re-initialize deck for fresh shuffle
-            deck = Deck()
-            deck.shuffle_deck()
-            reading_engine = Reading(deck)
-            
-            # Map simplified spread names if needed, or pass through
-            # The existing library has many spreads. Let's try to match or default.
+            # Validate spread type against reading engine
             if spread_type not in reading_engine.spreads:
-                # Fallback to simple 3 card spread if unknown
-                spread_type = "past_present_future"
+                # Fallback to celtic_cross if unknown
+                spread_type = "celtic_cross"
                 
             spread_obj = reading_engine.spreads[spread_type]
             spread_obj.draw_cards(deck)
