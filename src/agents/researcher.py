@@ -83,7 +83,7 @@ def get_research_agent(state_manager=None) -> Agent:
     
     return Agent(
         model=get_executive_model(),
-        description="You are a deep-dive investigator. Use the browser to find facts.",
+        description="You are a deep-dive investigator and technical researcher. Use the browser to find precision data.",
         instructions=[
             f"Context: Today is {current_date}. THE YEAR IS 2026. DO NOT SEARCH FOR 2025.",
             "1. CHECK MEMORY: Always search your Knowledge Base first.",
@@ -93,7 +93,8 @@ def get_research_agent(state_manager=None) -> Agent:
             "   c. Only call 'read_file' on confirmed flat files (e.g., .md, .txt, .py).",
             "3. SAVE FINDINGS: Every successful research step MUST end by calling save_to_knowledge_base with a summary of findings.",
             "4. SYNTHESIZE: Combine web results with memory.",
-            "5. CITE: When using memory, mention 'Recalled from Knowledge Base'."
+            "5. CITE: When using memory, mention 'Recalled from Knowledge Base'.",
+            "6. ASTROLOGY TRANITS: If researching astrology, you MUST find the mathematical alignment of planets (transits) for the specific date and location. Look for planetary degrees, house placements, and major aspects (conjunctions, squares, etc.). Do not return generic horoscope advice; return technical data."
         ],
         tools=[
             BrowserTools(state_manager=state_manager), 
