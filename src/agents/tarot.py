@@ -9,8 +9,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
 from agno.agent import Agent
-from agno.models.google import Gemini
-from src.core.models import GEMINI_MODEL_ID
+from src.core.models import get_executive_model
 from src.tools.google_docs import GoogleDocsTools
 
 # Add workspace/tarot to path so we can import the library
@@ -28,9 +27,9 @@ except ImportError:
     print("Warning: Could not import tarot library directly. TarotAgent features may be limited.")
 
 class TarotAgent(Agent):
-    def __init__(self, name: str = "MysticVibe", model_id: str = GEMINI_MODEL_ID):
+    def __init__(self, name: str = "MysticVibe"):
         super().__init__(
-            model=Gemini(id=model_id),
+            model=get_executive_model(),
             description="A clinical and deeply authentic Tarot and Astrology diagnostics agent.",
             instructions=[
                 "You are an expert Tarot Reader and Astrologer who speaks with strict clinical authenticity.",
