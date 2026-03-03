@@ -1,8 +1,8 @@
 import os
+import datetime
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google.oauth2 import service_account
-from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from agno.tools import Toolkit
 
@@ -20,13 +20,17 @@ class GoogleDocsTools(Toolkit):
         SCOPES = ['https://www.googleapis.com/auth/documents', 'https://www.googleapis.com/auth/drive']
         
         creds = None
-        service_account_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'secrets/service_account.json')
+        # Priority: Env Var, then Default Path
+        service_account_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+        if not service_account_path or not os.path.exists(service_account_path):
+             service_account_path = 'secrets/service_account.json'
         
         if os.path.exists(service_account_path):
             creds = service_account.Credentials.from_service_account_file(
                 service_account_path, scopes=SCOPES)
         else:
-            return f"Error: Strict Headless Authentication required. Please provide '{service_account_path}'. Interactive OAuth is disabled for security."
+            current_env = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'NOT_SET')
+            return f"Error: Strict Headless Authentication required. Credentials not found at '{service_account_path}' (Env Var: {current_env}). Interactive OAuth is disabled for security."
 
         try:
             drive_service = build('drive', 'v3', credentials=creds)
@@ -42,30 +46,18 @@ class GoogleDocsTools(Toolkit):
                 # The end index is the end of the last structural element
                 end_index = doc.get('body').get('content')[-1].get('endIndex') - 1
                 
-                import datetime
                 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                
-                # Prepare appending requests
-                # 1. Insertion header with horizontal line and @now
-                header_text = f"\n\n--------------------------------\n@now: {timestamp}\n# {title}\n\n"
+                # Removed @now prefix as requested
+                full_content = f"\n---\n{timestamp}\n# {title}\n\n{content}\n"
                 
                 requests = [
                     {
                         'insertText': {
                             'location': {'index': end_index},
-                            'text': header_text + content
+                            'text': full_content
                         }
                     }
                 ]
-                
-                # Basic Markdown formatting (Headers and Bold)
-                # Note: This is a simple implementation. Headers will be bolded for now.
-                # We apply formatting based on the offset within the *newly inserted* text
-                
-                # Find occurrences of # Header and **Bold** and apply formatting
-                # For simplicity in this toolkit, we will just perform the batchUpdate and then 
-                # potentially add more complex formatting if needed.
-                
                 docs_service.documents().batchUpdate(
                     documentId=document_id, body={'requests': requests}).execute()
             else:
@@ -74,8 +66,8 @@ class GoogleDocsTools(Toolkit):
                     'name': title,
                     'mimeType': 'application/vnd.google-apps.document'
                 }
-                file = drive_service.files().create(body=doc_metadata, fields='id').execute()
-                document_id = file.get('id')
+                file_metadata = drive_service.files().create(body=doc_metadata, fields='id').execute()
+                document_id = file_metadata.get('id')
                 
                 # Insert text into the document
                 requests = [
