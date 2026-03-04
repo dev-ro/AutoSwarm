@@ -8,9 +8,12 @@ def test_uv_dependencies_resolvable():
     # Core framework
     import agno
 
-    # Google and Gemini
-    import google.generativeai
-    import googleapiclient
+    core_deps = [
+        "agno",
+        "google.genai",
+        "pydantic",
+        "rich"
+    ]
     import google_auth_httplib2
     import google_auth_oauthlib
 

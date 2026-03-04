@@ -1,13 +1,11 @@
 import sys
-import traceback
 
-def main():
+def test_debug_tantivy():
+    print("EXECUTABLE:", sys.executable)
     try:
-        import src.tools.social
-        print("SUCCESS: src.tools.social imported")
+        import tantivy
+        print("SUCCESS")
     except Exception as e:
-        print("EXCEPTION CAUGHT:")
+        import traceback
         traceback.print_exc()
-
-if __name__ == '__main__':
-    main()
+        raise e
