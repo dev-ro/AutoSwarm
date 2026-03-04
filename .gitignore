@@ -4,3 +4,5 @@ __pycache__
 knowledge_base
 /workspace/
 /secrets/
+*_output*.txt
+data/
