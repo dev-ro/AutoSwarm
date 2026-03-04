@@ -17,7 +17,7 @@ AutoSwarm is an autonomous agent system designed to plan and execute complex tas
 1.  **Clone the repository.**
 2.  **Install dependencies:**
     ```bash
-    pip install -r requirements.txt
+    uv sync
     ```
 3.  **Install Playwright browsers:**
     ```bash
@@ -35,7 +35,7 @@ AutoSwarm is an autonomous agent system designed to plan and execute complex tas
 Run the main entry point to start the swarm:
 
 ```bash
-python main.py
+uv run main.py
 ```
 
 ## Repository Structure
