@@ -1,0 +1,29 @@
+[project]
+name = "autoswarm"
+version = "0.1.0"
+description = "AutoSwarm - An autonomous agent framework"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "agno",
+    "atproto",
+    "beautifulsoup4",
+    "google-api-python-client",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+    "google-generativeai",
+    "playwright",
+    "praw",
+    "pylance",
+    "python-dotenv",
+    "python-substack",
+    "termcolor",
+    "texttable",
+    "tweepy",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-mock",
+]
