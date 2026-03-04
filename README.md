@@ -69,3 +69,9 @@ All shell commands executed by the CoderAgent are run inside a `python:3.11-alpi
 
 ### 5. Efficiency: Heuristic Gates
 The system filters routine outputs using keyword heuristics to avoid unnecessary and expensive semantic analysis calls.
+
+### 6. Strategy: Cost-Benefit Analysis 
+The `AnalystAgent` executes objective optimization loops across the repository, assessing decisions strictly on quantifiable cost-benefit metrics while rejecting unneeded complexity.
+
+### 7. Signal Density: Subjective Agents
+The `TarotAgent` and related diagnostic logic force maximum signal density. They utilize strict declarative reporting (e.g. four explicit nodes) and absolute clinical honesty with zero forced positivity.
