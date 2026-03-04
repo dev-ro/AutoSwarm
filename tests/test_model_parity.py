@@ -26,13 +26,13 @@ def test_model_parity():
         actual_model = agent.model.id
         print(f"Agent {name} is using model: {actual_model}")
         if actual_model != MODEL:
-            print(f"❌ FAIL: {name} model mismatch!")
+            print(f"[FAIL]: {name} model mismatch!")
             success = False
         else:
-            print(f"✅ PASS: {name} model matches.")
+            print(f"[PASS]: {name} model matches.")
             
     if success:
-        print("\n✨ All agents are synchronized with the global model configuration.")
+        print("\nAll agents are synchronized with the global model configuration.")
     else:
         exit(1)
 

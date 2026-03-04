@@ -13,7 +13,7 @@ def concurrent_search(kb, thread_id):
         results = kb.vector_db.search(query="test query")
         print(f"Thread {thread_id}: Search successful, found {len(results)} results.")
     except Exception as e:
-        print(f"Thread {thread_id}: ❌ ERROR: {e}")
+        print(f"Thread {thread_id}: [ERROR]: {e}")
         # Identify OS Error 5 (Access Denied) or similar locking issues
         if "os error 5" in str(e).lower() or "permission denied" in str(e).lower():
             print(f"Thread {thread_id}: Detected file locking collision!")

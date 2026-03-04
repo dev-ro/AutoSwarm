@@ -37,7 +37,7 @@ def test_persona_routing():
         f"Routing failed! Expected 'executive_systems_architect', got '{best_persona.id}'"
     )
     
-    print("\n✅ SUCCESS: PersonalitySelector successfully matched and returned the 'executive_systems_architect' persona based on the genre focus.")
+    print("\n[SUCCESS]: PersonalitySelector successfully matched and returned the 'executive_systems_architect' persona based on the genre focus.")
 
 if __name__ == "__main__":
     test_persona_routing()
