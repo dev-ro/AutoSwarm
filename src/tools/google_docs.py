@@ -41,19 +41,15 @@ class GoogleDocsTools(Toolkit):
             
             if target_doc_id:
                 document_id = target_doc_id
-                # Get the current document to find the end index
-                doc = docs_service.documents().get(documentId=document_id).execute()
-                # The end index is the end of the last structural element
-                end_index = doc.get('body').get('content')[-1].get('endIndex') - 1
                 
                 timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 # Removed @now prefix as requested
-                full_content = f"\n---\n{timestamp}\n# {title}\n\n{content}\n"
+                full_content = f"{timestamp}\n# {title}\n\n{content}\n\n---\n\n"
                 
                 requests = [
                     {
                         'insertText': {
-                            'location': {'index': end_index},
+                            'location': {'index': 1},
                             'text': full_content
                         }
                     }
